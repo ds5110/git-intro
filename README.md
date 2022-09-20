@@ -32,7 +32,7 @@ make csv
 * If you make a local copy of a dataset, be sure to provide appropriate attribution.
 * Be very clear about anything you did to process the data. 
 * Results must be reproducible. Provide clear instructions for every step.
-* One nice thing about *make* is that you can edit the Makefile with having to edit this README.
+* One nice thing about *make* is that you can edit the Makefile without having to edit this README.
 * One annoying thing about *make* is that indents in the Makefile must be tabs -- spaces don't work.
 * If you don't have `make` then you're probably using Windows. If so, consider [Cygwin](https://www.cygwin.com/).
 
