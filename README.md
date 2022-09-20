@@ -77,3 +77,25 @@ conda deactivate
 * [github pages](https://pages.github.com/)
 * Activate a github-pages site for a repository in Settings > Pages
 * I do *NOT* recommend using Jekyll for this class.
+
+### seaborn issue
+
+* For some reason (python not installed as a framework?), plt.show() with seaborn hangs my terminal.  
+* Fix this by turning off interactive mode:
+```
+plt.ioff()
+```
+* You can also fix this by using a different backend:
+```
+matplotlib.use('TkAgg')
+```
+* List all the backends and the current backend with
+```
+print(plt.get_backend())
+print(matplotlib.rcsetup.all_backends)
+```
+* Or you can add the following to `~/.zprofile` to avoid a hang with the default backend
+```
+# Avoids seaborn hang on my old macbook pro
+export MPLBACKEND=qtagg
+```
