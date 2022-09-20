@@ -29,7 +29,8 @@ Download the source CSV from the [ISLR2](http://statlearning.com) website with t
 make csv
 ```
 
-* If you make a local copy of a dataset, be sure to clearly identify the source anything you did to it.
+* If you make a local copy of a dataset, be sure to provide appropriate attribution.
+* Be very clear about anything you did to process the data and reproduce reproduce all results.
 * One nice thing about *make* is that you can edit the Makefile with having to edit this README.
 * One annoying thing about *make* is that indents in the Makefile must be tabs -- spaces don't work.
 * If you don't have `make` then you're probably using Windows. If so, consider [Cygwin](https://www.cygwin.com/).
