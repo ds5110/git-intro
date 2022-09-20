@@ -64,7 +64,7 @@ conda list -e > requirements.txt
 
 You can use the requirements.txt to create a conda environment and run code as follows:
 ```
-conda create -name demo -file requirements.txt
+conda create --name demo --file requirements.txt
 conda activate demo
 make app
 conda deactivate
