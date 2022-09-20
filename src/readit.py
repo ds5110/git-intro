@@ -1,0 +1,9 @@
+import pandas as pd
+
+def csv(url = "https://github.com/ds5110/rdata/raw/main/data/Wage.csv"):
+    '''
+    Use pandas to read CSV data from the url (default: ISLR2 wage dataset)
+    '''
+    print(f"reading data from {url}")
+
+    return pd.read_csv(url)
