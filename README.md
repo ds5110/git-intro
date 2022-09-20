@@ -1,7 +1,7 @@
 
 # git-intro
 
-A demo repository for assignment submission
+A demo repository for assignment submission.
 
 ## updating a repo
 
