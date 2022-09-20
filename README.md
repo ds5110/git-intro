@@ -19,7 +19,7 @@ git commit -m "some informative message about what I did"
 git push origin main
 ```
 
-Add a `.gitignore` file to keep things from getting pushed to main.
+Add a `.gitignore` file to keep things from getting pushed to github.
 
 ### Reproducibility
 
