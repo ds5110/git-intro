@@ -90,12 +90,12 @@ You can also fix this by using a different backend:
 ```
 matplotlib.use('TkAgg')
 ```
-List all the backends and the current backend with
+List all the backends and the current backend with:
 ```
 print(plt.get_backend())
 print(matplotlib.rcsetup.all_backends)
 ```
-Or, to avoid using matplotlib, add the following to `~/.zprofile`
+Or, to avoid using matplotlib, add the following to `~/.zprofile`:
 ```
 # Avoids seaborn hang on my old macbook pro
 export MPLBACKEND=qtagg
