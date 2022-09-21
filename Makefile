@@ -3,9 +3,11 @@ app:
 	python -B src/app.py
 
 # Download the data
-# -L follows indirects
-# -O preserves filename of source
+# mkdir -p fails quietly if directory already exists
+# curl -L follows indirects
+# curl -O preserves filename of source
 csv:
+	mkdir -p data
 	cd data; curl -LO https://github.com/ds5110/rdata/raw/main/data/Wage.csv
 
 clean:
