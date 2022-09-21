@@ -26,7 +26,7 @@ Add a `.gitignore` file to keep things from getting pushed to github.
 Download the source CSV from the [ISLR2](http://statlearning.com) website with the following command
 
 ```
-make csv
+make data
 ```
 
 * You need to do this when you first clone the repo because CSV files are .gitignored.
