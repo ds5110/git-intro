@@ -95,7 +95,7 @@ matplotlib.use('TkAgg')
 print(plt.get_backend())
 print(matplotlib.rcsetup.all_backends)
 ```
-* Or you can add the following to `~/.zprofile` to avoid a hang with the default backend
+* Or, to avoid using matplotlib, add the following to `~/.zprofile`
 ```
 # Avoids seaborn hang on my old macbook pro
 export MPLBACKEND=qtagg
