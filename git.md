@@ -13,7 +13,7 @@ Updating a repository from the command-line.
 
 ## Install git
 
-Section 1.5 in the online book has guidance on installing command-line git. All of Chapter 1 in the online book is worth reading if you want background on git.
+Section 1.5 in the online book has guidance on installing command-line git. Chapter 1 is worth reading if you want background.
 
 * [1.5 Installing git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) -- git-scm.com
 * Note also: [1.4 Getting Started -- The Command Line](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line)
