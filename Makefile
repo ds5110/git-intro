@@ -7,3 +7,6 @@ app:
 # -O preserves filename of source
 csv:
 	cd data; curl -LO https://github.com/ds5110/rdata/raw/main/data/Wage.csv
+
+clean:
+	rm data/Wage.csv
