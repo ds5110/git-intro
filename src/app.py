@@ -3,7 +3,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from readit import csv
 
-df = csv()
+df = csv('data/Wage.csv')
 
 ax = sns.regplot(x="age", y="wage", data=df,
                  scatter_kws={"color": "gray", "s": 20},

@@ -29,6 +29,7 @@ Download the source CSV from the [ISLR2](http://statlearning.com) website with t
 make csv
 ```
 
+* You need to do this when you first clone the repo because CSV files are .gitignored.
 * If you make a local copy of a dataset, be sure to provide appropriate attribution.
 * Be very clear about anything you did to process the data. 
 * Results must be reproducible. Provide clear instructions for every step.
