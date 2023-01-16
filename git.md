@@ -1,7 +1,7 @@
 
 # git
 
-Updating a repository from the command-line.
+Some notes about using git from the command-line.
 
 ## References
 
@@ -37,7 +37,7 @@ These tutorials describe advanced usage of git and github, which you may use lat
 
 ## Committing
 
-After you make a change in to your local repository, you commit the changes and add a message
+After you make a change to your local repository, commit the changes and add a message:
 
 ```
 $ git commit . -m "I made a small but super-important change to such and such."
@@ -54,10 +54,11 @@ To checkout a previous commit
 ```
 $ get checkout <tag/branch/commit id>
 ```
-To reset to a previous commit (and lose everything since then!)
+To reset to a previous commit (because you'll lose everything since then!)
 ```
 $ get reset --hard <tag/branch/commit id>
 ```
+WARNING: Be super careful about using `git reset --hard` because it's destructive. Measure twice, cut once!!
 
 References:
 
