@@ -1,7 +1,7 @@
 .PHONY: data
 
 # Create the first chart in ISLR2 Figure 1.1
-app:
+q1:
 	python -B src/app.py
 
 # Download the data
