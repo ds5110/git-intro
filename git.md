@@ -7,20 +7,20 @@ Updating a repository from the command-line.
 
 "I really never wanted to do source control management at all and felt that it was just about the least interesting thing in the computing world (with the possible exception of databases ;^), and I hated all SCM’s with a passion." -- Linus Torvalds, creator of git
 
+* Ref: [git history](https://www.linuxfoundation.org/blog/10-years-of-git-an-interview-with-git-creator-linus-torvalds/)
 * [git book, 2nd edition](https://git-scm.com/book/en/v2) -- git-scm.com
 * [about git](https://git-scm.com/about) -- branching
-* [git history](https://www.linuxfoundation.org/blog/10-years-of-git-an-interview-with-git-creator-linus-torvalds/)
 
 ## Install git
 
-Section 1.5 in the online book has guidance on installing command-line git. Chapter 1 is worth reading if you want background.
+You may have it already so don't be in a rush to install it. Section 1.5 in the online book has guidance on installing command-line git. Chapter 1 is worth reading if you want background.
 
 * [1.5 Installing git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) -- git-scm.com
 * Note also: [1.4 Getting Started -- The Command Line](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line)
 
 ## Tutorials
 
-These tutorials describe advanced usage of git and github, which we'll use later in the course.
+These tutorials describe advanced usage of git and github, which may use later in the course.
 
 * [github starter course](https://github.com/education/github-starter-course)
 * [atlassian git tutorials](https://www.atlassian.com/git) -- atlassian.com
@@ -31,15 +31,11 @@ These tutorials describe advanced usage of git and github, which we'll use later
 * [github cli](https://docs.github.com/en/github-cli) -- github.com
   * This -- the github CLI -- is NOT the same as "git" (I don't use it)
 
-## Cloning a repo
-
-`$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY`
-
-Reference: 
+## Cloning
 
 * [Clone a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
-## Committing changes
+## Committing
 
 After you make a change in to your local repository, you commit the changes and add a message
 
@@ -116,4 +112,3 @@ $ git push origin main
 ## Pull requests
 
 [Creating a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) -- github.com
-
