@@ -3,15 +3,15 @@
 
 A demo repository for assignment submission.
 
-## updating a repo
+## update a repo
 
-First clone it.
+First clone it:
 
 ```
 git clone <url from the github.com GUI>
 ```
 
-Then work on stuff locally and update it.
+Then work on stuff locally and update it:
 
 ```
 git add .
@@ -19,7 +19,7 @@ git commit -m "some informative message about what I did"
 git push origin main
 ```
 
-Add a `.gitignore` file to keep things from getting pushed to github.
+Add/update the `.gitignore` file to keep big things from getting pushed to github.
 
 ### Reproducibility
 
