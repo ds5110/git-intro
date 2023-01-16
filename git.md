@@ -20,7 +20,7 @@ You may have it already! So don't be in a rush to install it. Section 1.5 in the
 
 ## Tutorials
 
-These tutorials describe advanced usage of git and github, which may use later in the course.
+These tutorials describe advanced usage of git and github, which you may use later in the course.
 
 * [github starter course](https://github.com/education/github-starter-course)
 * [atlassian git tutorials](https://www.atlassian.com/git) -- atlassian.com
