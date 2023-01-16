@@ -3,15 +3,22 @@
 
 A demo repository for assignment submission.
 
+## Clone a repo
+
+```
+git clone <URL from the github.com GUI>
+```
+
 ## Update a repo
 
-First clone it:
+Remember, before making local changes:
 
 ```
-git clone <url from the github.com GUI>
+git pull
 ```
 
-Then work on stuff locally and update it:
+* Remember to add/update the `.gitignore` file to keep big things out of version control.
+* Commit your changes and push them back to github:
 
 ```
 git add .
@@ -19,27 +26,33 @@ git commit -m "some informative message about what I did"
 git push origin main
 ```
 
-Add/update the `.gitignore` file to keep big things from getting pushed to github.
-
 ## Document for reproducibility
 
-Download the CSV file from the [ISL](http://statlearning.com) website with the following command
+Results must be reproducible. Provide clear instructions for every step, including data access.
+
+* Step 1: Download the CSV file from the [ISL](http://statlearning.com) website with the following command
 
 ```
 make data
 ```
 
 * You need to do this when you first clone the repo because CSV files are .gitignored.
-* If you make a local copy of a dataset, be sure to provide appropriate attribution.
+* Note: If you keep a local copy of a dataset, be sure to provide appropriate attribution.
 * Be very clear about anything you did to process the data. 
-* Results must be reproducible. Provide clear instructions for every step.
-* One nice thing about *make* is that you can edit the Makefile without having to edit this README.
-* One annoying thing about *make* is that indents in the Makefile must be tabs -- spaces don't work.
-* If you don't have `make` then you're probably using Windows. If so, consider [Cygwin](https://www.cygwin.com/).
+* This repo uses "make"
+  * One nice thing about *make* is that you can edit the Makefile without having to edit this README.
+  * One annoying thing about *make* is that indents in the Makefile must be tabs -- spaces don't work.
+* If you're using Windows, then consider [WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
+  * In that case, make will be installed with the Linux distribution
 
-### Presenting results
+### Reproducible results
 
-Here's the first chart in Figure 1.1 of ISLR2.
+Recreate the chart below with
+```
+make q1
+```
+
+Here's the first chart in Figure 1.1 of ISLR2, embedded with HTML.
 
 <img src="figs/q1.png" width=500>
 
@@ -47,12 +60,7 @@ This demonstrates another way to embed a PNG...
 
 ![another image](figs/q1.png)
 
-Recreate this chart with
-```
-make app
-```
-
-## requirements
+## Saving an environment
 
 I created the requirements.txt by first running this command
 
@@ -81,6 +89,7 @@ conda deactivate
 
 ### seaborn issue
 
+I encountered an issue on my older Mac.
 For some reason (python not installed as a framework?), plt.show() with seaborn hangs my terminal.
 Fix this by turning off interactive mode:
 ```
