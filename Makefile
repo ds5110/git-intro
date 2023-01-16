@@ -1,6 +1,6 @@
 .PHONY: data
 
-# Create first chart in ISLR2 Figure 1.1
+# Create the first chart in ISLR2 Figure 1.1
 app:
 	python -B src/app.py
 

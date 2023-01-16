@@ -3,7 +3,7 @@
 
 A demo repository for assignment submission.
 
-## update a repo
+## Update a repo
 
 First clone it:
 
@@ -21,9 +21,9 @@ git push origin main
 
 Add/update the `.gitignore` file to keep big things from getting pushed to github.
 
-### Reproducibility
+## Document for reproducibility
 
-Download the source CSV from the [ISLR2](http://statlearning.com) website with the following command
+Download the CSV file from the [ISL](http://statlearning.com) website with the following command
 
 ```
 make data
