@@ -11,24 +11,21 @@ git clone <URL from the github.com GUI>
 
 ## Update a repo
 
-Remember, before making local changes:
-
+* Usually a good idea to sync your repo before making changes.
 ```
 git pull
 ```
-
-* Remember to add/update the `.gitignore` file to keep big things out of version control.
-* Commit your changes and push them back to github:
-
+* Remember to keep big files and directories out of version control with `.gitignore`
+* Commit your changes locally and push them back to the origin on github:
 ```
 git add .
-git commit -m "some informative message about what I did"
+git commit -m "some informative message about what you did"
 git push origin main
 ```
 
 ## Document for reproducibility
 
-Results must be reproducible. Provide clear instructions for every step, including data access.
+Results must be reproducible. Provide clear instructions for every step in the data-processing pipeline, including data access. For example:
 
 * Step 1: Download the CSV file from the [ISL](http://statlearning.com) website with the following command
 
@@ -44,10 +41,7 @@ make data
   * One annoying thing about *make* is that indents in the Makefile must be tabs -- spaces don't work.
 * If you're using Windows, then consider [WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
   * In that case, make will be installed with the Linux distribution
-
-### Reproducible results
-
-Recreate the chart below with
+* Step 2: Recreate the chart below with
 ```
 make q1
 ```
@@ -62,50 +56,37 @@ This demonstrates another way to embed a PNG...
 
 ## Saving an environment
 
-I created the requirements.txt by first running this command
+You can create a `requirements.txt` or an `environment.yml`; they use slightly different syntax with conda.
+I created an environment.yml by first running this command
+```
+conda list -e > environment.yml
+```
+Then I used the following for hints on editing/trimming the file to include only the critical modules and version numbers.
+```
+conda env export --from-history
+```
+And I settled on this for my environment.yml...
+```
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - seaborn=0.11.2
+  - pyqt
+```
 
-```
-conda list -e > requirements.txt
-```
+## Creating an environment
 
-Then I edited it to include only the modules that I imported in my code, along with the python version.
+You can create an environment from a .yml file as follows:
 ```
-conda list -e > requirements.txt
+conda env create --name myenv -f environment.yml
 ```
-
-You can use the requirements.txt to create a conda environment and run code as follows:
+Or create it from a requirements.txt as follows:
 ```
-conda create --name demo --file requirements.txt
-conda activate demo
-make app
-conda deactivate
+conda create --name myenv --file requirements.txt
 ```
-
-### github pages
-
-* [github pages](https://pages.github.com/)
-* Activate a github-pages site for a repository in Settings > Pages
-* I do *NOT* recommend using Jekyll for this class.
-
-### seaborn issue
-
-I encountered an issue on my older Mac.
-For some reason (python not installed as a framework?), plt.show() with seaborn hangs my terminal.
-Fix this by turning off interactive mode:
+Remove an environment with:
 ```
-plt.ioff()
+conda env remove --name myenv
 ```
-You can also fix this by using a different backend:
-```
-matplotlib.use('TkAgg')
-```
-List all the backends and the current backend with:
-```
-print(plt.get_backend())
-print(matplotlib.rcsetup.all_backends)
-```
-Or, to avoid using matplotlib, add the following to `~/.zprofile`:
-```
-# Avoids seaborn hang on my old macbook pro
-export MPLBACKEND=qtagg
-```
+* Ref: [Creating an environment from an enviroment.yml file](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) -- conda.io
