@@ -13,15 +13,16 @@ A demo repository with guidelines for assignment submission.
 * If you keep a local copy of a dataset, be sure to provide appropriate attribution and links to the data source.
 * Provide instructions for reproducing all results from the command line.
 * Apply DRY principles, e.g., if multiple files use the same code, then put reused code in a module and import it.
+* Document for the 6-month rule
 * While there may be more than one way to do everything, here's the way to go...
   * Put source code in the `src` directory, figures in a `figs`directory, and tests in a `tests` directory.
-  * Use one file for each question, not one file for all questions.
-  * Use a Makefile to implement the entire data-processing pipeline.
+  * Use one file for each question/step, not one file for all questions/steps.
+  * Use a Makefile to implement and document the entire data-processing pipeline.
   * One annoying thing about `make` is that you must indent in the Makefile with tabs -- spaces don't work, alas.
 
-For example, suppose the assignment has two questions...
+For example, suppose the assignment has a data-access step and one question...
 
-## Q0: Data access
+## Step 1: Data access
 
 Download the CSV file from the [ISL](http://statlearning.com) website with the following command
 
@@ -29,7 +30,8 @@ Download the CSV file from the [ISL](http://statlearning.com) website with the f
 make data
 ```
 
-* You need to do this when you first clone the repo because CSV files are .gitignored.
+* This step is automatic if you start with Q1 (below)
+* This step is necessary when you first clone the repo because CSV files are .gitignored.
 * If you don't have requisite software, check out [install.md](http://github.com/ds5010/spring-2023/install.md).
 * If you're not familiar with git, check out [git.md](http://github.com/ds5010/spring-2023/git.md).
 
@@ -38,7 +40,7 @@ make data
 This section recreates and presents the first chart in Figure 1.1 of ISLR2.
 Recreate the chart below with
 ```
-make q2
+make q1
 ```
 
 <img src="figs/q1.png" width=500>
