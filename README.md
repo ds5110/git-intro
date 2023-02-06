@@ -19,7 +19,7 @@ A demo repository with guidelines for assignment submission.
 * Use one file per question.
 * Apply DRY principles -- if multiple files use the same code, then put reused code in a module and import it.
 
-For example:
+For example...
 
 ## Step 1: Data access
 
@@ -56,7 +56,7 @@ If you're using special software, or you need a specific version, then use
 and provide instructions with an `environment.yml` file.
 I created an environment.yml for this repo by first running this command
 ```
-conda list -e > environment.yml
+conda env export > environment.yml
 ```
 Then I used the `--from-history` option to get hints on editing/trimming the file into something nice and short.
 ```
