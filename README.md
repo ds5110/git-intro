@@ -12,16 +12,16 @@ A demo repository with guidelines for assignment submission.
 * If you need to download data, then put it in a `data` directory and make sure to ".gitignore" it.
 * If you keep a local copy of a dataset, be sure to provide appropriate attribution and links to the data source.
 * Provide instructions for reproducing all results from the command line.
-  * Use a Makefile
-  * One nice thing about *make* is that Makefiles make it easy to implement the pipeline.
-  * One annoying thing about *make* is that you must indent in the Makefile with tabs -- spaces don't work.
-* Put source code in the `src` directory, figures in a `figs`directory, and tests in a `tests` directory.
-* Use one file per question.
-* Apply DRY principles -- if multiple files use the same code, then put reused code in a module and import it.
+* Apply DRY principles, e.g., if multiple files use the same code, then put reused code in a module and import it.
+* While there may be more than one way to do everything, here's the way to go...
+  * Put source code in the `src` directory, figures in a `figs`directory, and tests in a `tests` directory.
+  * Use one file for each question, not one file for all questions.
+  * Use a Makefile to implement the entire data-processing pipeline.
+  * One annoying thing about `make` is that you must indent in the Makefile with tabs -- spaces don't work, alas.
 
-For example...
+For example, suppose the assignment has two questions...
 
-## Step 1: Data access
+## Q0: Data access
 
 Download the CSV file from the [ISL](http://statlearning.com) website with the following command
 
@@ -33,12 +33,12 @@ make data
 * If you don't have requisite software, check out [install.md](http://github.com/ds5010/spring-2023/install.md).
 * If you're not familiar with git, check out [git.md](http://github.com/ds5010/spring-2023/git.md).
 
-## Step 2: Presentation of results
+## Q1: Presentation of results
 
 This section recreates and presents the first chart in Figure 1.1 of ISLR2.
 Recreate the chart below with
 ```
-make q1
+make q2
 ```
 
 <img src="figs/q1.png" width=500>
