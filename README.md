@@ -49,7 +49,7 @@ This next image demonstrates another way to [embed a PNG in markdown](https://do
 
 ![another image](figs/q1.png)
 
-## Conda environments
+## Share your environment (optional)
 
 If you're using special software, or you need a specific version, then use 
 [conda](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) 
@@ -71,14 +71,13 @@ dependencies:
   - seaborn=0.11.2
   - pyqt
 ```
+Ref: [Sharing an environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment)
+
+## Create an environment
 
 You can create an environment from a .yml file as follows:
 ```
 conda env create --name myenv -f environment.yml
-```
-Or create it from a requirements.txt as follows:
-```
-conda create --name myenv --file requirements.txt
 ```
 Remove an environment with:
 ```
