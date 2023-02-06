@@ -3,60 +3,54 @@
 
 A demo repository for assignment submission.
 
-## Clone a repo
+## General guidance
 
-```
-git clone <URL from the github.com GUI>
-```
+#### Document for reproducibility
 
-## Update a repo
+* Results must be reproducible -- Jupyter notebooks are not acceptable.
+* Provide clear instructions for every step in the data-processing pipeline, including data access.
+* If you need to download data, then put it in a `data` directory and make sure to ".gitignore" it.
+* If you keep a local copy of a dataset, be sure to provide appropriate attribution and links to the source.
+* Use a Makefile -- with instructions for reproducing all results from command line.
+  * One nice thing about *make* is that you can edit the Makefile without having to edit this README.
+  * One annoying thing about *make* is that indents in the Makefile must be tabs -- spaces don't work.
+* Put source code (one file per question) in the `src` directory.
+* Apply DRY principles -- if multiple questions use the same code, then put reused code in a module and import it.
 
-* Usually a good idea to sync your repo before making changes.
-```
-git pull
-```
-* Remember to keep big files and directories out of version control with `.gitignore`
-* Commit your changes locally and push them back to the origin on github:
-```
-git add .
-git commit -m "some informative message about what you did"
-git push origin main
-```
+For example:
 
-## Document for reproducibility
+## Step 1: Download the data
 
-Results must be reproducible. Provide clear instructions for every step in the data-processing pipeline, including data access. For example:
-
-* Step 1: Download the CSV file from the [ISL](http://statlearning.com) website with the following command
+Download the CSV file from the [ISL](http://statlearning.com) website with the following command
 
 ```
 make data
 ```
 
 * You need to do this when you first clone the repo because CSV files are .gitignored.
-* Note: If you keep a local copy of a dataset, be sure to provide appropriate attribution.
-* Be very clear about anything you did to process the data. 
-* This repo uses "make"
-  * One nice thing about *make* is that you can edit the Makefile without having to edit this README.
-  * One annoying thing about *make* is that indents in the Makefile must be tabs -- spaces don't work.
-* If you're using Windows, then consider [WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
-  * In that case, make will be installed with the Linux distribution
-* Step 2: Recreate the chart below with
+* If you don't have requisite software, check out [install.md](http://github.com/ds5010/spring-2023/install.md).
+* If you're not familiar with git, check out [git.md](http://github.com/ds5010/spring-2023/git.md).
+
+## Step 2: 
+
+Recreate the chart below with
 ```
 make q1
 ```
 
-Here's the first chart in Figure 1.1 of ISLR2, embedded with HTML.
+This is the first chart in Figure 1.1 of ISLR2.
+Here the locally generated PNG is embedded in the markdown using HTML, which allows you to set the desired with.
 
 <img src="figs/q1.png" width=500>
 
-This demonstrates another way to embed a PNG...
+This next image demonstrates another way to embed a PNG in markdown.
 
 ![another image](figs/q1.png)
 
-## Saving an environment
+## Conda environments
 
-You can create a `requirements.txt` or an `environment.yml`; they use slightly different syntax with conda.
+If you're using special software that may need a separate download, then use conda and provide instructions
+and a `requirements.txt` or an `environment.yml` (they require slightly different syntax).
 I created an environment.yml by first running this command
 ```
 conda list -e > environment.yml
@@ -74,8 +68,6 @@ dependencies:
   - seaborn=0.11.2
   - pyqt
 ```
-
-## Creating an environment
 
 You can create an environment from a .yml file as follows:
 ```
