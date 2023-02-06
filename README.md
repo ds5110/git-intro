@@ -35,12 +35,11 @@ make data
 
 ## Step 2: Presentation of results
 
+This section recreates and presents the first chart in Figure 1.1 of ISLR2.
 Recreate the chart below with
 ```
 make q1
 ```
-
-This is the first chart in Figure 1.1 of ISLR2.
 
 <img src="figs/q1.png" width=500>
 
