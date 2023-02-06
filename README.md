@@ -1,19 +1,23 @@
 
 # git-intro
 
-A demo repository for assignment submission.
+A demo repository with guidelines for assignment submission.
 
 ## Document for reproducibility
 
-* Results must be reproducible -- Jupyter notebooks are not acceptable.
+* Jupyter notebooks are not acceptable.
+* Results must be reproducible.
+* Document your data source and provide appropriate attribution.
 * Provide clear instructions for every step in the data-processing pipeline, including data access.
 * If you need to download data, then put it in a `data` directory and make sure to ".gitignore" it.
-* If you keep a local copy of a dataset, be sure to provide appropriate attribution and links to the source.
-* Use a Makefile -- with instructions for reproducing all results from the command line.
+* If you keep a local copy of a dataset, be sure to provide appropriate attribution and links to the data source.
+* Provide instructions for reproducing all results from the command line.
+  * Use a Makefile
   * One nice thing about *make* is that Makefiles make it easy to implement the pipeline.
   * One annoying thing about *make* is that you must indent in the Makefile with tabs -- spaces don't work.
-* Put source code (one file per question) in the `src` directory.
-* Apply DRY principles -- if multiple questions use the same code, then put reused code in a module and import it.
+* Put source code in the `src` directory, figures in a `figs`directory, and tests in a `tests` directory.
+* Use one file per question.
+* Apply DRY principles -- if multiple files use the same code, then put reused code in a module and import it.
 
 For example:
 
