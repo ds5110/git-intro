@@ -27,7 +27,7 @@ For example, suppose the assignment has a data-access step and one question...
 Download the CSV file from the [ISL](http://statlearning.com) website with the following command
 
 ```
-make data
+make data/Wage.csv
 ```
 
 * This step is automatic if you start with Q1 (below)
