@@ -6,7 +6,7 @@ q1: data/Wage.csv
 
 # Download the data
 # mkdir -p fails quietly if directory already exists
-# curl -L follows indirects
+# curl -L follows redirects
 # curl -O preserves filename of the source
 data/Wage.csv:
 	mkdir -p data
