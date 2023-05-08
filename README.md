@@ -34,7 +34,7 @@ make data/Wage.csv
 * If you don't have requisite software, check out [install.md](http://github.com/ds5010/spring-2023/install.md).
 * If you're not familiar with git, check out [git.md](http://github.com/ds5010/spring-2023/git.md).
 
-## Q1: Presentation of results
+### Q1: Presentation of results
 
 Recreate the chart below with
 ```
