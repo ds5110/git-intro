@@ -15,6 +15,11 @@ Some notes about using git from the command-line.
 
 You may have it already! So don't be in a rush to install it. Section 1.5 in the online book has guidance on installing command-line git. Chapter 1 is worth reading if you want background.
 
+* If you have conda, then it's as easy as...
+```
+conda install -c conda-forge git
+```
+* Ref: https://anaconda.org/conda-forge/git
 * [1.5 Installing git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) -- git-scm.com
 * Note also: [1.4 Getting Started -- The Command Line](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line)
 
