@@ -78,7 +78,7 @@ dependencies:
 ```
 Ref: [Sharing an environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment)
 
-## Create an environment from yml 
+### Create an environment from yml 
 
 You can create an environment from a .yml file as follows:
 ```
