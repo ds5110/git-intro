@@ -10,6 +10,8 @@ Some notes about using git from the command-line.
 * Ref: [git history](https://www.linuxfoundation.org/blog/10-years-of-git-an-interview-with-git-creator-linus-torvalds/)
 * [git book, 2nd edition](https://git-scm.com/book/en/v2) -- git-scm.com
 * [about git](https://git-scm.com/about) -- branching
+* [Linus Torvalds on git](https://www.linuxfoundation.org/blog/blog/10-years-of-git-an-interview-with-git-creator-linus-torvalds)
+* [Linus Torvalds on git](sam rieche, pete steve dan)
 
 ## Install git
 
