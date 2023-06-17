@@ -32,7 +32,7 @@ make data/Wage.csv
 * This step is automatic if you start with Q1 (below)
 * This step is necessary when you first clone the repo because CSV files are .gitignored.
 * If you don't have requisite software, like "make", then check out [setup.md](setup.md)
-* If you're not familiar with git, check out [git.md](http://github.com/ds5010/spring-2023/git.md).
+* If you're not familiar with git, check out [git.md](git.md).
 
 ### Q1: Presentation of results
 
