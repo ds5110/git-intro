@@ -40,18 +40,18 @@ These tutorials describe advanced usage of git and github, which you may use lat
 ## Cloning
 
 * [Clone a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+  * This link has extensive documentation
 
 ## Authentication
 
 * If you're cloning a public repo, then you don't need to worry about authentication
-* To clone a private github repo, you'll need to set up authentication
-  * You have a couple choices of [github authentication](https://docs.github.com/en/authentication)
-    * This page provides an overview and additional links.
-    * There's extensive documentation.
+* To clone a private github repo (e.g., a repo set up with github-classroom), you'll need to set up authentication
+  * You have a couple choices...
+    * [github authentication](https://docs.github.com/en/authentication) has an overview and additional links.
     * The two main choices are SSH and github's personal access tokens.  I've used both. I recommend SSH keys.
   * [SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
     * SSH is an authentication standard that's used in various places.
-    * If you set it up here, you may be able to use it elsewhere.
+    * If you set up SSH for github, you may be able to use the same SSH setup elsewhere.
     * Github's personal access tokens are good for, well, github.
 
 ## Committing
