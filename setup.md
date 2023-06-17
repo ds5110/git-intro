@@ -73,15 +73,16 @@ conda deactivate
 
 You can use conda to create multiple environments with various installed libraries.
 
-* create a new environment called "myenv" and install the latest seaborn and friends from conda-forge
+* create a new environment called "myenv" and install the latest scikit-learn and friends from conda-forge
 ```
 conda create --name myenv
 conda activate myenv
+conda install -c conda-forge scikit-learn
 conda install -c conda-forge seaborn
 conda install -c conda-forge python
 conda install -c conda-forge pandas
 conda install -c conda-forge matplotlib
-conda install -c conda-forge 
+conda install -c conda-forge make
 ```
 
 * deactivate an environment
