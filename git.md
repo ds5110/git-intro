@@ -11,7 +11,6 @@ Some notes about using git from the command-line.
 * [git book, 2nd edition](https://git-scm.com/book/en/v2) -- git-scm.com
 * [about git](https://git-scm.com/about) -- branching
 * [Linus Torvalds on git](https://www.linuxfoundation.org/blog/blog/10-years-of-git-an-interview-with-git-creator-linus-torvalds)
-* [Linus Torvalds on git](sam rieche, pete steve dan)
 
 ## Install git
 
@@ -41,6 +40,19 @@ These tutorials describe advanced usage of git and github, which you may use lat
 ## Cloning
 
 * [Clone a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+
+## Authentication
+
+* If you're cloning a public repo, then you don't need to worry about authentication
+* To clone a private github repo, you'll need to set up authentication
+  * You have a couple choices of [github authentication](https://docs.github.com/en/authentication)
+    * This page provides an overview and additional links.
+    * There's extensive documentation.
+    * The two main choices are SSH and github's personal access tokens.  I've used both. I recommend SSH keys.
+  * [SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+    * SSH is an authentication standard that's used in various places.
+    * If you set it up here, you may be able to use it elsewhere.
+    * Github's personal access tokens are good for, well, github.
 
 ## Committing
 
