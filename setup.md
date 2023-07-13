@@ -266,7 +266,18 @@ Detailed instructions for installing WSL and some other useful things...
 ```
 * Restart vscode (e.g., from the command line: `vscode .`)
   * Then `which python` will point to python in the conda environment
-* Ref: [sfo hint](https://stackoverflow.com/questions/72908232/vs-code-terminal-not-recognising-conda-environment)
+
+## vscode -- enable key repeating on Mac when using vim mode
+
+On the command line...
+```
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+defaults write com.microsoft.VSCodeInsiders ApplePressAndHoldEnabled -bool false
+defaults write com.vscodium ApplePressAndHoldEnabled -bool false
+defaults write com.microsoft.VSCodeExploration ApplePressAndHoldEnabled -bool false
+```
+* log out, then log back in
+* See: [VSCodeVim ref docs](https://github.com/VSCodeVim/Vim#mac)
 
 ## matplotlib on an old Mac
 
