@@ -2,19 +2,23 @@
 
 Instructions for setting up and using conda environments
 
-## 1. Install miniconda
-
 Conda is an open-source package management system and environment management system 
 that runs on Windows, macOS, and Linux.
 
-[Miniconda](https://docs.conda.io/projects/conda/en/stable/glossary.html#miniconda)
-is a free minimal installer for conda.
+## 1. Use miniconda
 
+[Miniconda](https://docs.conda.io/projects/conda/en/stable/glossary.html#miniconda) is a free minimal 
+installer for conda.
+It includes a minimal distribution of Python and friends that includes conda
+
+* conda is a package manager
+* anaconda includes conda, but not the other way around -- anaconda is a distribution
+* you can install miniconda or anaconda, the references below mention the differences
 * [conda documentation](https://docs.conda.io/projects/conda/en/stable/)
 * [miniconda install instructions](https://docs.conda.io/projects/conda/en/stable/user-guide/install/index.html)
   * I recommend the command-line install
   * Start by downloading for your platform
-  * My install is documented in the Makefile...
+* My install details are documented in the Makefile...
 
 ```
 make miniconda
@@ -36,7 +40,7 @@ make miniconda
 
 ## 2. Install some basics
 
-If you don't have them already...
+If you don't have them already, you can install `make` and `git` with conda...
 ```
 conda install -c conda-forge make
 conda install -c conda-forge git
