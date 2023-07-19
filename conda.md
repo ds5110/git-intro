@@ -45,9 +45,14 @@ conda install -c conda-forge git
 ## 3. Use conda environments
 
 * [conda environments](https://docs.conda.io/projects/conda/en/stable/glossary.html#conda-environment) -- docs.conda.io
-* Conda installs from [channels](https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/channels.html)
-* In general, I recommend the open source "conda-forge" channel.  It's a good idea not to mix channels.
-* conda-forge is not the default channel
+
+### Channels
+
+Conda installs from [channels](https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/channels.html)
+
+* In general, I recommend the open source "conda-forge" channel.
+* conda-forge is not the default channel, but you can make it the default. 
+* It's a good idea not to mix channels, especially with geospatial software (more info below).
 ```
 conda config --show channels              # lists default channel(s)
 conda config --add channels conda-forge   # set conda-forge as the default channel
