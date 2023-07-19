@@ -21,6 +21,20 @@ Install miniconda on some version of Linux.
   * In general, I recommend the open source "conda-forge" channel.  It's a good idea not to mix channels.
 * Ref: [miniconda](https://docs.conda.io/projects/conda/en/stable/user-guide/install/index.html)
 
+### Why miniconda?
+
+* Recommended by Jake VanderPlas, the author of [Python Data Science Handbook (PDS)](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/00.00-Preface.ipynb)
+  * [This link](https://jakevdp.github.io/PythonDataScienceHandbook/00.00-preface.html#Installation-Considerations) points to a Jupyter notebook on github, where you'll see a recommendation to use miniconda.
+  * It's the first edition of the book, which was updated in 2022.  The more recent edition makes the same recommendation.
+* Recommended by Wes McKinney lead developer of Pandas and author or [Python for Data Analysis, 3rd Ed (2022)](https://wesmckinney.com)
+  * Section 1.4 of [Python for Data Analysis, 3rd Ed (2022)](https://wesmckinney.com/book/preliminaries.html#installation_and_setup) has the recommendation
+* [Conda myths and misconceptions](https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/)
+  * This blog post by Jake VanderPlas comparing pip & conda is a bit old (2016) but still interesting/relevant
+* Don't use pip. Or at least be careful about it.
+  * See: [Using pip in an environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#using-pip-in-an-environment) -- conda.io
+  * It discusses best practices for using conda and pip
+  * Another discussion of [conda and pip](https://www.anaconda.com/blog/understanding-conda-and-pip) -- anaconda.com
+
 ## 2. Install vscode
 
 You need a text editor. I recommend VScode -- a free visual text editor and IDE from Microsoft.
@@ -35,20 +49,6 @@ If you don't have it already, then...
 conda install -c conda-forge make
 ```
 Ref: https://anaconda.org/conda-forge/make
-
-## Why miniconda?
-
-* Recommended by Jake VanderPlas, the author of [Python Data Science Handbook (PDS)](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/00.00-Preface.ipynb)
-  * [This link](https://jakevdp.github.io/PythonDataScienceHandbook/00.00-preface.html#Installation-Considerations) points to a Jupyter notebook on github, where you'll see a recommendation to use miniconda.
-  * It's the first edition of the book, which was updated in 2022.  The more recent edition makes the same recommendation.
-* Recommended by Wes McKinney lead developer of Pandas and author or [Python for Data Analysis, 3rd Ed (2022)](https://wesmckinney.com)
-  * Section 1.4 of [Python for Data Analysis, 3rd Ed (2022)](https://wesmckinney.com/book/preliminaries.html#installation_and_setup) has the recommendation
-* [Conda myths and misconceptions](https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/)
-  * This blog post by Jake VanderPlas comparing pip & conda is a bit old (2016) but still interesting/relevant
-* Don't use pip. Or at least be careful about it.
-  * See: [Using pip in an environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#using-pip-in-an-environment) -- conda.io
-  * It discusses best practices for using conda and pip
-  * Another discussion of [conda and pip](https://www.anaconda.com/blog/understanding-conda-and-pip) -- anaconda.com
 
 ## Create and activate a conda environment
 
