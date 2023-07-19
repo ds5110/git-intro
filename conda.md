@@ -2,15 +2,21 @@
 
 Instructions for setting up and using conda environments
 
-## 1. Install miniconda on some version of Linux
+## 1. Install miniconda
 
-  * Conda has [channels](https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/channels.html)
-  * In general, I recommend the open source "conda-forge" channel.  It's a good idea not to mix channels.
-* Ref: [miniconda](https://docs.conda.io/projects/conda/en/stable/user-guide/install/index.html)
+Conda is an open-source package management system and environment management system 
+that runs on Windows, macOS, and Linux.
+
+[Miniconda](https://docs.conda.io/projects/conda/en/stable/glossary.html#miniconda)
+is a free minimal installer for conda.
+
+* [conda documentation](https://docs.conda.io/projects/conda/en/stable/)
+* [miniconda install instructions](https://docs.conda.io/projects/conda/en/stable/user-guide/install/index.html)
+  * I recommend the command-line install
+  * Start by downloading for your platform
 
 ```
-conda config --show channels # lists default channel(s)
-conda config --add channels conda-forge # set conda-forge as the default channel
+make miniconda
 ```
 
 ### Why miniconda?
@@ -22,25 +28,28 @@ conda config --add channels conda-forge # set conda-forge as the default channel
   * Section 1.4 of [Python for Data Analysis, 3rd Ed (2022)](https://wesmckinney.com/book/preliminaries.html#installation_and_setup) has the recommendation
 * [Conda myths and misconceptions](https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/)
   * This blog post by Jake VanderPlas comparing pip & conda is a bit old (2016) but still interesting/relevant
-* Don't use pip. Or at least be careful about it.
+* Don't use pip. Or, at least be careful about it.
   * See: [Using pip in an environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#using-pip-in-an-environment) -- conda.io
-  * It discusses best practices for using conda and pip
+  * The link has best practices for using conda and pip
   * Another discussion of [conda and pip](https://www.anaconda.com/blog/understanding-conda-and-pip) -- anaconda.com
 
-## 2. Install vscode
+## 2. Install basics
 
-You need a text editor. I recommend VScode -- a free visual text editor and IDE from Microsoft.
-
-* https://code.visualstudio.com/download
-* VScode has issues, especially if you're using a Mac, but they can usually be resolved.
-
-## 3. Install make
-
-If you don't have it already, then...
+If you don't have them already...
 ```
 conda install -c conda-forge make
+conda install -c conda-forge git
 ```
-Ref: https://anaconda.org/conda-forge/make
+
+## 2. Use conda environments
+
+* [conda environments](https://docs.conda.io/projects/conda/en/stable/glossary.html#conda-environment) -- docs.conda.io
+* Conda has [channels](https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/channels.html)
+* In general, I recommend the open source "conda-forge" channel.  It's a good idea not to mix channels.
+```
+conda config --show channels # lists default channel(s)
+conda config --add channels conda-forge # set conda-forge as the default channel
+```
 
 ## Create and activate a conda environment
 
