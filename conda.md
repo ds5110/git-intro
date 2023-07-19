@@ -1,22 +1,9 @@
-# setup
+# conda
 
-Instructions for setting up a Python environment for data science -- some opinionated recommendations (with references).
+Instructions for setting up and using conda environments
 
-* If you follow these recommendations (and related references), I can help you troubleshoot problems.
-* There are many ways to set things up. If you have something else that works, you can stay with it. 
-* However, beware that some installations and conflicting software versions can cause huge headaches.
+## 1. Install miniconda on some version of Linux
 
-## 1. Install miniconda on Linux
-
-Install miniconda on some version of Linux.
-
-* If you have Mac or you're using Linux on a PC then you're in good shape.
-* If you're using Windows, then consider first installing WSL, Windows Subsystem for Linux (see below).
-* Miniconda is a minimal distribution of Python and friends that includes conda
-  * conda is a package manager
-  * conda also comes with anaconda -- anaconda is a distribution
-  * you can install miniconda or anaconda, the references below mention the differences
-  * I recommend installing miniconda with the command-line installer
   * Conda has [channels](https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/channels.html)
   * In general, I recommend the open source "conda-forge" channel.  It's a good idea not to mix channels.
 * Ref: [miniconda](https://docs.conda.io/projects/conda/en/stable/user-guide/install/index.html)
