@@ -14,6 +14,7 @@ is a free minimal installer for conda.
 * [miniconda install instructions](https://docs.conda.io/projects/conda/en/stable/user-guide/install/index.html)
   * I recommend the command-line install
   * Start by downloading for your platform
+  * My install is documented in the Makefile...
 
 ```
 make miniconda
@@ -33,7 +34,7 @@ make miniconda
   * The link has best practices for using conda and pip
   * Another discussion of [conda and pip](https://www.anaconda.com/blog/understanding-conda-and-pip) -- anaconda.com
 
-## 2. Install basics
+## 2. Install some basics
 
 If you don't have them already...
 ```
@@ -41,14 +42,15 @@ conda install -c conda-forge make
 conda install -c conda-forge git
 ```
 
-## 2. Use conda environments
+## 3. Use conda environments
 
 * [conda environments](https://docs.conda.io/projects/conda/en/stable/glossary.html#conda-environment) -- docs.conda.io
-* Conda has [channels](https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/channels.html)
+* Conda installs from [channels](https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/channels.html)
 * In general, I recommend the open source "conda-forge" channel.  It's a good idea not to mix channels.
+* conda-forge is not the default channel
 ```
-conda config --show channels # lists default channel(s)
-conda config --add channels conda-forge # set conda-forge as the default channel
+conda config --show channels              # lists default channel(s)
+conda config --add channels conda-forge   # set conda-forge as the default channel
 ```
 
 ## Create and activate a conda environment
@@ -145,16 +147,16 @@ conda env remove --name myenv
 ```
 * Ref: [Creating an environment from an enviroment.yml file](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) -- conda.io
 
-## channels -- conda vs conda-forge
+## geospatial
 
 * geospatial software has dependencies that can cause problems if you mix channels
 * see: [geopandas install](https://geopandas.org/en/stable/getting_started/install.html)
 * see also: [using multiple channels](https://conda-forge.org/docs/user/tipsandtricks.html#using-multiple-channels)
-* I use conda-forge, and this is an ENV.yml created from my base install...
+* I use conda-forge, and this is an ENV.yml created for my "geo" environment...
 ```
 $ conda env export --from-history>ENV.yml
 $ cat ENV.yml
-name: base
+name: geo
 channels:
   - conda-forge
   - defaults
