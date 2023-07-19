@@ -28,9 +28,11 @@ Ref: https://anaconda.org/conda-forge/make
 
 ## Platform-specific detailed stuff
 
-### WSL
+### WSL (Windows Subsystem for Linux)
 
-Detailed instructions for installing WSL and some other useful things...
+If you're using Windows, I recommend WSL. 
+
+Here are instructions for installing WSL and other useful things...
 
 * [Install WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
   * Very easy. Open powershell/command prompt (windows jargon for the built-in terminal)
