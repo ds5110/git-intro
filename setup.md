@@ -6,33 +6,38 @@ Instructions for setting up a Python environment for data science -- some opinio
 * There are many ways to set things up. If you have something else that works, you can stay with it. 
 * However, beware that some installations and conflicting software versions can cause huge headaches.
 
-## 1. Install miniconda on Linux
+## command-line reproducibility
+
+Anyone should be able to run your code from the command line on some flavor of Linux.
+
+* if you're using a Mac, you're all set -- the built-in terminal is great and OSX is a flavor of Linux (my favorite)
+* if you're using microsoft windows, I recommend Windows Subsystem for Linux [WSL](#WSL)
+* if you're using windows, it's important that you first install WSL and then proceed below using WSL, NOT windows!!
+
+## 1. Install miniconda
 
 * Detailed instructions are here: [conda.md](conda.md)
 
 ## 2. Install vscode
 
-You need a text editor. I recommend vscode -- a free visual text editor and IDE from Microsoft.
+You need a text editor. I recommend vscode -- a free visual text editor and aspiring IDE from microsoft.
 
-* https://code.visualstudio.com/download
-* vscode has issues, especially if you're using a Mac, but they can usually be resolved.
-* vscode is free (owned by microsoft)
+* install instructions: https://code.visualstudio.com/download
+* note: vscode has issues and it's quirky, especially if you're using a Mac
+* but vscode is extremely popular in the real world and the quirks can usually be resolved
 
-## 3. Install make
+## 3. Install make and git
 
-If you don't have it already, then you can install it with conda...
+If you don't have them already, then you can install them with conda...
 ```
 conda install -c conda-forge make
+conda install -c conda-forge git
 ```
-Ref: https://anaconda.org/conda-forge/make
+If you're using a Mac, then I recommend the conda version of git so you can use SSH to authenticate on github.
 
-## Platform-specific detailed stuff
+## WSL
 
-### WSL (Windows Subsystem for Linux)
-
-If you're using Windows, I recommend WSL. 
-
-Here are instructions for installing WSL and other useful things...
+If you're using Windows, I recommend Windows Subsystem for Linux (WSL). 
 
 * [Install WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
   * Very easy. Open powershell/command prompt (windows jargon for the built-in terminal)
@@ -44,18 +49,10 @@ Here are instructions for installing WSL and other useful things...
   which curl
   ```
   should return: `/usr/bin/curl`
-* Install make
-  ```
-  sudo apt-get install make
-  ```
-  Verify that it worked...
-  ```
-  which make
-  ```
-  should return: `/usr/bin/make`
 * Enable copy/paste into the terminal from the clipboard
   * [Copy and Paste Arrives for Linux/WSL Consoles](https://devblogs.microsoft.com/commandline/copy-and-paste-arrives-for-linuxwsl-consoles/) -- microsoft.com
 * Install miniconda
+  * IMPORTANT: 
   * Use the directions for [Installing on Linux](https://docs.conda.io/projects/conda/en/stable/user-guide/install/linux.html)
   * Download the miniconda installer
     * Go to: https://docs.conda.io/en/latest/miniconda.html

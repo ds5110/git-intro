@@ -55,26 +55,14 @@ Ref: [embed a PNG in markdown](https://docs.github.com/en/get-started/writing-on
 
 ## Share your environment (if needed)
 
+[conda.md](conda.md) has detailed recommendations for using conda environments.
 If you're using special software, or you need a specific version of a common package, then
 provide instructions for using
 [conda](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) 
 with an `environment.yml` file.
-For example, I created an environment.yml for this repo by first running this command
+For example, you can create an environment.yml for a repo with
 ```
 conda env export > environment.yml
-```
-Then I used the `--from-history` option to get hints on editing/trimming the file into something nice and short.
-```
-conda env export --from-history
-```
-I settled on this for my environment.yml...
-```
-channels:
-  - conda-forge
-  - defaults
-dependencies:
-  - seaborn=0.11.2
-  - pyqt
 ```
 Ref: [Sharing an environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment)
 
@@ -84,8 +72,12 @@ You can create an environment from a .yml file as follows:
 ```
 conda env create --name myenv -f environment.yml
 ```
-Remove an environment with:
+Then activate the environment with
 ```
-conda env remove --name myenv
+conda activate myenv
+```
+and deactivate the environment with
+```
+conda deactivate myenv
 ```
 * Ref: [Creating an environment from an enviroment.yml file](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) -- conda.io
