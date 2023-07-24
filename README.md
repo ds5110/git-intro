@@ -81,8 +81,8 @@ conda deactivate myenv
 ```
 To remove the environment
 ```
-conda remove myenv
+conda remove --name myenv --all
 ```
-Note that this yml file also installs make and git.
+Note: this environment.yml file also installs make and git.
 
 * Ref: [Creating an environment from an enviroment.yml file](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) -- conda.io
