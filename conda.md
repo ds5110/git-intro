@@ -18,11 +18,7 @@ It includes a minimal distribution of Python and friends that includes conda
 * [miniconda install instructions](https://docs.conda.io/projects/conda/en/stable/user-guide/install/index.html)
   * I recommend the command-line install
   * Start by downloading for your platform
-* My install details are documented in the Makefile...
-
-```
-make miniconda
-```
+* Note: my install details are documented in the Makefile
 
 ### Why miniconda?
 

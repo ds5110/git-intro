@@ -3,12 +3,13 @@
 
 A demo repository with guidelines for assignment submission.
 
-## Document for reproducibility
+## Reproducibility
 
-* Jupyter notebooks are not acceptable for assignment submission (but they're great for protoytping and in-class exercises!).
+* Jupyter notebooks are not acceptable for assignment submission.
+* ...but they're great for protoytping, asking questions and in-class exercises!
 * Results must be reproducible from the original data source using the command line.
-* Document for the 6-month rule.
-* Document your data source and provide appropriate attribution.
+* Document for the 6-month rule -- when you come back in 6 months you should be able to pick up where you left off.
+* Document your data source and provide appropriate and generous attribution.
 * Provide clear instructions for every step in the data-processing pipeline, including data access.
 * If you need to download large data files, then put them in a `data` directory and make sure to ".gitignore" it.
 * If you keep a local copy of data, provide appropriate attribution and links to the original/authoritative data source.
@@ -16,7 +17,7 @@ A demo repository with guidelines for assignment submission.
 * While there may be more than one way to do everything, here's a recommendation for assignments...
   * Put source code in the `./src` and figures in a `./figs`
   * Use one file for each question/step, not one file for all questions/steps.
-  * Use a Makefile to implement and document the entire data-processing pipeline.
+* Use Makefiles to implement and document the entire data-processing pipeline.
 
 ## For example
 
@@ -29,8 +30,8 @@ Download the CSV file from the [ISL](http://statlearning.com) website with the f
 make data/Wage.csv
 ```
 
-* This step is automatic if you start with Q1 (below)
-* This step is necessary when you first clone the repo because CSV files are .gitignored.
+* Note: this step is automatic if you start with Q1 (below) because of the way the Makefile is set up.
+* This step is necessary when cloning the repo because CSV files are .gitignored.
 * If you don't have requisite software, like "make", then check out [setup.md](setup.md)
 * If you're not familiar with git, check out [git.md](git.md).
 
@@ -57,18 +58,16 @@ Ref: [embed a PNG in markdown](https://docs.github.com/en/get-started/writing-on
 
 [conda.md](conda.md) has detailed recommendations for using conda environments.
 If you're using special software, or you need a specific version of a common package, then
-provide instructions for using
-[conda](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) 
-with an `environment.yml` file.
-For example, you can create an environment.yml for a repo with
+provide a `yml` file.
+You can create one from your current environment as follows...
 ```
 conda env export > environment.yml
 ```
 Ref: [Sharing an environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment)
 
-### Create an environment from yml 
+### Create an environment from a yml file
 
-You can create an environment from a .yml file as follows:
+Assuming you have conda, you can create an environment for running code in this repo as follows:
 ```
 conda env create --name myenv -f environment.yml
 ```
@@ -80,4 +79,10 @@ and deactivate the environment with
 ```
 conda deactivate myenv
 ```
+To remove the environment
+```
+conda remove myenv
+```
+Note that this yml file also installs make and git.
+
 * Ref: [Creating an environment from an enviroment.yml file](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) -- conda.io
