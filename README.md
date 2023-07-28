@@ -21,7 +21,7 @@ so they're are not acceptable for assignment submission.
   * Use one file for each question/step, not one file for all questions/steps.
   * Make your code self documenting as much as possible.
 * Use [make](https://bost.ocks.org/mike/make/) and Makefiles for the entire data-processing pipeline.
-* For projects, consider adding [a license](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) for your repo, but not for homework.
+* For projects, consider adding [a license](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) for your repo, but not for assignments.
 
 ## For example
 
