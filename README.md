@@ -46,20 +46,17 @@ Recreate the chart below with
 make q1
 ```
 
-<img src="figs/q1.png" width=300>
+<img src="figs/q1.png" width=350>
 
 * This markdown file embeds `figs/q1.png` using HTML:
 ```
-<img src="figs/q1.png" width=500>
+<img src="figs/q1.png" width=350>
 ```
 * With HTML, you can set the desired width.
 * If you're okay with the default width, you can use standard markdown syntax:
 ```
 ![alternative to HTML](figs/q1.png)
 ```
-
-![alternative to HTML](figs/q1.png)
-
 Ref: [embed a PNG in markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#images).
 
 ## Share your environment (if needed)
