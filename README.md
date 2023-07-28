@@ -69,6 +69,6 @@ conda env export > environment.yml
 ```
 Ref: [Sharing an environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment)
 
-* If you're new to `conda`, then check out [conda.md](conda.md) for detailed recommendations rearding conda environments.
+* If you're new to `conda`, then check out [conda.md](conda.md) for detailed recommendations.
 * Note: the environment.yml file in this repo also has instructions for installing make and git.
 * And the Makefile has instructions for installing microconda.
