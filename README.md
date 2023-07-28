@@ -5,23 +5,27 @@ A demo repository with guidelines for assignment submission.
 
 ## Reproducibility
 
-* Jupyter notebooks are not acceptable for assignment submission.
-* ...but they're great for protoytping, asking questions and in-class exercises!
-* Results must be reproducible from the original data source using the command line.
-* Document for the 6-month rule -- when you come back in 6 months you should be able to pick up where you left off.
-* Document your data source and provide appropriate and generous attribution.
+* Reproducibility is paramount -- if someone else can't reproduce your results, then there's no point.
+* [Jupyter notebooks have reproducibility problems](https://www.nature.com/articles/d41586-021-01174-w)
+so they're are not acceptable for assignment submission.
+* ...but they're great for protoytping and in-class exercises!
+* The entire pipeline must be reproducible on the command line, starting with the original data source.
+* Document your data source(s) and provide appropriate and generous attribution for your results.
+* Consider adding [a license](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) for your repo.
+* Document for the 6-month rule, i.e., when you come back in 6 months you should be able to pick up where you left off.
 * Provide clear instructions for every step in the data-processing pipeline, including data access.
 * If you need to download large data files, then put them in a `data` directory and make sure to ".gitignore" it.
-* If you keep a local copy of data, provide appropriate attribution and links to the original/authoritative data source.
-* Apply DRY principles, e.g., if multiple files use the same code, then put reused code in a module and import it.
+* If you keep a local copy of data in your data, provide appropriate attribution and links to the original/authoritative data source.
+* Apply DRY (Don't Repeat Yourself), e.g., if multiple files use the same code, then put reused code in a module and import it.
 * While there may be more than one way to do everything, here's a recommendation for assignments...
   * Put source code in the `./src` and figures in a `./figs`
   * Use one file for each question/step, not one file for all questions/steps.
-* Use Makefiles to implement and document the entire data-processing pipeline.
+  * Make your code self documenting as much as possible.
+* Use [make](https://bost.ocks.org/mike/make/) and Makefiles for the entire data-processing pipeline.
 
 ## For example
 
-Suppose the assignment asks you to reproduce the first chart in Figure 1.1 of ISLR2. The solution follows.
+Suppose the assignment asks you to reproduce the first chart in Figure 1.1 of ISLR. The solution follows.
 
 ### Step 1: Data access
 
@@ -44,11 +48,11 @@ make q1
 
 <img src="figs/q1.png" width=500>
 
-* The locally generated PNG is embedded in the markdown using HTML, which allows you to set the desired width.
+* This markdown file embeds `figs/q1.png` in the markdown using HTML, which allows you to set the desired width.
 ```
 <img src="figs/q1.png" width=500>
 ```
-* You could use standard markdown syntax, but then you can't specify the width
+* If you're okay with the default width, you can use standard markdown syntax:
 ```
 ![alternative to HTML](figs/q1.png)
 ```
@@ -56,33 +60,29 @@ Ref: [embed a PNG in markdown](https://docs.github.com/en/get-started/writing-on
 
 ## Share your environment (if needed)
 
-[conda.md](conda.md) has detailed recommendations for using conda environments.
-If you're using special software, or you need a specific version of a common package, then
-provide a `yml` file.
+If you're new to `conda`, then check out [conda.md](conda.md) for detailed recommendations rearding conda environments.
+If you're using special software or you need a specific version of a common package, 
+then provide a `yml` file.
 You can create one from your current environment as follows...
 ```
 conda env export > environment.yml
 ```
 Ref: [Sharing an environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment)
 
-### Create an environment from a yml file
-
-Assuming you have conda, you can create an environment for running code in this repo as follows:
+You can create a fresh environment from the "envionment.yml" file as follows:
 ```
 conda env create --name myenv -f environment.yml
 ```
-Then activate the environment with
+Activate the environment with
 ```
 conda activate myenv
 ```
-and deactivate the environment with
+and deactivate it with
 ```
 conda deactivate myenv
 ```
-To remove the environment
-```
-conda remove --name myenv --all
-```
-Note: this environment.yml file also installs make and git.
+Note: the environment.yml file in this repo also has instructions for installing make and git.
+
+And the Makefile has instructions for installing microconda.
 
 * Ref: [Creating an environment from an enviroment.yml file](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) -- conda.io
