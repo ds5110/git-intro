@@ -10,9 +10,9 @@ Instructions for setting up a Python environment for data science -- some opinio
 
 Anyone should be able to run your code from the command line on some flavor of Linux.
 
-* if you're using a Mac, you're all set -- the built-in terminal is great and OSX is a flavor of Linux (my favorite)
-* if you're using microsoft windows, I recommend Windows Subsystem for Linux [WSL](#WSL)
-* if you're using windows, it's important that you first install WSL and then proceed below using WSL, NOT windows!!
+* If you're using a Mac, you're all set -- the built-in terminal is great and OSX is a flavor of Linux (my favorite)
+* If you're using microsoft windows, I recommend Windows Subsystem for Linux [(see below)](#WSL).
+* On windows, it's important that you install WSL first. Then proceed below using WSL, NOT windows!!
 
 ## 1. Install miniconda
 
@@ -20,7 +20,7 @@ Anyone should be able to run your code from the command line on some flavor of L
 
 ## 2. Install vscode
 
-You need a text editor. I recommend vscode -- a free visual text editor and aspiring IDE from microsoft.
+You need a text editor. I recommend vscode -- a free visual text editor and aspiring IDE owned by microsoft.
 
 * install instructions: https://code.visualstudio.com/download
 * note: vscode has issues and it's quirky, especially if you're using a Mac
@@ -33,7 +33,7 @@ If you don't have them already, then you can install them with conda...
 conda install -c conda-forge make
 conda install -c conda-forge git
 ```
-If you're using a Mac, then I recommend the conda version of git so you can use SSH to authenticate on github.
+If you're using a Mac, I recommend the conda version of git so you can use SSH to authenticate on github.
 
 ## WSL
 
