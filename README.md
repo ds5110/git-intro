@@ -57,6 +57,9 @@ make q1
 ```
 ![alternative to HTML](figs/q1.png)
 ```
+
+![alternative to HTML](figs/q1.png)
+
 Ref: [embed a PNG in markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#images).
 
 ## Share your environment (if needed)
