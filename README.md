@@ -67,23 +67,8 @@ You can create one from your current environment as follows...
 ```
 conda env export > environment.yml
 ```
-If you're new to `conda`, then check out [conda.md](conda.md) for detailed recommendations rearding conda environments.
 Ref: [Sharing an environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment)
 
-You can create a fresh environment from the "envionment.yml" file as follows:
-```
-conda env create --name myenv -f environment.yml
-```
-Activate the environment with
-```
-conda activate myenv
-```
-and deactivate it with
-```
-conda deactivate myenv
-```
-Note: the environment.yml file in this repo also has instructions for installing make and git.
-
-And the Makefile has instructions for installing microconda.
-
-* Ref: [Creating an environment from an enviroment.yml file](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) -- conda.io
+* If you're new to `conda`, then check out [conda.md](conda.md) for detailed recommendations rearding conda environments.
+* Note: the environment.yml file in this repo also has instructions for installing make and git.
+* And the Makefile has instructions for installing microconda.
