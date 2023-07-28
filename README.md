@@ -48,7 +48,7 @@ make q1
 
 <img src="figs/q1.png" width=500>
 
-* This markdown file embeds `figs/q1.png` in the markdown using HTML, which allows you to set the desired width.
+* This markdown file embeds `figs/q1.png` using HTML, which allows you to set the desired width.
 ```
 <img src="figs/q1.png" width=500>
 ```
