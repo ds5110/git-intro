@@ -8,10 +8,9 @@ A demo repository with guidelines for assignment submission.
 * Reproducibility is paramount -- if someone else can't reproduce your results, there's no point.
 * [Jupyter notebooks have reproducibility problems](https://www.nature.com/articles/d41586-021-01174-w),
 so they're are not acceptable for assignment submission.
-* ...but they're great for protoytping and in-class exercises!
+* ...but they're great for protoytping, in-class exercises and publishing!
 * The entire pipeline must be reproducible on the command line, starting with the original data source.
 * Document your data source(s) and provide appropriate and generous attribution for your results.
-* Consider adding [a license](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) for your repo.
 * Document for the 6-month rule, i.e., when you come back in 6 months you should be able to pick up where you left off.
 * Provide clear instructions for every step in the data-processing pipeline, including data access.
 * If you need to download large data files, then put them in a `data` directory and make sure to ".gitignore" it.
@@ -22,6 +21,7 @@ so they're are not acceptable for assignment submission.
   * Use one file for each question/step, not one file for all questions/steps.
   * Make your code self documenting as much as possible.
 * Use [make](https://bost.ocks.org/mike/make/) and Makefiles for the entire data-processing pipeline.
+* For projects, consider adding [a license](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) for your repo, but not for homework.
 
 ## For example
 
