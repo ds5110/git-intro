@@ -61,13 +61,13 @@ Ref: [embed a PNG in markdown](https://docs.github.com/en/get-started/writing-on
 
 ## Share your environment (if needed)
 
-If you're new to `conda`, then check out [conda.md](conda.md) for detailed recommendations rearding conda environments.
 If you're using special software or you need a specific version of a common package, 
 then provide a `yml` file.
 You can create one from your current environment as follows...
 ```
 conda env export > environment.yml
 ```
+If you're new to `conda`, then check out [conda.md](conda.md) for detailed recommendations rearding conda environments.
 Ref: [Sharing an environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment)
 
 You can create a fresh environment from the "envionment.yml" file as follows:
