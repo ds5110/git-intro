@@ -46,7 +46,7 @@ Recreate the chart below with
 make q1
 ```
 
-<img src="figs/q1.png" width=500>
+<img src="figs/q1.png" width=300>
 
 * This markdown file embeds `figs/q1.png` using HTML:
 ```
