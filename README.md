@@ -6,7 +6,7 @@ A demo repository with guidelines for assignment submission.
 ## Reproducibility
 
 * Reproducibility is paramount -- if someone else can't reproduce your results, there's no point.
-* [Jupyter notebooks have reproducibility problems](https://www.nature.com/articles/d41586-021-01174-w)
+* [Jupyter notebooks have reproducibility problems](https://www.nature.com/articles/d41586-021-01174-w),
 so they're are not acceptable for assignment submission.
 * ...but they're great for protoytping and in-class exercises!
 * The entire pipeline must be reproducible on the command line, starting with the original data source.
