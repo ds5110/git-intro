@@ -1,7 +1,7 @@
 
 # github classroom
 
-Directions for creating a github-classroom assignment
+Directions for creating a github-classroom assignment (if you're an instructor).
 
 ## Step 1: Create a template repo
 
