@@ -6,21 +6,29 @@ A demo repository with guidelines for assignment submission.
 ## Reproducibility
 
 * Reproducibility is paramount -- if someone else can't reproduce your results, there's no point.
-* [Jupyter notebooks have reproducibility problems](https://www.nature.com/articles/d41586-021-01174-w),
+  * [Jupyter notebooks have reproducibility problems](https://www.nature.com/articles/d41586-021-01174-w),
 so they're are not acceptable for assignment submission.
-* ...but they're great for protoytping, in-class exercises and publishing!
-* The entire pipeline must be reproducible on the command line, starting with the original data source.
-* Document your data source(s) and provide appropriate and generous attribution for your results.
-* Document for the 6-month rule, i.e., when you come back in 6 months you should be able to pick up where you left off.
-* Provide clear instructions for every step in the data-processing pipeline, including data access.
+  * ...but they're great for protoytping, in-class exercises and publishing!
+* Document the entire data-processing pipeline
+  * The entire pipeline must be reproducible on the command line, starting with the original data source.
+  * Document your data source(s) and show how to access the original data source whenever possible.
+* Use Make
+  * If you're not sure why, then read: [Why Use Make](https://bost.ocks.org/mike/make/) by the legendary Mike Bostock
+  * Provide clear instructions for every step in the data-processing pipeline, including data access.
+  * Document for the 6-month rule: when you come back in 6 months you should be able to pick up where you left off.
+* Acknowlgement is paramount
+  * Acknowledge your predecessors (a side benefit: it's a good way to avoid plagiarism).
+  * Cite your references, for many of the same reasons.
 * If you need to download large data files, then put them in a `data` directory and make sure to ".gitignore" it.
-* If you keep a local copy of data in your data, provide appropriate attribution and links to the original/authoritative data source.
-* Apply DRY (Don't Repeat Yourself), e.g., if multiple files use the same code, then put reused code in a module and import it.
-* While there may be more than one way to do everything, here's a recommendation for assignments...
+  * If you keep a local copy of data in your repo, provide appropriate attribution.
+  * And provide links to the original/authoritative data source.
+* Apply the DRY principle (Don't Repeat Yourself)
+  * For example, if multiple files use the same code, then put reused code in a module and import it.
+* For assignments...
   * Put source code in the `./src` and figures in a `./figs`
   * Use one file for each question/step, not one file for all questions/steps.
   * Make your code self documenting as much as possible.
-* Use [make](https://bost.ocks.org/mike/make/) and Makefiles for the entire data-processing pipeline.
+  * Follow [PEP 8](https://peps.python.org/pep-0008/)
 * For projects, consider adding [a license](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) to your repo, but not for assignments.
 
 ## For example
