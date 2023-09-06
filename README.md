@@ -47,7 +47,7 @@ make data/Wage.csv
 * If you don't have requisite software, like "make", then check out [setup.md](setup.md)
 * If you're not familiar with git, check out [git.md](git.md).
 
-### Q1: Presentation of results
+### Q1: Results
 
 Recreate the chart below with
 ```
