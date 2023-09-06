@@ -15,7 +15,7 @@ so they're are not acceptable for assignment submission.
 * Use Make
   * If you're not sure why, then read: [Why Use Make](https://bost.ocks.org/mike/make/) by the legendary Mike Bostock
   * Provide clear instructions for every step in the data-processing pipeline, including data access.
-  * Document for the 6-month rule: if you leave for 6 months, you can instantly pick up where you left off.
+  * Document for the 6-month rule: after 6 months away, you can instantly pick up where you left off.
 * Acknowlgement is paramount
   * Acknowledge your predecessors (a side benefit: it's a good way to avoid plagiarism).
   * Cite your references, for many of the same reasons.
