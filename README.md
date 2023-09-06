@@ -11,11 +11,11 @@ so they're are not acceptable for assignment submission.
   * ...but they're great for protoytping, in-class exercises and publishing!
 * Document the entire data-processing pipeline
   * The entire pipeline must be reproducible on the command line, starting with the original data source.
-  * Document your data source(s) and show how to access the original data source whenever possible.
+  * Document your data source(s) and show how to access the original source(s) whenever possible.
 * Use Make
   * If you're not sure why, then read: [Why Use Make](https://bost.ocks.org/mike/make/) by the legendary Mike Bostock
   * Provide clear instructions for every step in the data-processing pipeline, including data access.
-  * Document for the 6-month rule: when you come back in 6 months you should be able to pick up where you left off.
+  * Document for the 6-month rule: if you leave for 6 months, you should be able to pick up where you left off.
 * Acknowlgement is paramount
   * Acknowledge your predecessors (a side benefit: it's a good way to avoid plagiarism).
   * Cite your references, for many of the same reasons.
