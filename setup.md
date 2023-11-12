@@ -60,6 +60,7 @@ If you're using Windows, I recommend Windows Subsystem for Linux (WSL).
     * The browser will download the file to your windows C drive
 * Where's the C drive?
   * The C drive is available in Linux as `/mnt/c`
+  * In my case, it downloaded to `/mtn/c/Users/pbogj/Downloads`
 * Use the built-in Linux `sha256sum` command for [cryptographic hash verification](https://docs.conda.io/projects/conda/en/stable/user-guide/install/download.html#cryptographic-hash-verification)
   * On the command line, it'll be something like...
   ```
