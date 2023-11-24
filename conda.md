@@ -8,16 +8,15 @@ that runs on all platforms. For Windows users, I recommend first setting up
 
 ## 1. Use miniconda
 
-[Miniconda](https://docs.conda.io/projects/conda/en/stable/glossary.html#miniconda) is a free minimal 
+[Miniconda](https://docs.conda.io/projects/conda/en/stable/glossary.html#miniconda) is a free 
 installer for conda.
 It includes a minimal distribution of Python and friends.
 
-* anaconda includes conda, but not the other way around -- anaconda is a distribution
-* you can install miniconda or anaconda, the references below describe the differences
+* I recommend the [command-line install](https://docs.conda.io/projects/miniconda/en/latest/)
+  * [miniconda install instructions](https://docs.conda.io/projects/conda/en/stable/user-guide/install/index.html)
+  * you can install miniconda or anaconda, the references below describe the differences
+  * anaconda includes conda, but not the other way around -- anaconda is a distribution
 * [conda documentation](https://docs.conda.io/projects/conda/en/stable/)
-* [miniconda install instructions](https://docs.conda.io/projects/conda/en/stable/user-guide/install/index.html)
-  * I recommend the [command-line install](https://docs.conda.io/projects/miniconda/en/latest/)
-  * Start by downloading the version for your platform
 * Note: my install details are documented in the Makefile
 
 ### Why miniconda?
