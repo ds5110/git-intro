@@ -17,7 +17,10 @@ It includes a minimal distribution of Python and friends.
   * Note: you can install miniconda or anaconda, the references below describe the differences. I prefer miniconda.
     * anaconda includes conda, but not the other way around -- anaconda is a distribution
 * [conda documentation](https://docs.conda.io/projects/conda/en/stable/)
-* Note: my install details are documented in the Makefile
+* Note: I created a shell script to install miniconda on my Mac (24 Nov 2023)...
+  ```
+  bash my_install.sh
+  ```
 
 ### Why miniconda?
 
