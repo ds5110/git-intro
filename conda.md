@@ -31,7 +31,7 @@ It includes a minimal distribution of Python and friends.
   * Section 1.4 of [Python for Data Analysis, 3rd Ed (2022)](https://wesmckinney.com/book/preliminaries.html#installation_and_setup) has the recommendation
 * [Conda myths and misconceptions](https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/)
   * This blog post by Jake VanderPlas comparing pip & conda is a bit old (2016) but still interesting/relevant
-* Don't use pip. Or, at least be careful about it.
+* Don't use pip. Or, at least, be careful about it.
   * See: [Using pip in an environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#using-pip-in-an-environment) -- conda.io
   * The link has best practices for using conda and pip
   * Another discussion of [conda and pip](https://www.anaconda.com/blog/understanding-conda-and-pip) -- anaconda.com
