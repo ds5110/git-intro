@@ -4,8 +4,7 @@ Instructions for setting up and using conda environments
 
 Conda is an open-source package management system and environment management system 
 that runs on all platforms. For Windows users, I recommend first setting up
-[WSL](https://learn.microsoft.com/en-us/windows/wsl/about).
-See [setup.md](setup.md) for setup recommendations.
+[WSL](https://learn.microsoft.com/en-us/windows/wsl/about) (see [setup.md](setup.md)).
 
 ## 1. Use miniconda
 
