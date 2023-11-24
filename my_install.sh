@@ -1,4 +1,7 @@
 #!/bin/bash
+#
+# Shell script that I used to install miniconda on my Mac
+#
 set -e # shell script will exit immediately on error
 
 # This is the latest for my mac, which has an M3 Pro chip
