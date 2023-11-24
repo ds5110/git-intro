@@ -2,7 +2,7 @@
 #
 # Shell script that I used to install miniconda on my Mac
 #
-set -e # shell script will exit immediately on error
+set -e # shell script will exit immediately on error (e.g., inconsistent SHA256 hash)
 
 # This is the latest for my mac, which has an M3 Pro chip
 export MY_CONDA=Miniconda3-latest-MacOSX-arm64.sh
