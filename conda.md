@@ -12,13 +12,12 @@ that runs on all platforms. For Windows users, I recommend first setting up
 installer for conda.
 It includes a minimal distribution of Python and friends.
 
-* conda is a package manager
 * anaconda includes conda, but not the other way around -- anaconda is a distribution
-* you can install miniconda or anaconda, the references below mention the differences
+* you can install miniconda or anaconda, the references below describe the differences
 * [conda documentation](https://docs.conda.io/projects/conda/en/stable/)
 * [miniconda install instructions](https://docs.conda.io/projects/conda/en/stable/user-guide/install/index.html)
   * I recommend the command-line install
-  * Start by downloading for your platform
+  * Start by downloading the version for your platform
 * Note: my install details are documented in the Makefile
 
 ### Why miniconda?
