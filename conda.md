@@ -6,7 +6,7 @@ Conda is an open-source package management system and environment management sys
 that runs on all platforms. For Windows users, I recommend first setting up
 [WSL](https://learn.microsoft.com/en-us/windows/wsl/about) (see [setup.md](setup.md)).
 
-## 1. Use miniconda
+## 1. Install miniconda
 
 [Miniconda](https://docs.conda.io/projects/conda/en/stable/glossary.html#miniconda) is a free 
 installer for conda.
