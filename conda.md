@@ -13,9 +13,9 @@ installer for conda.
 It includes a minimal distribution of Python and friends.
 
 * I recommend the [command-line install](https://docs.conda.io/projects/miniconda/en/latest/)
-  * [miniconda install instructions](https://docs.conda.io/projects/conda/en/stable/user-guide/install/index.html)
-  * you can install miniconda or anaconda, the references below describe the differences
-  * anaconda includes conda, but not the other way around -- anaconda is a distribution
+  * Main [miniconda install instructions](https://docs.conda.io/projects/conda/en/stable/user-guide/install/index.html)
+  * Note: you can install miniconda or anaconda, the references below describe the differences. I prefer miniconda.
+    * anaconda includes conda, but not the other way around -- anaconda is a distribution
 * [conda documentation](https://docs.conda.io/projects/conda/en/stable/)
 * Note: my install details are documented in the Makefile
 
