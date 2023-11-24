@@ -10,7 +10,7 @@ that runs on all platforms. For Windows users, I recommend first setting up
 
 [Miniconda](https://docs.conda.io/projects/conda/en/stable/glossary.html#miniconda) is a free minimal 
 installer for conda.
-It includes a minimal distribution of Python and friends that includes conda
+It includes a minimal distribution of Python and friends.
 
 * conda is a package manager
 * anaconda includes conda, but not the other way around -- anaconda is a distribution
