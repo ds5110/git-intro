@@ -16,7 +16,7 @@ It includes a minimal distribution of Python and friends.
 * you can install miniconda or anaconda, the references below describe the differences
 * [conda documentation](https://docs.conda.io/projects/conda/en/stable/)
 * [miniconda install instructions](https://docs.conda.io/projects/conda/en/stable/user-guide/install/index.html)
-  * I recommend the command-line install
+  * I recommend the [command-line install](https://docs.conda.io/projects/miniconda/en/latest/)
   * Start by downloading the version for your platform
 * Note: my install details are documented in the Makefile
 
