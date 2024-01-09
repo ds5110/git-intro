@@ -3,7 +3,7 @@
 
 http://colab.research.google.com 
 
-Students should authenticate with their husky.neu.edu email -- northeastern.edu has been problematic.
+Students should authenticate with their husky.neu.edu email.
 
 https://colab.research.google.com/notebooks/ has some useful info. 
 
