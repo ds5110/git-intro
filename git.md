@@ -31,7 +31,7 @@ These tutorials describe advanced usage of git and github, which you may use lat
 * [github starter course](https://github.com/education/github-starter-course)
 * [atlassian git tutorials](https://www.atlassian.com/git) -- atlassian.com
   * Some very good tutorials
-  * [Begginner guide](https://www.atlassian.com/git/tutorials/what-is-version-control)
+  * [Beginner guide](https://www.atlassian.com/git/tutorials/what-is-version-control)
   * [Setting up a repository](https://www.atlassian.com/git/tutorials/setting-up-a-repository) -- pretty good
   * [Collaborating](https://www.atlassian.com/git/tutorials/syncing) -- later in the course
 * [github cli](https://docs.github.com/en/github-cli) -- github.com
