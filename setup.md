@@ -12,7 +12,8 @@ Anyone should be able to run your code from the command line on some flavor of L
 
 * If you're using a Mac, you're all set -- the built-in terminal is great and OSX is a flavor of Linux (my favorite)
 * If you're using microsoft windows, I recommend Windows Subsystem for Linux [(see below)](#WSL).
-* On windows, it's important that you install WSL first. Then proceed below using WSL, NOT windows!!
+  * On windows, it's important that you install WSL first. Then proceed below using WSL, NOT windows!!
+  * Once you install WSL, use the WSL terminal (**NOT** powershell) and install things for Linux (NOT windows!!)
 
 ## 1. Install miniconda
 
