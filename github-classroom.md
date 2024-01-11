@@ -58,6 +58,7 @@ Do this at the beginning of the semester
 * Go to https://classroom.github.com/classrooms
   * Click on "New classroom"
   * Add TAs and admins
+  * NOTE: TAs must be "owners" of the associated "organization"
 * Register students
   * Easy with a list of email addresses (add them all at once)
   * Currently it's not possible to connect github-classroom directly to canvas

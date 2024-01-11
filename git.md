@@ -14,7 +14,7 @@ Some notes about using git from the command-line.
 
 ## Install git
 
-You may have it already! So don't be in a rush to install it. Section 1.5 in the online book has guidance on installing command-line git. Chapter 1 is worth reading if you want background.
+You may have `git` already! So don't be in a rush to install it. Section 1.5 in the online book has guidance on installing command-line git. Chapter 1 is worth reading if you want background.
 
 * If you have conda, then it's as easy as...
 ```
@@ -53,6 +53,19 @@ These tutorials describe advanced usage of git and github, which you may use lat
     * SSH is an authentication standard that's used in various places.
     * If you set up SSH for github, you may be able to use the same SSH setup elsewhere.
     * Github's personal access tokens are good for, well, github.
+
+## gitignore large files
+
+**IMPORTANT:* Before you commit a large file with git, list it in `.gitignore`!
+
+You can't push file larger than 100 MB to github.com. So if you accidentally commit a large file with git, remove it!!
+
+You should also gitignore files with sensitive data (passwords, passkeys, etc.)!
+
+* [gitignore](https://git-scm.com/docs/gitignore) -- git-scm
+* [ignoring files](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files) -- github.com
+* [gitignore templates](https://github.com/github/gitignore) -- github.com
+* [Removing files from git history](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)
 
 ## Committing
 
