@@ -30,7 +30,7 @@ so they're not acceptable for assignment submission.
   * Make your code self documenting as much as possible.
 * If you need to download large data files...
   * Don't put the data into your git history
-  * Instead, list the file(s) in a `data` directory and make sure to ".gitignore" that directory.
+  * Instead, list the file(s) in a `data` directory and make sure to ".gitignore" that directory (see [git.md](git.md)).
   * If you keep a local copy of data in your repo, provide appropriate attribution.
   * And provide links to the original/authoritative data source.
 * For projects
