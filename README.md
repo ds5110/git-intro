@@ -1,5 +1,3 @@
-THIS IS SILLY!!!
-
 # git-intro
 
 A demo repository with guidelines for assignment submission.
