@@ -1,7 +1,7 @@
 
 # git
 
-An opinionated set of references for using git (from the command line).
+An opinionated set of references for using git (from the command line)
 
 ## context
 
