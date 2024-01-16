@@ -78,14 +78,6 @@ Reference: [Clone a repository](https://docs.github.com/en/repositories/creating
 
 ## gitignore large files
 
-## accidental commits
-
-* Common use case: You accidently commit a large data file or a file with sensitive info before you `.gitignore` it.
-* There are [several recommended ways to deal with this problem.](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository) -- github.com
-  * I use `git filter-repo`
-  * You can [install git-filter-repo with conda from conda-forge](https://anaconda.org/conda-forge/git-filter-repo)
-* Of course, the best way to deal with accidental commits is to [avoid them](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository) -- github.com
-
 **IMPORTANT:** Do NOT commit large files (> 50 MB) with git, list it in `.gitignore`!
 
 You can't push file larger than 100 MB to github.com, and you start getting nasty messages at 50 MB. So if you accidentally commit a large file with git, remove it **before** you push it!!
