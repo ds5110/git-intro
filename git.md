@@ -7,9 +7,9 @@ An opinionated set of references for using git (from the command line)
 
 "I really never wanted to do source control management at all and felt that it was just about the least interesting thing in the computing world (with the possible exception of databases ;^), and I hated all SCM’s with a passion." -- Linus Torvalds, creator of git
 
+* [an interview with Linus Torvalds](https://www.linuxfoundation.org/blog/blog/10-years-of-git-an-interview-with-git-creator-linus-torvalds/)
 * [git book, 2nd edition](https://git-scm.com/book/en/v2) -- git-scm.com
 * [about git](https://git-scm.com/about) -- branching -- git-scm.com
-* [an interview with Linus Torvalds](https://www.linuxfoundation.org/blog/blog/10-years-of-git-an-interview-with-git-creator-linus-torvalds/)
 
 ## install
 
@@ -22,8 +22,8 @@ An opinionated set of references for using git (from the command line)
 
 ## authentication
 
-* If you're cloning a public repo, then you don't need to worry about authentication
-* To clone a private github repo (e.g., a repo set up with github-classroom), you'll need to authenticate
+* If all you're doing is cloning a public repo, then you don't need to worry about authentication.
+* To clone a private github repo or update any kind of repo, you'll need to authenticate. You have some choices:
   * You can type your github username and password
     * This gets old fast.
   * You have a couple choices for automating things...
@@ -32,13 +32,11 @@ An opinionated set of references for using git (from the command line)
   * [SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
     * SSH is an authentication standard that's used in various places.
     * If you set up SSH for github, you may be able to use the same SSH setup elsewhere.
-    * Github's personal access tokens are good for, well, github.
+    * In contrast, Github's personal access tokens are good for, well, github.
     * Note: github is not git but github uses git. So beware of becoming dependent on proprietary github stuff.
-  * I've used github's personal access tokens and I've stored passwords in the Mac keychain with `/usr/bin/git`
-  * I've also used SSH -- and this is what I recommend.
 * [generating ssh keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) -- github.com
-  * this link has instructions for creating ssh keys
-  * You can install openssh with conda
+  * This link has instructions for creating ssh keys
+  * It requires openssh, which you can install with conda
   ```
   conda install -c conda-forge openssh 
   ```
@@ -50,7 +48,7 @@ An opinionated set of references for using git (from the command line)
 
 ## tutorials
 
-These tutorials are extensive. Some describe advanced usage of git and github that we'll use later in the course.
+These tutorials are extensive. Some describe advanced usage of git and github -- there's a lot there.
 
 * [Git tutorials](https://www.atlassian.com/git) -- atlassian.com
   * Atlassian isn't github, but it has some very good tutorials, specifically:
@@ -80,9 +78,9 @@ Reference: [Clone a repository](https://docs.github.com/en/repositories/creating
 
 ## gitignore large files
 
-**IMPORTANT:** Before you commit a large file with git, list it in `.gitignore`!
+**IMPORTANT:** Do NOT commit large files (> 50 MB) with git, list it in `.gitignore`!
 
-You can't push file larger than 100 MB to github.com, and you start getting nasty messages at 50 MB. So if you accidentally commit a large file with git, remove it before you push it!!
+You can't push file larger than 100 MB to github.com, and you start getting nasty messages at 50 MB. So if you accidentally commit a large file with git, remove it **before** you push it!!
 
 You should also gitignore files with sensitive data (passwords, passkeys, etc.)!
 
@@ -90,7 +88,6 @@ You should also gitignore files with sensitive data (passwords, passkeys, etc.)!
 * [ignoring files](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files) -- github.com
 * [gitignore templates](https://github.com/github/gitignore) -- github.com
 * [Removing files from git history](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)
-
 
 ## making changes
 
