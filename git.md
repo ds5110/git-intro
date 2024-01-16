@@ -78,16 +78,16 @@ Reference: [Clone a repository](https://docs.github.com/en/repositories/creating
 
 ## gitignore large files
 
-**IMPORTANT:** Do NOT commit large files (> 50 MB) with git, list it in `.gitignore`!
+**IMPORTANT:** Do NOT commit large files (> 50 MB) with git. List them in `.gitignore` instead!
 
-You can't push file larger than 100 MB to github.com, and you start getting nasty messages at 50 MB. So if you accidentally commit a large file with git, remove it **before** you push it!!
+You can't push files larger than 100 MB to github.com, and you start getting nasty messages at 50 MB. So if you accidentally commit a large file with git, remove it **before** you push it!!
 
 You should also gitignore files with sensitive data (passwords, passkeys, etc.)!
 
+* [removing files from git history](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)
 * [gitignore](https://git-scm.com/docs/gitignore) -- git-scm
 * [ignoring files](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files) -- github.com
 * [gitignore templates](https://github.com/github/gitignore) -- github.com
-* [Removing files from git history](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)
 
 ## accidental commits
 
