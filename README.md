@@ -50,7 +50,7 @@ make data/Wage.csv
 
 * Note: this is automatic when you type `make q1` because of the Makefile configuration.
 * This step is necessary when cloning the repo because `data` is in the .gitignore file.
-* If you don't have requisite software, like "make", then check out [setup.md](setup.md)
+* If you don't have requisite software, like `make`, then check out [setup.md](setup.md)
 * If you're not familiar with git, check out [git.md](git.md).
 
 ### Q1
