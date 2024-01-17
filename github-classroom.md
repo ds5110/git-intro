@@ -30,26 +30,20 @@ Here's the link to the github-classroom assignment
 Let your instructors know if you have any questions.
 ```
 
-## Create an assignment
+## Create an assignment (detail)
 
-* make a template repo in the ds51109 organization
-  * do it here: http://github.com/ds110 (or somewhere that's publicly accessible)
+* make a template private repo in the ds5110 organization
+  * that is, do it here: http://github.com/ds110
   * do this before creating an assignment with github-classroom
   * make sure the template repo is in fact a "template" repo -- remember to check the checkbox in settings
-* create an `assignment.md` from the solution folder
-  * for example: `cp hw-gapminder-solution/README.md assignment.md`
-  * the edit this file so it contains only the questions -- no solutions
-* clone the template repo
-  * for example: `https://github.com/pbogden/hw-gapminder.git`
-* add assignment to the template
-  * for example: `cp assignment.md hw-gapminder/README.md 
+  * copy the README.md from the solution folder -- edit the file so it contains only the questions -- no solutions
 * return to github-classroom and use this as the template for an assignment
-  * do this with northeastern credentials
-  * make sure my northeastern account has access to the template repo
-* go to github classroom logged in with my northeastern credentials (in this case for Fall 2022)
-  * for example: https://classroom.github.com/classrooms/82665678-ds5110-fall22
   * click "Create an assigment"
   * create the assignment from the template
+  * Do this after authenticating with credentials that can access to the template repo
+  * IMPORTANT: to reuse a template from a previous year -- edit the template or it won't appear as an option!!
+  * Q: Why does github classroom work this way?  A: Who the heck knows. But it does.
+* Copy the invitation URL into canvas
 
 ## Create a classroom
 
