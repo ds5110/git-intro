@@ -1,7 +1,7 @@
 
 # github classroom
 
-Directions for instructors creating a github-classroom assignment.
+Directions for instructors to create a github-classroom assignment.
 
 ## Classroom setup
 
