@@ -48,8 +48,8 @@ Download the CSV file from the [ISL](http://statlearning.com) website with the f
 make data/Wage.csv
 ```
 
-* Note: step 1 is not necessary because of the way the Makefile is configured.
-* This step is necessary when cloning the repo because CSV files are .gitignored.
+* Note: this step is automatic if you type `make q1` because of the way the Makefile is configured.
+* This step is necessary when cloning the repo because `data` is in the .gitignore file.
 * If you don't have requisite software, like "make", then check out [setup.md](setup.md)
 * If you're not familiar with git, check out [git.md](git.md).
 
