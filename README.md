@@ -55,7 +55,7 @@ make data/Wage.csv
 
 ### Q1
 
-The graphic below reproduces Figure 1.1 of ISLR. Recreate it with the following command:
+The graphic below reproduces Figure 1.1 of ISL. Recreate it with the following command:
 ```
 make q1
 ```
