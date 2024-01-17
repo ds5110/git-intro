@@ -1,12 +1,7 @@
 
 # github classroom
 
-Directions for instructors to create a github-classroom assignment.
-
-## Classroom setup
-
-* TAs must have admin privileges in the organization associated with a classroom.
-* Students can be added all at once via the email associated with their github account.
+Directions for instructors to create a github-classroom assignment. (See below for classroom setup.)
 
 ## Step 1: Create a template repo
 
