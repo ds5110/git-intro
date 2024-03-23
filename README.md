@@ -1,4 +1,3 @@
-
 # git-intro
 
 A demo repository with guidelines for assignment submission.
@@ -30,7 +29,7 @@ so they're not acceptable for assignment submission.
   * Make your code self documenting as much as possible.
 * If you need to download large data files...
   * Don't put the data into your git history
-  * Instead, list the file(s) in a `data` directory and make sure to ".gitignore" that directory.
+  * Instead, list the file(s) in a `data` directory and make sure to ".gitignore" that directory (see [git.md](git.md)).
   * If you keep a local copy of data in your repo, provide appropriate attribution.
   * And provide links to the original/authoritative data source.
 * For projects
@@ -49,14 +48,14 @@ Download the CSV file from the [ISL](http://statlearning.com) website with the f
 make data/Wage.csv
 ```
 
-* Note: step 1 is not necessary because of the way the Makefile is configured.
-* This step is necessary when cloning the repo because CSV files are .gitignored.
-* If you don't have requisite software, like "make", then check out [setup.md](setup.md)
-* If you're not familiar with git, check out [git.md](git.md).
+* Note: this is automatic when you type `make q1` because of the Makefile configuration.
+* This step is necessary when cloning the repo because `data` is in the .gitignore file.
+* If you don't have the requisite software, like `make`, then check out [setup.md](setup.md)
+* If you're not familiar with git, then check out [git.md](git.md).
 
 ### Q1
 
-The graphic below reproduces Figure 1.1 of ISLR. Recreate it with the following command:
+The graphic below reproduces Figure 1.1 of ISL. Recreate it with the following command:
 ```
 make q1
 ```
@@ -73,5 +72,12 @@ make q1
 ```
 ![alternative to HTML](figs/q1.png)
 ```
-Ref: [embed a PNG in markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#images).
+Refs:
+  * [github flavored markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+  * [gfm spec](https://github.github.com/gfm/)
+  * [embed a PNG in markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#images)
+  * [math in markdown](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
 
+$$
+\int e^x dx = e^x + \mathrm{const}
+$$
