@@ -40,8 +40,8 @@ It includes a minimal distribution of Python and friends.
 
 If you don't have them already, you can install `make` and `git` with conda...
 ```
-conda install -c conda-forge make
-conda install -c conda-forge git
+conda install make
+conda install git
 ```
 
 ## 3. Use conda environments
@@ -52,9 +52,10 @@ conda install -c conda-forge git
 
 Conda installs from [channels](https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/channels.html)
 
-* In general, I recommend the open source "conda-forge" channel.
+* When you install miniconda3, you use the default channel.
+* However, if you encounter problems, I recommend the open source "conda-forge" channel.
 * conda-forge is not the default channel, but you can make it the default. 
-* It's a good idea not to mix channels, especially with geospatial software (more info below).
+* Do **not** mix channels, especially with geospatial software (more info below).
 ```
 conda config --show channels              # lists default channel(s)
 conda config --add channels conda-forge   # set conda-forge as the default channel
