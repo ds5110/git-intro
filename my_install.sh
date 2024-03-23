@@ -8,7 +8,10 @@ set -e # shell script will exit immediately on error (e.g., inconsistent SHA256 
 export MY_CONDA=Miniconda3-latest-MacOSX-arm64.sh
 
 curl -LO https://repo.anaconda.com/miniconda/$MY_CONDA
-echo 5043144d7eaea2286e30d091b62fcf50f7ed983b092230e56c370b592e7a57f2 > sha256_hash.txt
+
+# The checksum -- I updated the SHA256 hash on 23 Mar 2024
+* The hash and script came from here: https://docs.anaconda.com/free/miniconda/
+echo 1c277b1ec046fd1b628390994e3fa3dbac0e364f44cd98b915daaa67a326c66a > sha256_hash.txt
 
 # Verify the checksum
 shasum -a 256 $MY_CONDA | awk '{print $1;}' > sha256_download.txt
@@ -17,8 +20,8 @@ rm sha256_hash.txt
 rm sha256_download.txt
 
 # Install...
-#   Be patient and respond to the prompts! 
-#   Accept the defaults and respond with "yes" regarding license.
+#   Be patient! Read the license and respond with "yes" regarding license.
+#   Otherwise, accept the defaults.
 bash $MY_CONDA
 
 # Clean up
