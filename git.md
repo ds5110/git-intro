@@ -191,12 +191,21 @@ git merge demo
 ```
 * You need to specify the upstream for the branch before you can "push" or "pull"
 
+To update a dev branch with changes that were made in main while you were working in dev...
+```
+git checkout main  # make sure main is up to date
+git pull
+git checkout demo
+git merge main     # or use `git rebase` -- see reference below
+```
+
 References: 
 
 * [git branch](https://git-scm.com/docs/git-branch) -- git-scm.com
 * [Git branching](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) -- git-scm.com
 * [About branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)
 * [Working with branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches#working-with-branches)
+* [Merging vs rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing) -- atlassian.com
 
 ## pull requests
 
