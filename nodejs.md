@@ -1,10 +1,17 @@
 # nodejs
 
-* [Install](https://nodejs.org/en/download/package-manager)
-* Recommended install for MacOS: [nvm](https://github.com/nvm-sh/nvm)
-* To install or update nvm, you should run the install script.
-* [The install script](https://github.com/nvm-sh/nvm/blob/v0.39.7/install.sh)
-* [nvm install issue (Mar 2024](https://github.com/nvm-sh/nvm/issues/3318)
+* Note: I inadvertently screwed up yarn on a couple laptops...and I'm not sure how I did it
+* As a result, I chose to try another approach to installing node.js. Instructions below... 
+
+## Mac silicon
+
+* I have a cool new Mac with an Apple M2 Max chip
+* I chose not to [install nodejs using a package manager (nvm)](https://nodejs.org/en/download/package-manager)
+* Here's why: [nvm install issue (Mar 2024)](https://github.com/nvm-sh/nvm/issues/3318)
+* I didn't [install with a prebuilt installer](https://nodejs.org/en/download) because Linux doesn't have one.
+* Instead, I chose to [install prebuilt binaries](https://nodejs.org/en/download/prebuilt-binaries)
+* Why? Because this approach works for every platform (even Windows and AIX?!)
+* **IMPORTANT:** If I had to use Windows (a sad thing), I'd use WSL and install for Linux!
 
 ## Download Node.js
 
@@ -28,3 +35,16 @@ and with the result
 ```
 node-v20.12.1-darwin-arm64.tar.gz: OK
 ```
+then
+```
+tar xzvf node-v20.12.1-darwin-arm64.tar.gz: OK
+```
+
+## Install
+
+I added a line in my `~/.zshrc` to point to the binaries in the distribution that I just downloaded
+```
+export PATH="$PATH:/Users/pbogden/node-v20.12.1-darwin-arm64/bin"
+```
+
+I then chose to: [install yarn](https://yarnpkg.com/getting-started/install)
