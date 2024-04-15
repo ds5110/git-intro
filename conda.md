@@ -167,7 +167,6 @@ $ cat ENV.yml
 name: geo
 channels:
   - conda-forge
-  - defaults
 dependencies:
   - python=3.10
   - conda==22.11.1
