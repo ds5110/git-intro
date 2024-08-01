@@ -151,6 +151,11 @@ To checkout a previous commit
 ```
 $ get checkout <tag/branch/commit id>
 ```
+If you made some changes and you want to revert then
+```
+git restore . # revert any changes that don't want to commit
+git clean -f  # delete any untracked files (beware -- it really deletes them)
+```
 You can reset to a previous commit (but you'll lose everything you did since then!!)
 ```
 $ get reset --hard <tag/branch/commit id>
