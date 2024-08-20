@@ -24,7 +24,7 @@ It includes Python 3.x and a minimal distribution of Python friends.
   * Windows users!! Remember: if you're using WSL, then you should install the Linux version from the WSL terminal!!
 * I do not recommend that you install Anaconda. That said, you can use it if you already have it.
   * Q: Miniconda or Anaconda? A: Miniconda.  References below describe the differences.
-  * In a nutshell: Anaconda includes conda, but not the other way around -- anaconda is a distribution.
+  * In a nutshell: Anaconda includes conda, but not the other way around -- Anaconda is a distribution.
 
 ### Why miniconda?
 
