@@ -16,7 +16,7 @@ Windows users, before anything else: I highly recommend that you either buy a Ma
 [Miniconda](https://docs.conda.io/projects/conda/en/stable/glossary.html#miniconda) is a free 
 installer for conda.
 
-It includes Python 3 and a minimal distribution of Python friends.
+It includes Python 3.x and a minimal distribution of Python friends.
 
 * [Conda documentation](https://docs.conda.io/projects/conda/en/stable/)
 * [Conda install docs](https://docs.conda.io/projects/conda/en/stable/) recommend installing conda via miniconda.
