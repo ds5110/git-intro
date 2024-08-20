@@ -28,9 +28,8 @@ It includes Python 3.x and a minimal distribution of Python friends.
 
 ### Why miniconda?
 
-* Recommended by Jake VanderPlas, the author of [Python Data Science Handbook (PDS)](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/00.00-Preface.ipynb)
-  * [This link](https://jakevdp.github.io/PythonDataScienceHandbook/00.00-preface.html#Installation-Considerations) points to a Jupyter notebook on github, where you'll see a recommendation to use miniconda.
-  * It's the first edition of the book, which was updated in 2022.  The more recent edition makes the same recommendation.
+* Recommended by Jake VanderPlas, the author of [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/00.00-Preface.ipynb)
+  * Jake's [installation considerations](https://jakevdp.github.io/PythonDataScienceHandbook/00.00-preface.html#Installation-Considerations)
 * Recommended by Wes McKinney lead developer of Pandas and author or [Python for Data Analysis, 3rd Ed (2022)](https://wesmckinney.com)
   * Section 1.4 of [Python for Data Analysis, 3rd Ed (2022)](https://wesmckinney.com/book/preliminaries.html#installation_and_setup) has the recommendation
 * [Conda myths and misconceptions](https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/)
@@ -47,6 +46,7 @@ If you don't have them already, you can install `make` and `git` with conda...
 conda install make
 conda install git
 ```
+I recommend both, even if you're using a Mac and you already have Apple's version of git.
 
 ## 3. Use conda environments
 
