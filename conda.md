@@ -6,9 +6,9 @@ Conda is system-level, binary package and environment manager running on all maj
 
 ## First things first
 
-Recommendations below assume that you're using Linux, macOS (which is basically Linux under the hood) or WSL (not Windows).
+Recommendations below assume that you're using Linux, macOS (Linux under the hood) or WSL (Linux as a VM).
 
-For Windows users, I highly recommend that you set up 
+Windows users: I highly recommend that you set up 
 [WSL](https://learn.microsoft.com/en-us/windows/wsl/about) before doing anything else (see [setup.md](setup.md)).
 
 ## 1. Install miniconda
