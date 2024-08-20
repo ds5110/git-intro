@@ -4,10 +4,11 @@ Recommendations for setting up and using conda
 
 Conda is system-level, binary package and environment manager running on all major operating systems and platforms.
 
-## Step 0 
+## First step
 
 For Windows users, I recommend that you set up
 [WSL](https://learn.microsoft.com/en-us/windows/wsl/about) before doing anything else (see [setup.md](setup.md)).
+
 Recommendations below assume that you're using Linux, macOS (which is basically Linux under the hood) or WSL.
 
 ## 1. Install miniconda
