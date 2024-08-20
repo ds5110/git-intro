@@ -15,17 +15,16 @@ Recommendations below assume that you're using Linux, macOS (which is basically 
 
 [Miniconda](https://docs.conda.io/projects/conda/en/stable/glossary.html#miniconda) is a free 
 installer for conda.
-It includes a minimal distribution of Python and friends.
 
-* I recommend the [command-line install](https://docs.conda.io/projects/miniconda/en/latest/)
-  * Main [miniconda install instructions](https://docs.conda.io/projects/conda/en/stable/user-guide/install/index.html)
-  * Note: you can install miniconda or anaconda, the references below describe the differences. I prefer miniconda.
-    * anaconda includes conda, but not the other way around -- anaconda is a distribution
-* [conda documentation](https://docs.conda.io/projects/conda/en/stable/)
-* Note: I created a shell script to install miniconda on my Mac (24 Nov 2023)...
-  ```
-  bash my_install.sh
-  ```
+It includes a Python and a minimal distribution of Python friends.
+
+* [Conda documentation](https://docs.conda.io/projects/conda/en/stable/)
+* [Conda install docs](https://docs.conda.io/projects/conda/en/stable/) recommend installing conda via miniconda.
+  * I agree and I recommend the [command-line install](https://docs.conda.io/projects/miniconda/en/latest/) 
+  * Windows users!! Remember: if you're using WSL, then you should install the Linux version from the WSL terminal!!
+* I do not recommend that you install Anaconda. That said, you can use it if you already have it.
+  * Q: Miniconda or Anaconda? A: Miniconda.  References below describe the differences.
+  * In a nutshell: Anaconda includes conda, but not the other way around -- anaconda is a distribution.
 
 ### Why miniconda?
 
