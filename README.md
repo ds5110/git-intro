@@ -4,11 +4,12 @@ This README has guidelines for creating a reproducible data-science pipeline.
 
 DS 5110 assignment submissions must follow these basic command-line requirements -- Jupyter notebooks are not allowed.
 
-Other documents in this repo have recommmendations for setting up a development environment that works on all platforms.
+Other documents in this repo have recommmendations for [setting up a development environment](setup.md) that works on all platforms.
 
 ## Reproducibility
 
-* Reproducibility is paramount -- if someone else can't reproduce your results, there's no point.
+* Create reproducible pipelines
+  * Reproducibility is paramount -- if someone else can't reproduce your results, there's no point.
   * [Jupyter notebooks have reproducibility problems](https://www.nature.com/articles/d41586-021-01174-w),
 so they're not acceptable for assignment submission.
   * ...but they're great for protoytping, in-class exercises and publishing books!
@@ -16,31 +17,32 @@ so they're not acceptable for assignment submission.
   * The entire pipeline must be reproducible from the command line, starting from the original data source(s).
   * Document your data source(s) and show how to access the original source(s).
 * Use Make
-  * If you're not sure why, then read: [Why Use Make](https://bost.ocks.org/mike/make/) by the legendary Mike Bostock
-  * Provide clear instructions for every step in the pipeline, including data access. (Make makes it easy.)
-  * Document for the 6-month rule: after 6 months away, you can instantly pick up where you left off.
+  * Make makes it particularly easy to provide clear instructions for every step in the pipeline, including data access.
+  * If you're not sure why, then read: [Why Use Make?](https://bost.ocks.org/mike/make/) by the legendary Mike Bostock
+  * Use the 6-month rule: document things to that, after 6 months away, you can instantly pick up where you left off.
   * There are many other tools for automating workflows. They're typically proprietary and/or harder to use. For automated workflows, I recommend [Github Actions](https://docs.github.com/en/actions).
-* Acknowlgement is critical
-  * Acknowledge your predecessors (a side benefit: it's a good way to avoid plagiarism).
-  * Cite your references (for many of the same reasons).
+* Acknowledge
+  * Cite original sources and and provide links to authoritative references.
+  * Acknowledging your predecessors has a side benefit: it's a good way to avoid plagiarism.
 * Write clean code
   * Strive for self-documenting code
   * Follow [PEP 8](https://peps.python.org/pep-0008/)
   * Apply the DRY principle (Don't Repeat Yourself)
     * For example, if multiple files use the same code, then put reused code in a module and import it.
 * For assignments...
-  * Put source code in the `./src` and figures in a `./figs`
-  * Use one file for each question/step, not one file for all questions/steps.
+  * Put source code in `./src` and figures in `./figs`. 
+  * Use one file for each question, not one file for all questions.
   * Make your code self documenting as much as possible.
+  * Use `./docs` for a github-pages site when appropriate (but not for assignment submissions).
 * If you need to download large data files...
-  * Don't put the data into your git history
-  * Instead, list the file(s) in a `data` directory and make sure to ".gitignore" that directory (see [git.md](git.md)).
-  * If you keep a local copy of data in your repo, provide appropriate attribution.
-  * And provide links to the original/authoritative data source.
+  * Don't put the data into your git history! Github has a file-size limit of 50 MB.
+  * Instead, download the file(s) into `./data` and make sure to "gitignore" that directory (see [git.md](git.md)).
+  * If you keep a local copy of data in your repo, provide clear instructions for accessing the file from the source.
+  * Acknowledge the data source(s) and provide links to the original/authoritative source.
 * For projects
+  * Use miniconda and share your conda environment with a YML file (see [conda.md](conda.md))
   * Consider adding [a license](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) to your repo.
-  * Use miniconda and share your conda environment (see [conda.md](conda.md))
-* And if you're not sure how to set up your development environment, see [setup.md](setup.md)
+* If you're not sure how to set up your development environment, see [setup.md](setup.md)
 
 ## Example assignment formatting
 
