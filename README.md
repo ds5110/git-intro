@@ -12,7 +12,7 @@ Other documents in this repo have recommmendations for [setting up a development
   * Reproducibility is paramount -- if someone else can't reproduce your results, there's no point.
   * [Jupyter notebooks have reproducibility problems](https://www.nature.com/articles/d41586-021-01174-w),
 so they're not acceptable for assignment submission.
-  * ...but they're great for protoytping, in-class exercises and publishing books!
+  * ...but they're great for prototyping, in-class exercises and publishing books!
 * Document the entire data-processing pipeline
   * The entire pipeline must be reproducible from the command line, starting from the original data source(s).
   * Document your data source(s) and show how to access the original source(s).
