@@ -13,7 +13,7 @@ Other documents in this repo have recommmendations for setting up a development 
 so they're not acceptable for assignment submission.
   * ...but they're great for protoytping, in-class exercises and publishing books!
 * Document the entire data-processing pipeline
-  * The entire pipeline must be reproducible from the command line, starting at the original data source(s).
+  * The entire pipeline must be reproducible from the command line, starting from the original data source(s).
   * Document your data source(s) and show how to access the original source(s).
 * Use Make
   * If you're not sure why, then read: [Why Use Make](https://bost.ocks.org/mike/make/) by the legendary Mike Bostock
