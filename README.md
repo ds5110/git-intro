@@ -1,6 +1,10 @@
 # git-intro
 
-A demo repository with guidelines for assignment submission.
+This README has guidelines for creating a reproducible data-science pipeline.
+
+DS 5110 assignment submissions must follow these basic command-line requirements -- Jupyter notebooks are not allowed.
+
+Other documents in this repo have recommmendations for setting up a development environment that works on all platforms.
 
 ## Reproducibility
 
@@ -9,12 +13,13 @@ A demo repository with guidelines for assignment submission.
 so they're not acceptable for assignment submission.
   * ...but they're great for protoytping, in-class exercises and publishing books!
 * Document the entire data-processing pipeline
-  * The entire pipeline must be reproducible on the command line, starting with the original data source.
-  * Document your data source(s) and show how to access the original source(s) whenever possible.
+  * The entire pipeline must be reproducible from the command line, starting at the original data source(s).
+  * Document your data source(s) and show how to access the original source(s).
 * Use Make
   * If you're not sure why, then read: [Why Use Make](https://bost.ocks.org/mike/make/) by the legendary Mike Bostock
-  * Provide clear instructions for every step in the data-processing pipeline, including data access.
+  * Provide clear instructions for every step in the pipeline, including data access. (Make makes it easy.)
   * Document for the 6-month rule: after 6 months away, you can instantly pick up where you left off.
+  * There are many other tools for automating workflows. They're typically proprietary and/or harder to use. For automated workflows, I recommend [Github Actions](https://docs.github.com/en/actions).
 * Acknowlgement is critical
   * Acknowledge your predecessors (a side benefit: it's a good way to avoid plagiarism).
   * Cite your references (for many of the same reasons).
