@@ -11,7 +11,7 @@ Instructions for setting up a Python environment for data science -- some opinio
 Anyone should be able to run your code from the command line on some flavor of Linux.
 
 * If you're using a Mac, you're all set -- the built-in terminal is great and OSX is a flavor of Linux (my favorite)
-* If you're using microsoft windows, I recommend Windows Subsystem for Linux [(see below)](#WSL).
+* If you're using Windows and you don't want to buy a Mac, I recommend Windows Subsystem for Linux [(see below)](#WSL).
   * On windows, it's important that you install WSL first. Then proceed below using WSL, NOT windows!!
   * Once you install WSL, use the WSL terminal (**NOT** powershell) and install things for Linux (NOT windows!!)
 
@@ -38,18 +38,20 @@ If you're using a Mac, I recommend the conda version of git so you can use SSH t
 
 ## WSL
 
-If you're using Windows, I recommend Windows Subsystem for Linux (WSL). 
+If you're using Windows, the Windows Subsystem for Linux (WSL) is a super easy install... 
 
 * [Install WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
-  * Very easy. Open powershell/command prompt (windows jargon for the built-in terminal)
+  * Very easy. Open powershell/command prompt (windows jargon for the built-in Windows terminal)
   ```
   wsl --install
   ```
+* From now on, you should use the WSL terminal -- NOT powershell!!
 * Verify that you're using Linux...
   ```
   which curl
   ```
   should return: `/usr/bin/curl`
+* The instructions below are getting old -- WSL seems to be improving.
 * Enable copy/paste into the terminal from the clipboard
   * [Copy and Paste Arrives for Linux/WSL Consoles](https://devblogs.microsoft.com/commandline/copy-and-paste-arrives-for-linuxwsl-consoles/) -- microsoft.com
 * Install miniconda
