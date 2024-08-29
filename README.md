@@ -43,7 +43,7 @@ so they're not acceptable for assignment submission.
   * Consider adding [a license](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) to your repo.
 * If you're not sure how to set up your development environment, see [setup.md](setup.md)
 
-## Example assignment formatting
+## Example assignment layout
 
 Suppose the assignment asks you to reproduce the first chart in Figure 1.1 of ISLR. A solution follows.
 
