@@ -32,8 +32,7 @@ so they're not acceptable for assignment submission.
 * For assignments...
   * Put source code in `./src` and figures in `./figs`. 
   * Use one file for each question, not one file for all questions.
-  * Make your code self documenting as much as possible.
-  * Use `./docs` for a github-pages site when appropriate (but not for assignment submissions).
+  * Use `./docs` for a github-pages site when appropriate (e.g., projects, but not for other assignments).
 * If you need to download large data files...
   * Don't put the data into your git history! Github has a file-size limit of 50 MB.
   * Instead, download the file(s) into `./data` and make sure to "gitignore" that directory (see [git.md](git.md)).
