@@ -1,7 +1,5 @@
 # git-intro
 
-How's it going, dude?
-
 This README has guidelines for creating a reproducible data-science pipeline.
 
 DS 5110 assignments must be reproducible from the command-line -- Jupyter notebooks are not allowed.
