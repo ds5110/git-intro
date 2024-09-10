@@ -55,7 +55,7 @@ These tutorials are extensive. Some describe advanced usage of git and github --
   * [Beginner guide](https://www.atlassian.com/git/tutorials/what-is-version-control)
   * [Setting up a repository](https://www.atlassian.com/git/tutorials/setting-up-a-repository)
   * [Collaborating](https://www.atlassian.com/git/tutorials/syncing)
-* [github starter course](https://github.com/education/github-starter-course)
+* [github starter course](https://github.com/classroom-resources/github-starter-course)
   * The overview page has links to many detailed topics.
 * [github cli](https://docs.github.com/en/github-cli) -- github.com
   * The github CLI is NOT the same as "git" on the command line (I don't use it)
