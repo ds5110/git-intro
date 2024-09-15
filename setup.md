@@ -24,8 +24,9 @@ Anyone should be able to run your code from the command line on some flavor of L
 You need a text editor. I recommend vscode -- a free visual text editor and aspiring IDE owned by microsoft.
 
 * install instructions: https://code.visualstudio.com/download
-* note: vscode has issues and it's quirky, especially if you're using a Mac
-* but vscode is extremely popular in the real world and the quirks can usually be resolved
+* iv you're using WSL, then look here: https://code.visualstudio.com/docs/remote/wsl
+* note: vscode has issues and it's quirky (especially if you're using a Mac) but it's getting better all the time
+* vscode is extremely popular in the real world
 
 ## 3. Install make and git
 
