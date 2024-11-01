@@ -1,7 +1,10 @@
 name: myenv
 channels:
   - conda-forge
+  - defaults
 dependencies:
-  - seaborn=0.11.2
+  - scikit-learn
+  - seaborn
+  - matplotlib
   - make
   - git
