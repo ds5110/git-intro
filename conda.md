@@ -104,6 +104,7 @@ conda install -c conda-forge python
 conda install -c conda-forge pandas
 conda install -c conda-forge matplotlib
 conda install -c conda-forge make
+conda install -c conda-forge git
 ```
 
 * deactivate an environment
