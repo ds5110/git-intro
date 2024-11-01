@@ -143,15 +143,8 @@ Then I used the `--from-history` option to get hints on editing/trimming the fil
 ```
 conda env export --from-history
 ```
-I settled on this for my environment.yml...
-```
-channels:
-  - conda-forge
-  - defaults
-dependencies:
-  - seaborn=0.11.2
-  - pyqt
-```
+Here's my latest [environment.yml](environment.yml).
+
 Ref: [Sharing an environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment)
 
 ### Create an environment from a yml file
@@ -166,7 +159,28 @@ conda env remove --name myenv
 ```
 * Ref: [Creating an environment from an enviroment.yml file](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) -- conda.io
 
-### geospatial
+### Observable
+
+To use Observable Framework (and for web development in general), you'll need [Node.js](https://nodejs.org/en).
+I install Node.js from conda-forge, and likewise for Flask (a lightweight Python web framwork).
+I install it from [observable.yml](observable.yml) as follows:
+
+```
+conda env create -f observable.yml
+conda activate observable
+```
+then [install Observable Framework](https://observablehq.com/framework/) with their recommended
+```
+npx @observablehq/framework@latest create
+```
+
+Then I install yarn (an npm alternative) following [their recommendation](https://yarnpkg.com/getting-started/install).
+
+```
+conda activate observable
+```
+
+### Geospatial
 
 * geospatial software has dependencies that can cause problems if you mix channels
 * see: [geopandas install](https://geopandas.org/en/stable/getting_started/install.html)
