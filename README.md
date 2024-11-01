@@ -35,7 +35,7 @@ so they're not acceptable for assignment submission.
   * Use `./docs` for a github-pages site when appropriate (e.g., projects, but not for other assignments).
 * If you need to download large data files...
   * Don't put the data into your git history! Github has a file-size limit of 50 MB.
-  * Instead, download the file(s) into `./data` and make sure to "gitignore" that directory (see [git.md](git.md)).
+  * Instead, download the file(s) into `./data` and make sure to `.gitignore` that directory (see [git.md](git.md)).
   * If you keep a local copy of data in your repo, provide clear instructions for accessing the file from the source.
   * Acknowledge the data source(s) and provide links to the original/authoritative source.
 * For projects
