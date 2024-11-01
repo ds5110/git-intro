@@ -6,7 +6,7 @@ Conda is a system-level binary package and environment manager. It runs on all m
 
 ## First things first
 
-Recommendations below assume that you're using Linux, macOS (Linux under the hood) or WSL (Linux in a VM).
+Recommendations below assume that you're using Linux, macOS (basically Linux under the hood) or WSL (Linux in a VM).
 
 Windows users, before anything else: I highly recommend that you either buy a Mac or set up 
 [WSL](https://learn.microsoft.com/en-us/windows/wsl/about) (see [setup.md](setup.md)).
