@@ -161,23 +161,22 @@ conda env remove --name myenv
 
 ### Observable
 
-To use Observable Framework (and for web development in general), you'll need [Node.js](https://nodejs.org/en).
-I install Node.js from conda-forge, and likewise for Flask (a lightweight Python web framwork).
-I install it from [observable.yml](observable.yml) as follows:
+To use [Framework](https://observablehq.com/framework/), and for web development in general, 
+you need [Node.js](https://nodejs.org/en).
+You can install it from their site, or you can install it from conda-forge.
+The down side of conda-forge is you might not have the latest version, but the up side
+is that it's easier to delete the install with conda than it is if you install it directly.
+
+I install Node, yarn (an npm alternative that's faster), and Flask (a Python web framework) from conda-forge with
 
 ```
 conda env create -f observable.yml
 conda activate observable
 ```
-then [install Observable Framework](https://observablehq.com/framework/) with their recommended
+
+Then [install Framework](https://observablehq.com/framework/) with their recommendtion
 ```
 npx @observablehq/framework@latest create
-```
-
-Then I install yarn (an npm alternative) following [their recommendation](https://yarnpkg.com/getting-started/install).
-
-```
-conda activate observable
 ```
 
 ### Geospatial
