@@ -2,7 +2,7 @@
 
 Recommendations for setting up and using conda
 
-Conda is system-level, binary package and environment manager. It runs on all major operating systems and platforms.
+Conda is a system-level, binary package and environment manager. It runs on all major operating systems and platforms.
 
 ## First things first
 
@@ -58,7 +58,7 @@ Conda installs from [channels](https://docs.conda.io/projects/conda/en/stable/us
 
 * When you install miniconda3, you use the default channel.
 * However, if you encounter problems, I recommend the open source "conda-forge" channel.
-* conda-forge is not the default channel, but you can make it the default. 
+* conda-forge is not the default channel, but you can make it the default.
 * Do **not** mix channels, especially with geospatial software (more info below).
 ```
 conda config --show channels              # lists default channel(s)
@@ -67,7 +67,7 @@ conda config --add channels conda-forge   # set conda-forge as the default chann
 
 ### Create and activate a conda environment
 
-Create an environment with a specific version of python
+You can create an environment with a specific version of python:
 ```
 conda create -n myenv python=3.9
 ```
@@ -84,16 +84,17 @@ conda deactivate
 * [Manage environments](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) -- conda.io
   * [Creating an environment with commands](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands)
 * vscode: 
+  * Warning: as vscode is getting better, this recommendation for configuring vscode may now be out of date.
   * You can manually specify the path to the conda executable to use for activation 
   (version 4.4+). To do so, open the Command Palette (⇧⌘P).
   * You get a dropdown menu and you can pick the conda environment of your choice
   * On a mac, the detault was in `/usr/bin`, so you need to select the miniconda version
 
-### Install libraries in an environment
+### Install libraries in a conda environment
 
 You can use conda to create multiple environments with various installed libraries.
 
-* create a new environment called "myenv" and install the latest scikit-learn and friends from conda-forge
+* create a new environment called "myenv" and install (by hand) the latest scikit-learn and friends from conda-forge
 ```
 conda create --name myenv
 conda activate myenv
@@ -190,7 +191,7 @@ dependencies:
 prefix: /Users/pbogden/miniconda3
 ```
 
-* create a new environment called "newenv" from requirements.txt
+* to create a new environment called "newenv" from requirements.txt
 ```
 conda create --name newenv --file requirements.txt --channel conda-forge
 conda activate newenv
