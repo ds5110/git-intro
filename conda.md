@@ -164,8 +164,8 @@ conda env remove --name myenv
 To use [Framework](https://observablehq.com/framework/), and for web development in general, 
 you need [Node.js](https://nodejs.org/en).
 You can install Node.js from directly their site, or you can install it from conda-forge.
-The down side of conda-forge is you might not have the latest version, but the up side is that 
-it's easier to delete everything that Node.js installs with conda than it is if you install Node.js directly.
+The down side of conda-forge is that you might not have the latest version, but the up side is that 
+it's easier to delete everything that Node.js installs on your system.
 
 Note: for web development, I install Node, yarn (an npm alternative that's faster), 
 and Flask (a Python web framework) from conda-forge with
