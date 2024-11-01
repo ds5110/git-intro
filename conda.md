@@ -189,9 +189,9 @@ npx @observablehq/framework@latest create
   It gets really bad if you mix package managers.
 * see: [geopandas install](https://geopandas.org/en/stable/getting_started/install.html)
 * see also: [using multiple channels](https://conda-forge.org/docs/user/tipsandtricks.html#using-multiple-channels)
-* I use conda-forge, and this is an ENV.yml created for my "geo" environment...
+* I use conda-forge, and this is an geo.yml created for my "geo" environment...
 ```
-$ conda env export --from-history>ENV.yml
+$ conda env export --from-history>geo.yml
 $ cat ENV.yml
 name: geo
 channels:
