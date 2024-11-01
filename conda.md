@@ -2,7 +2,7 @@
 
 Recommendations for setting up and using conda
 
-Conda is a system-level, binary package and environment manager. It runs on all major operating systems and platforms.
+Conda is a system-level binary package and environment manager. It runs on all major operating systems and platforms.
 
 ## First things first
 
