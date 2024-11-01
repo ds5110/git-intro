@@ -168,7 +168,7 @@ The down side of conda-forge is that you might not have the latest version, but 
 it's easier to delete everything that Node.js installs on your system.
 
 Note: for web development, I install Node, yarn (an npm alternative that's faster), 
-and Flask (a Python web framework) from conda-forge with
+and Flask (a Python web framework) from conda-forge with [observable.yml](observable.yml),
 ```
 conda env create -f observable.yml
 ```
