@@ -185,7 +185,8 @@ npx @observablehq/framework@latest create
 
 ### Geospatial
 
-* geospatial software has dependencies that can cause problems if you mix channels
+* Geospatial software has binary dependencies that can cause problems if you mix channels.
+  It gets really bad if you mix package managers.
 * see: [geopandas install](https://geopandas.org/en/stable/getting_started/install.html)
 * see also: [using multiple channels](https://conda-forge.org/docs/user/tipsandtricks.html#using-multiple-channels)
 * I use conda-forge, and this is an ENV.yml created for my "geo" environment...
