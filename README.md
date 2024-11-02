@@ -59,7 +59,8 @@ Other documents in this repo have recommmendations for [setting up a development
 
 ## Example assignment layout
 
-Suppose the assignment asks you to reproduce the first chart in Figure 1.1 of ISLR. A solution follows.
+Suppose the assignment asks you to reproduce the first chart in Figure 1.1 of 
+[ISL](https://www.statlearning.com/). A solution follows...
 
 ### Step 1: Data access
 
