@@ -48,7 +48,7 @@ If you're using a Mac, I recommend the conda version of git so you can use SSH t
 
 ## WSL
 
-If you're using macOS or Linux, skip this section. And if you have a modern laptop, skip the rest of the document. If you're using Windows, then Windows Subsystem for Linux (WSL) is a super easy install... 
+If you're using macOS or Linux, skip this section. And if you have a modern laptop and vscode is working well, skip the rest of the document. If you're using Windows, then Windows Subsystem for Linux (WSL) is a super easy install... 
 
 * [Install WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
   * Very easy. Open powershell/command prompt (windows jargon for the built-in Windows terminal)
