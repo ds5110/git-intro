@@ -15,7 +15,7 @@ Other documents in this repo have recommmendations for [setting up a development
   * ...but they're great for prototyping, in-class exercises and publishing books, like 
   [this one](https://github.com/jakevdp/PythonDataScienceHandbook)!
   * Related comments from one of our part-time MSDS students who's also a corporate executive 
-  and spends most of her time working the real world...
+  and spends most of her time working in the real world...
     > I asked a Senior Engineer about Jupyter vs. command line, and why we use Notebooks and he said, "We run 
     > everything in the terminal. The only people on the team who use Notebooks are the data scientists and they 
     > aren't deploying anything to production. Frankly it's a pain in the rear to deal with their stuff when they 
