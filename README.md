@@ -46,7 +46,7 @@ Other documents in this repo have recommmendations for [setting up a development
 * For assignments...
   * Put source code in `./src` and figures in `./figs`. 
   * Use one file for each question, not one file for all questions.
-  * Use `./docs` for a github-pages site when appropriate (e.g., projects, but not for other assignments).
+  * Use `./docs` for a github-pages site when appropriate (e.g., portfolio projects, but not homework assignments).
 * If you need to download large data files...
   * Don't put the data into your git history! Github has a file-size limit of 50 MB.
   * Instead, download the file(s) into `./data` and make sure to `.gitignore` that directory (see [git.md](git.md)).
