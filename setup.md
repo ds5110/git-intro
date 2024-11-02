@@ -64,7 +64,7 @@ If you're using macOS or Linux, skip this section. And if you have a modern lapt
   should return: `/usr/bin/curl`
 * The instructions below are getting old -- WSL seems to be improving.
 * Enable copy/paste into the terminal from the clipboard
-  * [Copy and Paste Arrives for Linux/WSL Consoles](https://devblogs.microsoft.com/commandline/copy-and-paste-arrives-for-linuxwsl-consoles/) -- microsoft.com
+  * [Copy and Paste Arrives for Linux/WSL Consoles](https://devblogs.microsoft.com/commandline/copy-and-paste-arrives-for-linuxwsl-consoles/), hooray! -- microsoft.com
 * Install miniconda
   * IMPORTANT: 
   * Use the directions for [Installing on Linux](https://docs.conda.io/projects/conda/en/stable/user-guide/install/linux.html)
@@ -126,7 +126,7 @@ defaults write com.microsoft.VSCodeExploration ApplePressAndHoldEnabled -bool fa
 * log out, then log back in
 * See: [VSCodeVim ref docs](https://github.com/VSCodeVim/Vim#mac)
 
-## matplotlib on an old (Intel) Mac
+### matplotlib on an old (Intel) Mac
 
 * Problem: My terminal would occasionally hang on my laptop using an old version of the macOS
 * Solution: Add the following to `~/.zprofile` to avoid a hang with default backend
@@ -145,7 +145,7 @@ matplotlib.use('TkAgg')
 
 * [matplotlib backends](https://matplotlib.org/stable/users/explain/backends.html)
 
-## seaborn issue on an older Mac
+### seaborn issue on an older Mac
 
 I encountered an issue on my older Mac.
 For some reason (python not installed as a framework?), plt.show() with seaborn hangs my terminal.
