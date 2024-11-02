@@ -97,7 +97,7 @@ If you're using macOS or Linux, skip this section. And if you have a modern lapt
   ```
   which should return something like `Python 3.9.12`
 
-### vscode terminal on Mac
+## vscode terminal on Mac
 
 * The problem: vscode's integrated terminal wasn't using my conda environment
   * Why? Because Microsoft still doesn't play real well with Mac
@@ -145,7 +145,7 @@ matplotlib.use('TkAgg')
 
 * [matplotlib backends](https://matplotlib.org/stable/users/explain/backends.html)
 
-### seaborn issue on an older Mac
+## seaborn issue on an older Mac
 
 I encountered an issue on my older Mac.
 For some reason (python not installed as a framework?), plt.show() with seaborn hangs my terminal.
