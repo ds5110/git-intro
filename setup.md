@@ -55,6 +55,7 @@ If you're using Windows, the Windows Subsystem for Linux (WSL) is a super easy i
   ```
   wsl --install
   ```
+* Follow [their instructions for installing vscode](https://code.visualstudio.com/docs/remote/wsl).
 * From now on, you should use the WSL terminal -- NOT powershell!!
 * Verify that you're using Linux...
   ```
