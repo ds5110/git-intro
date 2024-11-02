@@ -20,7 +20,7 @@ Other documents in this repo have recommmendations for [setting up a development
     > everything in the terminal. The only people on the team who use Notebooks are the data scientists and they 
     > aren't deploying anything to production. Frankly it's a pain in the rear to deal with their stuff when they 
     > send it over for us to scale and build into something that can be pushed to production. I wish they would stop 
-    > using Notebooks but they are addicted.
+    > using Notebooks but they are addicted."
     >
     > I had downloaded Github Desktop and was using that without realizing that is what I was doing, 
     > which also contributed to my confusion. I removed it.
