@@ -100,7 +100,7 @@ If you're using macOS or Linux, skip this section. And if you have a modern lapt
 ## vscode terminal on Mac
 
 * The problem: vscode's integrated terminal wasn't using my conda environment
-  * Why? Because Microsoft still doesn't play real well with Mac
+  * Why, you ask? Not sure. Maybe Microsoft still doesn't play real well with Mac?
   * UPDATE (late 2024): vscode seems to have improved, so instructions below are probably out of date...
 * The solution:
   * In vscode, navigate to `code->preference->setting->Features->Terminal->Integrated>Env:Osx` 
