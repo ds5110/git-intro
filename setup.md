@@ -19,7 +19,7 @@ Anyone should be able to run your code from the command line on some flavor of L
 * microsoft has since put some effort into fixing WSL so that windows works well with Linux, so nowadays, follow...
   * [their instructions for installing vscode](https://code.visualstudio.com/docs/remote/wsl) after you install WSL
   * You'll almost surely need the so-called "WSL extension", which apparently fixes a lot of the issues that I had in the "old days" (i.e., early 2024)
-  * Once you get your windows machine to work like Linux, then it's time to celebrate. And after all, it took microsoft more than a decade to get rid of IE.
+  * Once you get your windows machine to work like Linux, then it's time to celebrate. After all, it took microsoft more than a decade to get rid of IE.
   Now that Bill's gone, things seem to be improving relatively quickly.
 * After you get WSL and vscode working. Then proceed below using WSL, NOT windows!!
   * And when you're working outside vscode, make sure you're using the WSL terminal (**NOT** powershell).
