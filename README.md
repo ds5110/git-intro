@@ -13,6 +13,15 @@ Other documents in this repo have recommmendations for [setting up a development
   * [Jupyter notebooks have reproducibility problems](https://www.nature.com/articles/d41586-021-01174-w),
 so they're not acceptable for assignment submission.
   * ...but they're great for prototyping, in-class exercises and publishing books!
+  * Related comments from one of our par-time MSDS students and a corporate executive working the real world...
+  > I asked a Senior Engineer about Jupyter vs. command line, and why we use Notebooks and he said, "We run 
+  > everything in the terminal. The only people on the team who use Notebooks are the data scientists and they 
+  > aren't deploying anything to production. Frankly it's a pain in the rear to deal with their stuff when they 
+  > send it over for us to scale and build into something that can be pushed to production. I wish they would stop 
+  > using Notebooks but they are addicted.
+  >
+  > I had downloaded Github Desktop and was using that without realizing that is what I was doing, 
+  > which also contributed to my confusion. I removed it.
 * Document the entire data-processing pipeline
   * The entire pipeline must be reproducible from the command line, starting from the original data source(s).
   * Document your data source(s) and show how to access the original source(s).
