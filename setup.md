@@ -10,10 +10,19 @@ Instructions for setting up a Python environment for data science -- some opinio
 
 Anyone should be able to run your code from the command line on some flavor of Linux.
 
-* If you're using a Mac, you're all set -- the built-in terminal is great and OSX is a flavor of Linux (my favorite)
-* If you're using Windows and you don't want to buy a Mac, I recommend Windows Subsystem for Linux [(see below)](#WSL).
-  * On windows, it's important that you install WSL first. Then proceed below using WSL, NOT windows!!
-  * Once you install WSL, use the WSL terminal (**NOT** powershell) and install things for Linux (NOT windows!!)
+* If you're using a Mac, you're all set -- the built-in terminal is great and, under the hood, macOS is a "flavor" of Linux (my favorite)
+* If you're using Windows and you don't want to buy a Mac, I recommend Windows Subsystem for Linux, also known as WSL [(see below)](#WSL).
+  * On windows, it's important that you install WSL first. 
+* In the old days, when WSL was young (last year, more or less), I'd recommend the following sequence, but not anymore:
+  * ~~Then proceed below using WSL, NOT windows!!~~
+  * ~~Once you install WSL, use the WSL terminal (**NOT** powershell) and install things for Linux (NOT windows!!)~~
+* microsoft has since put some effort into fixing WSL so that windows works well with Linux, so nowadays, follow...
+  * [their instructions for installing vscode](https://code.visualstudio.com/docs/remote/wsl) after you install WSL
+  * You'll almost surely need the so-called "WSL extension", which apparently fixes a lot of the issues that I had in the "old days" (i.e., early 2024)
+  * Once you get your windows machine to work like Linux, then it's time to celebrate. After all, it took microsoft more than a decade to get rid of IE.
+  Now that Bill's gone, things seem to be improving relatively quickly.
+* After you get WSL and vscode working. Then proceed below using WSL, NOT windows!!
+  * And when you're working outside vscode, make sure you're using the WSL terminal (**NOT** powershell).
 
 ## 1. Install miniconda
 
@@ -87,26 +96,11 @@ If you're using Windows, the Windows Subsystem for Linux (WSL) is a super easy i
   ```
   which should return something like `Python 3.9.12`
 
-### My experience on a mac
-
-* For my old Intel Mac, I downloaded "Miniconda3 macOS Intel x86 64-bit bash"
-* Checked the hash with `shasum -a 256 ~/Downloads/Miniconda3-latest-MacOSX-x86_64.sh`
-* Followed the regular installation [here](https://conda.io/projects/conda/en/stable/user-guide/install/macos.html)
-* With the command: `bash Miniconda3-latest-MacOSX-x86_64.sh`
-  * When prompted with the following question:
-  ```
-  Do you wish the installer to initialize Miniconda3
-  by running conda init? [yes|no]
-  ```
-  * I responded with "yes" -- don't get impatient, because the default response is no
-* I opened a new terminal shell and my prompt began with "(base)" -- so the base environment was running
-* And I had python installed. `which python` returns `/Users/pbogden/miniconda3/bin/python`
-* And `python --version` returns `Python 3.10.8`
-
 ### vscode terminal on Mac
 
 * The problem: vscode's integrated terminal wasn't using my conda environment
   * Why? Because Microsoft still doesn't play real well with Mac
+  * UPDATE (late 2024): vscode seems to have improved, so instructions below are probably out of date...
 * The solution:
   * In vscode, navigate to `code->preference->setting->Features->Terminal->Integrated>Env:Osx` 
   * Choose `edit in settings.json`
@@ -131,9 +125,9 @@ defaults write com.microsoft.VSCodeExploration ApplePressAndHoldEnabled -bool fa
 * log out, then log back in
 * See: [VSCodeVim ref docs](https://github.com/VSCodeVim/Vim#mac)
 
-## matplotlib on an old Mac
+## matplotlib on an old (Intel) Mac
 
-* Problem: My terminal would occasionally hang on my laptop using an old version of the MacOS
+* Problem: My terminal would occasionally hang on my laptop using an old version of the macOS
 * Solution: Add the following to `~/.zprofile` to avoid a hang with default backend
 
 ```
@@ -167,7 +161,7 @@ List all the backends and the current backend with:
 print(plt.get_backend())
 print(matplotlib.rcsetup.all_backends)
 ```
-Or, to avoid using matplotlib, add the following to `~/.zprofile`:
+Or add the following to `~/.zprofile`:
 ```
 # Avoids seaborn hang on my old macbook pro
 export MPLBACKEND=qtagg
