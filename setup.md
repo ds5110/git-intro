@@ -65,6 +65,7 @@ If you're using macOS or Linux, skip this section. And if you have a modern lapt
 * The instructions below are getting old -- WSL seems to be improving.
 * Enable copy/paste into the terminal from the clipboard
   * [Copy and Paste Arrives for Linux/WSL Consoles](https://devblogs.microsoft.com/commandline/copy-and-paste-arrives-for-linuxwsl-consoles/), hooray! -- microsoft.com
+  * Since WSL keeps improving, you should check because this may already work on your machine.
 * Install miniconda
   * IMPORTANT: 
   * Use the directions for [Installing on Linux](https://docs.conda.io/projects/conda/en/stable/user-guide/install/linux.html)
