@@ -10,7 +10,7 @@ Instructions for setting up a Python environment for data science -- some opinio
 
 Anyone should be able to run your code from the command line on some flavor of Linux.
 
-* If you're using a Mac, you're all set -- the built-in terminal is great and, under the hood, macOS is a "flavor" of Linux (my favorite).
+* If you're using a Mac, you're all set -- the built-in terminal is great and, under the hood, macOS is a "flavor" of Linux (my favorite). Proceed to the next section.
 * If you're using Windows and you don't want to buy a Mac, I recommend Windows Subsystem for Linux, also known as WSL [(see below)](#WSL).
   * On windows, it's important that you install WSL first. 
 * In the old days, when WSL was young (last year, more or less), I'd recommend the following sequence, but not anymore:
