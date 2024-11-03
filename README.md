@@ -37,6 +37,13 @@ Other documents in this repo have recommmendations for [setting up a development
   They always cost money when scaled up for production in a secure environment. 
   To automate your github-pages site, I recommend [Github Actions](https://docs.github.com/en/actions).
   And if you need to scale or deploy securely: [Observable Cloud](https://observablehq.com/platform/cloud).
+* [gitignore](https://git-scm.com/docs/gitignore) large and/or private data
+  * Don't put large data files or private data (e.g., passwords) into your git history! 
+  * Github has a [50 MB limit for files](https://docs.github.com/en/enterprise-cloud@latest/repositories/working-with-files/managing-large-files/about-large-files-on-github), 
+  so if you commit a large file, you'll have to get it out ([not fun](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)).
+  * Instead, download the file(s) into `./data` and make sure to `.gitignore` that directory (see [git.md](git.md)).
+  * If you keep a local copy of data in your repo, 
+  provide clear instructions for downloading/acquiring the file from the source (for reproducibility).
 * Acknowledge
   * Cite all data sources and provide links to the original/authoritative sources.
   * If you get code and/or ideas from someone else, make sure you have their permission and 
@@ -52,13 +59,6 @@ Other documents in this repo have recommmendations for [setting up a development
   * Use `./docs` for a public facing github-pages site, and make sure it's understandable by a general audience.
   (That's for portfolio projects, but not homework or in-class exercises.)
   * Use your README.md for a technical audience (such as yourself, when applying the 6-month rule).
-* [gitignore](https://git-scm.com/docs/gitignore) large and/or private data
-  * Don't put large data files or private data (e.g., passwords) into your git history! 
-  * Github has a [50 MB limit for files](https://docs.github.com/en/enterprise-cloud@latest/repositories/working-with-files/managing-large-files/about-large-files-on-github), 
-  so if you commit a large file, you'll have to get it out ([not fun](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)).
-  * Instead, download the file(s) into `./data` and make sure to `.gitignore` that directory (see [git.md](git.md)).
-  * If you keep a local copy of data in your repo, 
-  provide clear instructions for downloading/acquiring the file from the source (for reproducibility).
 * For projects...
   * Use miniconda and share your conda environment with a YML file (see [conda.md](conda.md))
   * Consider adding [a license](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) to your repo.
