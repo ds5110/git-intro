@@ -36,7 +36,7 @@ Other documents in this repo have recommmendations for [setting up a development
   I recommend [Github Actions](https://docs.github.com/en/actions) for your github-pages sites and, 
   if you need to scale with proprietary data, [Observable Cloud](https://observablehq.com/platform/cloud).
 * Acknowledge
-  * Cite original sources and and provide links to authoritative references.
+  * Cite original sources and provide links to authoritative references.
   * Acknowledging your predecessors has a side benefit: it's a good way to avoid plagiarism.
 * Write clean code
   * Strive for self-documenting code
