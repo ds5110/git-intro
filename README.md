@@ -63,7 +63,7 @@ Other documents in this repo have recommmendations for [setting up a development
   * Use miniconda and share your conda environment with a YML file (see [conda.md](conda.md))
   * Consider adding [a license](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) to your repo.
 * If you're not sure how to set up your development environment, see [setup.md](setup.md).
-* If you find any mistakes in this repo, let me know.
+* If you find any mistakes in this repo, please let me know.
 
 ## Example assignment layout
 
