@@ -26,7 +26,8 @@ Other documents in this repo have recommmendations for [setting up a development
     > which also contributed to my confusion. I removed it.
 * Document the entire pipeline
   * The entire pipeline must be reproducible from the command line, starting from the original data source(s).
-  * Document your data source(s) and show how to access the original source(s). Provide sample/simulated data
+  * Document your data source(s) and show how to access the original source(s). 
+  * If necessary, provide sample/simulated data
   to enable testing/verification by others.
 * Use [Make](https://www.gnu.org/software/make/)
   * Make makes it particularly easy to provide clear instructions for every step in the pipeline, including data access.
