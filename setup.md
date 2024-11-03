@@ -6,205 +6,67 @@ Instructions for setting up a Python environment for data science -- some opinio
 * There are many ways to set things up. If you have something else that works, you can stay with it. 
 * However, beware that some installations and conflicting software versions can cause huge headaches.
 
-## 1. Install miniconda on Linux
+## command-line reproducibility
 
-Install miniconda on some version of Linux.
+Anyone should be able to run your code from the command line on some flavor of Linux.
 
-* If you have Mac or you're using Linux on a PC then you're in good shape.
-* If you're using Windows, then consider first installing WSL, Windows Subsystem for Linux (see below).
-* Miniconda is a minimal distribution of Python and friends that includes conda
-  * conda is a package manager
-  * conda also comes with anaconda -- anaconda is a distribution
-  * you can install miniconda or anaconda, the references below mention the differences
-  * I recommend installing miniconda with the command-line installer
-  * Conda has [channels](https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/channels.html)
-  * In general, I recommend the open source "conda-forge" channel.  It's a good idea not to mix channels.
-* Ref: [miniconda](https://docs.conda.io/projects/conda/en/stable/user-guide/install/index.html)
+* If you're using a Mac, you're all set -- the built-in terminal is great and, under the hood, macOS is a "flavor" of Linux (my favorite). So, if you're using Linux or a Mac, proceed immediately to the next section.
+* If you're using Windows and you don't want to buy a Mac, I recommend Windows Subsystem for Linux, also known as WSL [(see below)](#WSL).
+  * On windows, it's important that you install WSL first. 
+* In the old days, when WSL was young (last year, more or less), I'd recommend the following sequence, but not anymore:
+  * ~~Then proceed below using WSL, NOT windows!!~~
+  * ~~Once you install WSL, use the WSL terminal (**NOT** powershell) and install things for Linux (NOT windows!!)~~
+* microsoft has since put some effort into fixing WSL so that windows works well with Linux, so nowadays, follow...
+  * [their instructions for installing vscode](https://code.visualstudio.com/docs/remote/wsl) after you install WSL
+  * You'll almost surely need the so-called "WSL extension", which apparently fixes a lot of the issues that I had in the "old days" (i.e., early 2024)
+  * Once you get your windows machine to work like Linux, then it's time to celebrate.
+* After you get WSL and vscode working. Then proceed below using WSL, NOT windows!!
+  * And when you're working outside vscode, make sure you're using the WSL terminal (**NOT** powershell).
+
+## 1. Install miniconda
+
+* Detailed instructions are here: [conda.md](conda.md)
 
 ## 2. Install vscode
 
-You need a text editor. I recommend VScode -- a free visual text editor and IDE from Microsoft.
+You need a text editor. I recommend vscode -- a free visual text editor and aspiring IDE owned by microsoft.
 
-* https://code.visualstudio.com/download
-* VScode has issues, especially if you're using a Mac, but they can usually be resolved.
+* install instructions: https://code.visualstudio.com/download
+* if you're using WSL, then look here: https://code.visualstudio.com/docs/remote/wsl
+* note: vscode has issues and it's quirky (especially if you're using a Mac) but it's getting better all the time
+* vscode is extremely popular in the real world
 
-## 3. Install make
+## 3. Install make and git
 
-If you don't have it already, then...
+If you don't have them already, then you can install them with conda...
 ```
 conda install -c conda-forge make
+conda install -c conda-forge git
 ```
-Ref: https://anaconda.org/conda-forge/make
-
-## Why miniconda?
-
-* Recommended by Jake VanderPlas, the author of [Python Data Science Handbook (PDS)](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/00.00-Preface.ipynb)
-  * [This link](https://jakevdp.github.io/PythonDataScienceHandbook/00.00-preface.html#Installation-Considerations) points to a Jupyter notebook on github, where you'll see a recommendation to use miniconda.
-  * It's the first edition of the book, which was updated in 2022.  The more recent edition makes the same recommendation.
-* Recommended by Wes McKinney lead developer of Pandas and author or [Python for Data Analysis, 3rd Ed (2022)](https://wesmckinney.com)
-  * Section 1.4 of [Python for Data Analysis, 3rd Ed (2022)](https://wesmckinney.com/book/preliminaries.html#installation_and_setup) has the recommendation
-* [Conda myths and misconceptions](https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/)
-  * This blog post by Jake VanderPlas comparing pip & conda is a bit old (2016) but still interesting/relevant
-* Don't use pip. Or at least be careful about it.
-  * See: [Using pip in an environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#using-pip-in-an-environment) -- conda.io
-  * It discusses best practices for using conda and pip
-  * Another discussion of [conda and pip](https://www.anaconda.com/blog/understanding-conda-and-pip) -- anaconda.com
-
-## Create and activate a conda environment
-
-Create an environment with a specific version of python
-```
-conda create -n myenv python=3.9
-```
-Activate the environment and verify
-```
-conda activate myenv
-python --version
-```
-Deactivate the environment
-```
-conda deactivate
-```
-
-* [Manage environments](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) -- conda.io
-  * [Creating an environment with commands](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands)
-
-## Conda basics
-
-You can use conda to create multiple environments with various installed libraries.
-
-* create a new environment called "myenv" and install the latest seaborn and friends from conda-forge
-```
-conda create --name myenv
-conda activate myenv
-conda install -c conda-forge seaborn
-conda install -c conda-forge python
-conda install -c conda-forge pandas
-conda install -c conda-forge matplotlib
-conda install -c conda-forge 
-```
-
-* deactivate an environment
-```
-conda deactivate
-```
-
-* activate the "myenv" environment
-```
-conda activate myenv
-```
-
-* list all environments
-```
-conda env list
-```
-
-## Remove an environment
-
-```
-conda remove --name myenv --all
-```
-
-* [Remove an environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#removing-an-environment) -- conda.io
-
-## Share an environment
-
-If you're using special software, or you need a specific version, then use 
-[conda](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) 
-and provide instructions with an `environment.yml` file.
-I created an environment.yml for this repo by first running this command
-```
-conda env export > environment.yml
-```
-Then I used the `--from-history` option to get hints on editing/trimming the file into something nice and short.
-```
-conda env export --from-history
-```
-I settled on this for my environment.yml...
-```
-channels:
-  - conda-forge
-  - defaults
-dependencies:
-  - seaborn=0.11.2
-  - pyqt
-```
-Ref: [Sharing an environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment)
-
-## Create an environment from a yml file
-
-You can create an environment from a .yml file as follows:
-```
-conda env create --name myenv -f environment.yml
-```
-Remove an environment with:
-```
-conda env remove --name myenv
-```
-* Ref: [Creating an environment from an enviroment.yml file](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) -- conda.io
-
-## channels -- conda vs conda-forge
-
-* geospatial software has dependencies that can cause problems if you mix channels
-* see: [geopandas install](https://geopandas.org/en/stable/getting_started/install.html)
-* see also: [using multiple channels](https://conda-forge.org/docs/user/tipsandtricks.html#using-multiple-channels)
-* I use conda-forge, and this is an ENV.yml created from my base install...
-```
-$ conda env export --from-history>ENV.yml
-$ cat ENV.yml
-name: base
-channels:
-  - conda-forge
-  - defaults
-dependencies:
-  - python=3.10
-  - conda==22.11.1
-  - setuptools
-  - pip
-  - wheel
-  - conda-content-trust
-  - python.app
-  - geopandas
-  - contextily
-  - pyqt
-prefix: /Users/pbogden/miniconda3
-```
-
-* create a new environment called "newenv" from requirements.txt
-```
-conda create --name newenv --file requirements.txt --channel conda-forge
-conda activate newenv
-```
-
-* [conda docs](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
-* [conda cheatsheet](https://docs.conda.io/projects/conda/en/latest/_downloads/843d9e0198f2a193a3484886fa28163c/conda-cheatsheet.pdf)
+If you're using a Mac, I recommend the conda version of git so you can use SSH to authenticate on github.
 
 ## WSL
 
-Detailed instructions for installing WSL and some other useful things...
+If you're using macOS or Linux, skip this section. And if you have a modern laptop and vscode is working well, skip the rest of the document. If you're using Windows, then Windows Subsystem for Linux (WSL) is a super easy install... 
 
 * [Install WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
-  * Very easy. Open powershell/command prompt (windows jargon for the built-in terminal)
+  * Very easy. Open powershell/command prompt (windows jargon for the built-in Windows terminal)
   ```
   wsl --install
   ```
+* Follow [their instructions for installing vscode](https://code.visualstudio.com/docs/remote/wsl).
+* From now on, you should use the WSL terminal -- NOT powershell!!
 * Verify that you're using Linux...
   ```
   which curl
   ```
   should return: `/usr/bin/curl`
-* Install make
-  ```
-  sudo apt-get install make
-  ```
-  Verify that it worked...
-  ```
-  which make
-  ```
-  should return: `/usr/bin/make`
+* The instructions below are getting old -- WSL seems to be improving.
 * Enable copy/paste into the terminal from the clipboard
-  * [Copy and Paste Arrives for Linux/WSL Consoles](https://devblogs.microsoft.com/commandline/copy-and-paste-arrives-for-linuxwsl-consoles/) -- microsoft.com
+  * [Copy and Paste Arrives for Linux/WSL Consoles](https://devblogs.microsoft.com/commandline/copy-and-paste-arrives-for-linuxwsl-consoles/), hooray! -- microsoft.com
+  * Since WSL keeps improving, you should check because this may already work on your machine.
 * Install miniconda
+  * IMPORTANT: 
   * Use the directions for [Installing on Linux](https://docs.conda.io/projects/conda/en/stable/user-guide/install/linux.html)
   * Download the miniconda installer
     * Go to: https://docs.conda.io/en/latest/miniconda.html
@@ -212,6 +74,7 @@ Detailed instructions for installing WSL and some other useful things...
     * The browser will download the file to your windows C drive
 * Where's the C drive?
   * The C drive is available in Linux as `/mnt/c`
+  * In my case, it downloaded to `/mtn/c/Users/pbogj/Downloads`
 * Use the built-in Linux `sha256sum` command for [cryptographic hash verification](https://docs.conda.io/projects/conda/en/stable/user-guide/install/download.html#cryptographic-hash-verification)
   * On the command line, it'll be something like...
   ```
@@ -234,26 +97,11 @@ Detailed instructions for installing WSL and some other useful things...
   ```
   which should return something like `Python 3.9.12`
 
-## My experience on a mac
-
-* For my old Intel Mac, I downloaded "Miniconda3 macOS Intel x86 64-bit bash"
-* Checked the hash with `shasum -a 256 ~/Downloads/Miniconda3-latest-MacOSX-x86_64.sh`
-* Followed the regular installation [here](https://conda.io/projects/conda/en/stable/user-guide/install/macos.html)
-* With the command: `bash Miniconda3-latest-MacOSX-x86_64.sh`
-  * When prompted with the following question:
-  ```
-  Do you wish the installer to initialize Miniconda3
-  by running conda init? [yes|no]
-  ```
-  * I responded with "yes" -- don't get impatient, because the default response is no
-* I opened a new terminal shell and my prompt began with "(base)" -- so the base environment was running
-* And I had python installed. `which python` returns `/Users/pbogden/miniconda3/bin/python`
-* And `python --version` returns `Python 3.10.8`
-
 ## vscode terminal on Mac
 
 * The problem: vscode's integrated terminal wasn't using my conda environment
-  * Why? Because Microsoft still doesn't play real well with Mac
+  * Why, you ask? Not sure. Maybe Microsoft still doesn't play real well with Mac?
+  * UPDATE (late 2024): vscode seems to have improved, so instructions below are probably out of date...
 * The solution:
   * In vscode, navigate to `code->preference->setting->Features->Terminal->Integrated>Env:Osx` 
   * Choose `edit in settings.json`
@@ -265,11 +113,22 @@ Detailed instructions for installing WSL and some other useful things...
 ```
 * Restart vscode (e.g., from the command line: `vscode .`)
   * Then `which python` will point to python in the conda environment
-* Ref: [sfo hint](https://stackoverflow.com/questions/72908232/vs-code-terminal-not-recognising-conda-environment)
 
-## matplotlib on an old Mac
+## vscode -- enable key repeating on Mac when using vim mode
 
-* Problem: My terminal would occasionally hang on my laptop using an old version of the MacOS
+On the command line...
+```
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+defaults write com.microsoft.VSCodeInsiders ApplePressAndHoldEnabled -bool false
+defaults write com.vscodium ApplePressAndHoldEnabled -bool false
+defaults write com.microsoft.VSCodeExploration ApplePressAndHoldEnabled -bool false
+```
+* log out, then log back in
+* See: [VSCodeVim ref docs](https://github.com/VSCodeVim/Vim#mac)
+
+### matplotlib on an old (Intel) Mac
+
+* Problem: My terminal would occasionally hang on my laptop using an old version of the macOS
 * Solution: Add the following to `~/.zprofile` to avoid a hang with default backend
 
 ```
@@ -286,7 +145,7 @@ matplotlib.use('TkAgg')
 
 * [matplotlib backends](https://matplotlib.org/stable/users/explain/backends.html)
 
-### seaborn issue
+### seaborn issue on an older Mac
 
 I encountered an issue on my older Mac.
 For some reason (python not installed as a framework?), plt.show() with seaborn hangs my terminal.
@@ -303,7 +162,7 @@ List all the backends and the current backend with:
 print(plt.get_backend())
 print(matplotlib.rcsetup.all_backends)
 ```
-Or, to avoid using matplotlib, add the following to `~/.zprofile`:
+Or add the following to `~/.zprofile`:
 ```
 # Avoids seaborn hang on my old macbook pro
 export MPLBACKEND=qtagg

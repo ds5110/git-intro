@@ -1,26 +1,74 @@
-
 # git-intro
 
-A demo repository with guidelines for assignment submission.
+This README has guidelines for creating a reproducible data-science pipeline.
 
-## Document for reproducibility
+DS 5110 assignments must be reproducible from the command-line -- Jupyter notebooks are not allowed.
 
-* Jupyter notebooks are not acceptable for assignment submission (but they're great for protoytping and in-class exercises!).
-* Results must be reproducible from the original data source using the command line.
-* Document for the 6-month rule.
-* Document your data source and provide appropriate attribution.
-* Provide clear instructions for every step in the data-processing pipeline, including data access.
-* If you need to download large data files, then put them in a `data` directory and make sure to ".gitignore" it.
-* If you keep a local copy of data, provide appropriate attribution and links to the original/authoritative data source.
-* Apply DRY principles, e.g., if multiple files use the same code, then put reused code in a module and import it.
-* While there may be more than one way to do everything, here's a recommendation for assignments...
-  * Put source code in the `./src` and figures in a `./figs`
-  * Use one file for each question/step, not one file for all questions/steps.
-  * Use a Makefile to implement and document the entire data-processing pipeline.
+Other documents in this repo have recommmendations for [setting up a development environment](setup.md) that works on all platforms.
 
-## For example
+## Reproducibility
 
-Suppose the assignment asks you to reproduce the first chart in Figure 1.1 of ISLR2. The solution follows.
+* Create reproducible pipelines
+  * Reproducibility is paramount -- if someone else can't reproduce your results, there's no point.
+  * [Jupyter notebooks have reproducibility problems](https://www.nature.com/articles/d41586-021-01174-w),
+  so they're not acceptable for assignment submission.
+  * ...but they're great for prototyping, in-class exercises and publishing books, like 
+  [this one](https://github.com/jakevdp/PythonDataScienceHandbook)!
+  * Related comments from one of our part-time MSDS students who's also a corporate executive 
+  and spends most of her time working in the real world...
+    > I asked a Senior Engineer about Jupyter vs. command line, and why we use Notebooks and he said, "We run 
+    > everything in the terminal. The only people on the team who use Notebooks are the data scientists and they 
+    > aren't deploying anything to production. Frankly it's a pain in the rear to deal with their stuff when they 
+    > send it over for us to scale and build into something that can be pushed to production. I wish they would stop 
+    > using Notebooks but they are addicted."
+    >
+    > I had downloaded Github Desktop and was using that without realizing that is what I was doing, 
+    > which also contributed to my confusion. I removed it.
+* Document the entire pipeline
+  * The entire pipeline must be reproducible from the command line, starting from original data source(s).
+  * Document your data source(s) and show how to access the original source(s). 
+  * If necessary, provide sample/simulated data
+  to enable testing/verification by others.
+* Use [Make](https://www.gnu.org/software/make/)
+  * Make makes it particularly easy to provide clear instructions for every step in the pipeline, including data access.
+  * If you're not sure why, then read: [Why Use Make?](https://bost.ocks.org/mike/make/) by the legendary Mike Bostock
+  * Use the 6-month rule: document things so that, after 6 months away, you can instantly pick up where you left off.
+  * There are many tools for automating workflows. With some notable exceptions, they cost money. 
+  They always cost money when scaled up for production in a secure environment. 
+  To automate your github-pages site, I recommend [Github Actions](https://docs.github.com/en/actions).
+  And if you need to scale: [Observable Cloud](https://observablehq.com/platform/cloud).
+* Acknowledge
+  * Cite all data sources and provide links to the original/authoritative sources.
+  * If you get code and/or ideas from someone else, make sure you have their permission and 
+  that you acknowledge their contribution.
+  * Acknowledging your predecessors has a side benefit: it's a good way to avoid plagiarism.
+* Write clean code
+  * Strive for self-documenting code.
+  * Follow [PEP 8](https://peps.python.org/pep-0008/).
+  * Apply the DRY principle (Don't Repeat Yourself). For example, if multiple files use the same code, then put reused code in a module and import it.
+* For assignments...
+  * Put source code in `./src` and figures in `./figs`. 
+  * Use one file for each question, not one file for all questions.
+  * Use `./docs` for a public facing github-pages site, and make sure it's understandable by a general audience.
+  (That's for portfolio projects, but not homework or in-class exercises.)
+  * Use your README.md for a technical audience (such as yourself, when applying the 6-month rule).
+* [gitignore](https://git-scm.com/docs/gitignore) large and/or private data
+  * Don't put large data files or private data (e.g., passwords) into your git history! 
+  * Github has a [50 MB limit for files](https://docs.github.com/en/enterprise-cloud@latest/repositories/working-with-files/managing-large-files/about-large-files-on-github), 
+  so if you commit a large file, you'll have to get it out ([not fun](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)).
+  * Instead, download the file(s) into `./data` and make sure to `.gitignore` that directory (see [git.md](git.md)).
+  * If you keep a local copy of data in your repo, 
+  provide clear instructions for downloading/acquiring the file from the source (for reproducibility).
+* For projects...
+  * Use miniconda and share your conda environment with a YML file (see [conda.md](conda.md))
+  * Consider adding [a license](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) to your repo.
+* If you're not sure how to set up your development environment, see [setup.md](setup.md).
+* If you find any mistakes in this repo, please let me know.
+
+## Example assignment layout
+
+Suppose the assignment asks you to reproduce the first chart in Figure 1.1 of 
+[ISL](https://www.statlearning.com/). A solution follows...
 
 ### Step 1: Data access
 
@@ -29,63 +77,37 @@ Download the CSV file from the [ISL](http://statlearning.com) website with the f
 make data/Wage.csv
 ```
 
-* This step is automatic if you start with Q1 (below)
-* This step is necessary when you first clone the repo because CSV files are .gitignored.
-* If you don't have requisite software, like "make", then check out [setup.md](setup.md)
-* If you're not familiar with git, check out [git.md](http://github.com/ds5010/spring-2023/git.md).
+* Note: this is automatic when you type `make q1` because of the Makefile configuration.
+* This step is necessary when cloning this repo because `data` is in the .gitignore file.
+* If you don't have the requisite software, like `make`, then check out [setup.md](setup.md)
+* If you're not familiar with git, then check out [git.md](git.md).
 
-### Q1: Presentation of results
+### Q1
 
-Recreate the chart below with
+The graphic below reproduces Figure 1.1 of ISL. Recreate it with the following command:
 ```
 make q1
 ```
 
-<img src="figs/q1.png" width=500>
+<img src="figs/q1.png" width=350>
 
-* The locally generated PNG is embedded in the markdown using HTML, which allows you to set the desired width.
+* Note that the makefile has all the command-line commands for the entire pipeline.
+* Note that the demo code imports a module.
+* This markdown file embeds `figs/q1.png` using vanilla HTML:
 ```
-<img src="figs/q1.png" width=500>
+<img src="figs/q1.png" width=350>
 ```
-* You could use standard markdown syntax, but then you can't specify the width
+* With HTML, you can set the desired width.
+* If you're okay with the default width, you can use standard markdown syntax:
 ```
 ![alternative to HTML](figs/q1.png)
 ```
-Ref: [embed a PNG in markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#images).
+Refs:
+  * [github flavored markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+  * [gfm spec](https://github.github.com/gfm/)
+  * [embed a PNG in markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#images)
+  * [math in markdown](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
 
-## Share your environment (if needed)
-
-If you're using special software, or you need a specific version of a common package, then
-provide instructions for using
-[conda](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) 
-with an `environment.yml` file.
-For example, I created an environment.yml for this repo by first running this command
-```
-conda env export > environment.yml
-```
-Then I used the `--from-history` option to get hints on editing/trimming the file into something nice and short.
-```
-conda env export --from-history
-```
-I settled on this for my environment.yml...
-```
-channels:
-  - conda-forge
-  - defaults
-dependencies:
-  - seaborn=0.11.2
-  - pyqt
-```
-Ref: [Sharing an environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment)
-
-### Create an environment from yml 
-
-You can create an environment from a .yml file as follows:
-```
-conda env create --name myenv -f environment.yml
-```
-Remove an environment with:
-```
-conda env remove --name myenv
-```
-* Ref: [Creating an environment from an enviroment.yml file](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) -- conda.io
+$$
+\int e^x dx = e^x + \mathrm{const}
+$$
