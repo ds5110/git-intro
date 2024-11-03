@@ -31,7 +31,7 @@ Other documents in this repo have recommmendations for [setting up a development
   * Make makes it particularly easy to provide clear instructions for every step in the pipeline, including data access.
   * If you're not sure why, then read: [Why Use Make?](https://bost.ocks.org/mike/make/) by the legendary Mike Bostock
   * Use the 6-month rule: document things so that, after 6 months away, you can instantly pick up where you left off.
-  * There are many tools for automating workflows. With some notable exceptions, they often cost money. 
+  * There are many tools for automating workflows. With some notable exceptions, they cost money. 
   They always cost money when scaled up for production. For automated workflows, 
   I recommend [Github Actions](https://docs.github.com/en/actions) for your github-pages sites and, 
   if you need to scale with proprietary data, [Observable Cloud](https://observablehq.com/platform/cloud).
