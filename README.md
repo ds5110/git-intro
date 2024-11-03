@@ -43,8 +43,7 @@ Other documents in this repo have recommmendations for [setting up a development
 * Write clean code
   * Strive for self-documenting code
   * Follow [PEP 8](https://peps.python.org/pep-0008/)
-  * Apply the DRY principle (Don't Repeat Yourself)
-    * For example, if multiple files use the same code, then put reused code in a module and import it.
+  * Apply the DRY principle (Don't Repeat Yourself). For example, if multiple files use the same code, then put reused code in a module and import it.
 * For assignments...
   * Put source code in `./src` and figures in `./figs`. 
   * Use one file for each question, not one file for all questions.
