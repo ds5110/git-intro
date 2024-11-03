@@ -35,8 +35,8 @@ Other documents in this repo have recommmendations for [setting up a development
   * Use the 6-month rule: document things so that, after 6 months away, you can instantly pick up where you left off.
   * There are many tools for automating workflows. With some notable exceptions, they cost money. 
   They always cost money when scaled up for production in a secure environment. 
-  To automate your github-pages site, I recommend [Github Actions](https://docs.github.com/en/actions) and,
-  if you need to scale, [Observable Cloud](https://observablehq.com/platform/cloud).
+  To automate your github-pages site, I recommend [Github Actions](https://docs.github.com/en/actions).
+  And if you need to scale: [Observable Cloud](https://observablehq.com/platform/cloud).
 * Acknowledge
   * Cite all data sources and provide links to the original/authoritative sources.
   * If you get code and/or ideas from someone else, make sure you have their permission and 
