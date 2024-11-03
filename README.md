@@ -36,7 +36,7 @@ Other documents in this repo have recommmendations for [setting up a development
   * There are many tools for automating workflows. With some notable exceptions, they cost money. 
   They always cost money when scaled up for production in a secure environment. For automated workflows, 
   I recommend [Github Actions](https://docs.github.com/en/actions) for your github-pages sites and, 
-  if you need to scale with proprietary data, [Observable Cloud](https://observablehq.com/platform/cloud).
+  if you need to scale, [Observable Cloud](https://observablehq.com/platform/cloud).
 * Acknowledge
   * Cite original sources and provide links to authoritative references.
   * Acknowledging your predecessors has a side benefit: it's a good way to avoid plagiarism.
