@@ -25,7 +25,7 @@ An opinionated set of recommendations (with references) for using git from the c
 * If all you're doing is cloning a public repo, then you don't need to worry about authentication.
 * To clone a private github repo or update any kind of repo, you'll need to authenticate. You have some choices:
   * You can type your github username and password
-    * This gets old fast.
+    * That gets old fast.
   * You have a couple choices for automating things...
     * [github authentication](https://docs.github.com/en/authentication) has an overview and additional links.
     * The two main choices are SSH and github's personal access tokens.  I've used both. I recommend SSH keys.
