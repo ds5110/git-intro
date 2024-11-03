@@ -29,6 +29,15 @@ Other documents in this repo have recommmendations for [setting up a development
   * Document your data source(s) and show how to access the original source(s). 
   * If necessary, provide sample/simulated data
   to enable testing/verification by others.
+* Acknowledge
+  * Cite all data sources and provide links to the original/authoritative sources.
+  * If you get code and/or ideas from someone else, make sure you have their permission and 
+  that you acknowledge their contribution.
+  * Acknowledging your predecessors has a side benefit: it's a good way to avoid plagiarism.
+* Write clean code
+  * Strive for self-documenting code.
+  * Follow [PEP 8](https://peps.python.org/pep-0008/).
+  * Apply the DRY principle (Don't Repeat Yourself). For example, if multiple files use the same code, then put reused code in a module and import it.
 * Use [Make](https://www.gnu.org/software/make/)
   * Make makes it particularly easy to provide clear instructions for every step in the pipeline, including data access.
   * If you're not sure why, then read: [Why Use Make?](https://bost.ocks.org/mike/make/) by the legendary Mike Bostock
@@ -44,15 +53,6 @@ Other documents in this repo have recommmendations for [setting up a development
   * Instead, download the file(s) into `./data` and make sure to `.gitignore` that directory (see [git.md](git.md)).
   * If you keep a local copy of data in your repo, 
   provide clear instructions for downloading/acquiring the file from the source (for reproducibility).
-* Acknowledge
-  * Cite all data sources and provide links to the original/authoritative sources.
-  * If you get code and/or ideas from someone else, make sure you have their permission and 
-  that you acknowledge their contribution.
-  * Acknowledging your predecessors has a side benefit: it's a good way to avoid plagiarism.
-* Write clean code
-  * Strive for self-documenting code.
-  * Follow [PEP 8](https://peps.python.org/pep-0008/).
-  * Apply the DRY principle (Don't Repeat Yourself). For example, if multiple files use the same code, then put reused code in a module and import it.
 * For assignments...
   * Put source code in `./src` and figures in `./figs`. 
   * Use one file for each question, not one file for all questions.
