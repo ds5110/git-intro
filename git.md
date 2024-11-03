@@ -215,3 +215,9 @@ References:
 ## pull requests
 
 [Creating a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) -- github.com
+
+## Removing a file/directory from git history
+
+`git filter-repo` usage -- if you commit sensitive data (e.g. password) or you accidentally commit a huge file. Be careful how you deal with this.  The article on github.com is a good one...
+
+* [Removing sensitive data from a repository](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository) -- github.com
