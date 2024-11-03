@@ -5,7 +5,7 @@ An opinionated set of recommendations (with references) for using git from the c
 
 ## context
 
-"I really never wanted to do source control management at all and felt that it was just about the least interesting thing in the computing world (with the possible exception of databases ;^), and I hated all SCM’s with a passion." -- Linus Torvalds, creator of git
+"I really never wanted to do source control management at all and felt that it was just about the least interesting thing in the computing world (with the possible exception of databases ;^), and I hated all SCM’s with a passion." -- Linus Torvalds, creator of git (and Linux)
 
 * [an interview with Linus Torvalds](https://www.linuxfoundation.org/blog/blog/10-years-of-git-an-interview-with-git-creator-linus-torvalds/)
 * [git book, 2nd edition](https://git-scm.com/book/en/v2) -- git-scm.com
