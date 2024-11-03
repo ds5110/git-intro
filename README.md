@@ -49,8 +49,9 @@ Other documents in this repo have recommmendations for [setting up a development
   * Use `./docs` for a public facing github-pages site, and make sure it's understandable by a general audience.
   That's appropriate for portfolio projects, but not homework or in-class exercises.
   * Use your README.md for a technical audience (such as yourself, when applying the 6-month rule).
-* If you need to download large data files...
-  * Don't put the data into your git history! Github has a file-size limit of 50 MB.
+* [gitignore](https://git-scm.com/docs/gitignore) large an/or private data
+  * Don't put large data files or private data (passwords) into your git history! 
+  * Github has a [50 MB limit for files](https://docs.github.com/en/enterprise-cloud@latest/repositories/working-with-files/managing-large-files/about-large-files-on-github).
   * Instead, download the file(s) into `./data` and make sure to `.gitignore` that directory (see [git.md](git.md)).
   * If you keep a local copy of data in your repo, provide clear instructions for accessing the file from the source.
   * Acknowledge the data source(s) and provide links to the original/authoritative source.
