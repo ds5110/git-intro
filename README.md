@@ -47,7 +47,7 @@ Other documents in this repo have recommmendations for [setting up a development
   * Put source code in `./src` and figures in `./figs`. 
   * Use one file for each question, not one file for all questions.
   * Use `./docs` for a public facing github-pages site that's understandable by a general audience 
-  (e.g., portfolio projects, but not homework or in-class assignments).
+  (e.g., portfolio projects, but not homework or in-class exercises).
   * Use your README.md for a technical audience (such as yourself, when applying the 6-month rule).
 * If you need to download large data files...
   * Don't put the data into your git history! Github has a file-size limit of 50 MB.
