@@ -27,7 +27,7 @@ Other documents in this repo have recommmendations for [setting up a development
 * Document the entire pipeline
   * The entire pipeline must be reproducible from the command line, starting from the original data source(s).
   * Document your data source(s) and show how to access the original source(s). Provide sample/simulated data
-  to enable testing.
+  to enable testing/verification.
 * Use [Make](https://www.gnu.org/software/make/)
   * Make makes it particularly easy to provide clear instructions for every step in the pipeline, including data access.
   * If you're not sure why, then read: [Why Use Make?](https://bost.ocks.org/mike/make/) by the legendary Mike Bostock
