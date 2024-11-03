@@ -47,8 +47,8 @@ Other documents in this repo have recommmendations for [setting up a development
   To automate your github-pages site, I recommend [Github Actions](https://docs.github.com/en/actions).
   And if you need to scale or deploy securely: [Observable Cloud](https://observablehq.com/platform/cloud).
 * [gitignore](https://git-scm.com/docs/gitignore) large and/or private data
-  * Don't put large data files or private data (e.g., passwords) into your git history! 
-  * Github has a [50 MB limit for files](https://docs.github.com/en/enterprise-cloud@latest/repositories/working-with-files/managing-large-files/about-large-files-on-github), 
+  * Don't add large data files or private data (e.g., passwords) to your git history! 
+  * This is important because Github has a [50 MB limit for files](https://docs.github.com/en/enterprise-cloud@latest/repositories/working-with-files/managing-large-files/about-large-files-on-github), 
   so if you commit a large file, you'll have to get it out ([not fun](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)).
   * Instead, download the file(s) into `./data` and make sure to `.gitignore` that directory (see [git.md](git.md)).
   * If you keep a local copy of data in your repo, 
