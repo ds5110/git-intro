@@ -53,7 +53,8 @@ Other documents in this repo have recommmendations for [setting up a development
   * Don't put large data files or private data (e.g., passwords) into your git history! 
   * Github has a [50 MB limit for files](https://docs.github.com/en/enterprise-cloud@latest/repositories/working-with-files/managing-large-files/about-large-files-on-github), so if you commit a large file, you'll have to get it out (not fun).
   * Instead, download the file(s) into `./data` and make sure to `.gitignore` that directory (see [git.md](git.md)).
-  * If you keep a local copy of data in your repo, provide clear instructions for accessing the file from the source (tfor reproducibility).
+  * If you keep a local copy of data in your repo, 
+  provide clear instructions for downloading/acquiring the file from the source (for reproducibility).
   * Acknowledge the data source(s) and provide links to the original/authoritative source.
 * For projects
   * Use miniconda and share your conda environment with a YML file (see [conda.md](conda.md))
