@@ -57,7 +57,7 @@ Other documents in this repo have recommmendations for [setting up a development
   * If you keep a local copy of data in your repo, 
   provide clear instructions for downloading/acquiring the file from the source (for reproducibility).
   * Acknowledge the data source(s) and provide links to the original/authoritative source.
-* For projects
+* For projects...
   * Use miniconda and share your conda environment with a YML file (see [conda.md](conda.md))
   * Consider adding [a license](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) to your repo.
 * If you're not sure how to set up your development environment, see [setup.md](setup.md)
