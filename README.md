@@ -56,7 +56,7 @@ Other documents in this repo have recommmendations for [setting up a development
   * Instead, download the file(s) into `./data` and make sure to `.gitignore` that directory (see [git.md](git.md)).
   * If you keep a local copy of data in your repo, 
   provide clear instructions for downloading/acquiring the file from the source (for reproducibility).
-  * Acknowledge the data source(s) and provide links to the original/authoritative source.
+  * Acknowledge all data sources and provide links to the original/authoritative sources.
 * For projects...
   * Use miniconda and share your conda environment with a YML file (see [conda.md](conda.md))
   * Consider adding [a license](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) to your repo.
