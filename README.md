@@ -24,7 +24,7 @@ Other documents in this repo have recommmendations for [setting up a development
     >
     > I had downloaded Github Desktop and was using that without realizing that is what I was doing, 
     > which also contributed to my confusion. I removed it.
-* Document the entire data-processing pipeline
+* Document the entire pipeline
   * The entire pipeline must be reproducible from the command line, starting from the original data source(s).
   * Document your data source(s) and show how to access the original source(s).
 * Use [Make](https://www.gnu.org/software/make/)
