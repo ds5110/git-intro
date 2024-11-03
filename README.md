@@ -38,7 +38,9 @@ Other documents in this repo have recommmendations for [setting up a development
   To automate your github-pages site, I recommend [Github Actions](https://docs.github.com/en/actions) and,
   if you need to scale, [Observable Cloud](https://observablehq.com/platform/cloud).
 * Acknowledge
-  * Cite original sources and provide links to authoritative references.
+  * Cite all data sources and provide links to the original/authoritative sources.
+  * If you get code and/or ideas from someone else, make sure you have their permission and 
+  that you acknowledge their contribution.
   * Acknowledging your predecessors has a side benefit: it's a good way to avoid plagiarism.
 * Write clean code
   * Strive for self-documenting code
@@ -56,7 +58,6 @@ Other documents in this repo have recommmendations for [setting up a development
   * Instead, download the file(s) into `./data` and make sure to `.gitignore` that directory (see [git.md](git.md)).
   * If you keep a local copy of data in your repo, 
   provide clear instructions for downloading/acquiring the file from the source (for reproducibility).
-  * Acknowledge all data sources and provide links to the original/authoritative sources.
 * For projects...
   * Use miniconda and share your conda environment with a YML file (see [conda.md](conda.md))
   * Consider adding [a license](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) to your repo.
