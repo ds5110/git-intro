@@ -43,11 +43,6 @@ An opinionated set of recommendations (with references) for using git from the c
     * In contrast, Github's personal access tokens are good for, well, github.
     * Note: github is not git but github uses git. So beware of becoming dependent on proprietary github stuff.
 * [generating ssh keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) -- github.com
-  * This link has instructions for creating ssh keys
-  * It requires openssh, which you can install with conda
-  ```
-  conda install -c conda-forge openssh 
-  ```
 * HTTPS or SSH?
   ```
   git remote -v
