@@ -24,7 +24,7 @@ An opinionated set of recommendations (with references) for using git from the c
   but I had trouble getting Mac's git to works well with SSH.
 * The alternative is to use Mac's built-in git and follow Github's 
   [special instructions for Mac](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
-* Whatever you do, note that I do NOT recommend github desktop (or becoming dependent
+* Whatever you do, note that I do NOT recommend github desktop or github CLI (or becoming dependent
   on any github proprietary stuff). Unlike github, git is used everywhere. Github is not.
 
 ## authentication
