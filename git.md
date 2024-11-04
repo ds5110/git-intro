@@ -13,7 +13,7 @@ An opinionated set of recommendations (with references) for using git from the c
 
 ## install
 
-* If you have a Mac, you already have a version of git in `/usr/bin/git` that works with Mac's keychain 
+* If you have a Mac, you already have a version of git in `/usr/bin/git`. That version works with Mac's keychain 
   for authentication.
 * I [install git from conda-forge](https://anaconda.org/conda-forge/git) and authenticate with SSH 
   using standard Linux recommendations.
