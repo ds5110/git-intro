@@ -35,7 +35,7 @@ An opinionated set of recommendations (with references) for using git from the c
   * You have a couple choices for automating things...
     * [github authentication](https://docs.github.com/en/authentication) has an overview and additional links.
     * The two main choices are SSH and github's personal access tokens.  I've used both. I recommend SSH keys.
-    * SSH is a standard and it works other places, like the Discovery Cluster. 
+    * SSH is a standard and it works other places.
     Whatever you do, it's worth spending the time to get this stuff to work on your platform.
   * [SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
     * SSH is an authentication standard that's used in various places.
