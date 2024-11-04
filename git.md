@@ -16,7 +16,7 @@ An opinionated set of recommendations (with references) for using git from the c
 * If you have a Mac, you already have a version of git in `/usr/bin/git` that works with Mac's keychain 
   for authentication.
 * I [install git from conda-forge](https://anaconda.org/conda-forge/git) and authenticate with SSH 
-  using standard Linux recommendations (in this section).
+  using standard Linux recommendations.
   ```
   conda install -c conda-forge git
   ```
@@ -35,6 +35,8 @@ An opinionated set of recommendations (with references) for using git from the c
   * You have a couple choices for automating things...
     * [github authentication](https://docs.github.com/en/authentication) has an overview and additional links.
     * The two main choices are SSH and github's personal access tokens.  I've used both. I recommend SSH keys.
+    * SSH is a standard and it works for things like the Discovery Cluster. 
+    Whatever you do, it's worth spending the time to get this stuff to work.
   * [SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
     * SSH is an authentication standard that's used in various places.
     * If you set up SSH for github, you may be able to use the same SSH setup elsewhere.
