@@ -42,6 +42,7 @@ An opinionated set of recommendations (with references) for using git from the c
     * If you set up SSH for github, you may be able to use the same SSH setup elsewhere.
     * In contrast, Github's personal access tokens are good for, well, github.
     * Note: github is not git but github uses git. So beware of becoming dependent on proprietary github stuff.
+    (I do NOT recommend github desktop either.)
   * With SSH, you'll need to [generate ssh keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) -- github.com
 * HTTPS or SSH?
   ```
