@@ -13,16 +13,17 @@ An opinionated set of recommendations (with references) for using git from the c
 
 ## install
 
-* If you have a mac, you may already have a version of git in `/usr/bin/git` that works with mac's keychain.
+* If you have a Mac, you may already have a version of git in `/usr/bin/git` that works with mac's keychain.
 * I recommend that you [install git from conda-forge](https://anaconda.org/conda-forge/git)
   ```
   conda install -c conda-forge git
   ```
- * Note: This version of git doesn't work with the Mac keychain.
+ * Note: This version of git doesn't work with the Mac keychain, but it works well SSH.
 
 ## authentication
 
 * If all you're doing is cloning a public repo, then you don't need to worry about authentication.
+  Otherwise, you'll be typing your username and password a lot, and that gets old fast.
 * To clone a private github repo or update any kind of repo, you'll need to authenticate. You have some choices:
   * You can type your github username and password
     * That gets old fast.
