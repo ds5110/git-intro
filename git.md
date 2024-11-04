@@ -13,12 +13,14 @@ An opinionated set of recommendations (with references) for using git from the c
 
 ## install
 
-* If you have a Mac, you may already have a version of git in `/usr/bin/git` that works with mac's keychain.
+* If you have a Mac, you already have a version of git in `/usr/bin/git` that works with mac's keychain.
 * I recommend that you [install git from conda-forge](https://anaconda.org/conda-forge/git)
   ```
   conda install -c conda-forge git
   ```
- * Note: This version of git doesn't work with the Mac keychain, but it works well SSH.
+* Note: This version of git doesn't work with the Mac keychain, 
+  but I had trouble getting Mac's git to works well with SSH.
+* Or you can check out Github's [special instructions for Mac](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent).
 
 ## authentication
 
