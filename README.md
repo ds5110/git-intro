@@ -8,7 +8,7 @@ This repo also has recommmendations for setting up a platform-independent develo
 
 ## Contents
 
-* [README.md](README.md) (this document): guidelines for assignment submission in DS 5110 with github classroom.
+* [README.md](README.md) (this document): guidelines for assignment submission in DS 5110 with github classroom
 * [setup.md](setup.md): opinionated recommendations (with references) for a development environment
 * [conda.md](conda.md): cheat sheet & intro to software package management (cross-platform, polyglot, open-source)
 * [git.md](git.md): intro and extensive references for learning and using command-line git
@@ -33,7 +33,7 @@ This repo also has recommmendations for setting up a platform-independent develo
     > I had downloaded Github Desktop and was using that without realizing that is what I was doing, 
     > which also contributed to my confusion. I removed it.
 * Document the entire pipeline
-  * The entire pipeline must be reproducible from the command line, starting from original data source(s).
+  * The **entire** pipeline must be reproducible from the command line, from data source(s) to final result.
   * Document your data source(s) and show how to access the original source(s). 
   * If necessary, provide sample/simulated data
   to enable testing/verification by others.
