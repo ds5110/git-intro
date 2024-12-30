@@ -69,7 +69,7 @@ This repo also has recommmendations for setting up a platform-independent develo
 * For assignments...
   * Put source code in `./src` and figures in `./figs`. 
   * Use one file for each question, not one file for all questions.
-  * Your README.md should show your results and provide instructions to reproduce them on the command-line.
+  * Present results in the README.md and provide instructions for reproducing them from the command-line.
 * For projects...
   * Use miniconda and share your conda environment with a YML file (see [conda.md](conda.md)).
   * Assume the audience for your README.md has your technical skill level.
@@ -105,12 +105,11 @@ make q1
 <img src="figs/q1.png" width=350>
 
 * Note that the makefile has all the command-line commands for the entire pipeline.
-* Note that the demo code imports a module.
-* This markdown file embeds `figs/q1.png` using vanilla HTML:
+* Note that the demo code imports a local module (critical for the DRY princple).
+* This markdown file embeds `figs/q1.png` using vanilla HTML, which allows you to set the width:
 ```
 <img src="figs/q1.png" width=350>
 ```
-* With HTML, you can set the desired width.
 * If you're okay with the default width, you can use standard markdown syntax:
 ```
 ![alternative to HTML](figs/q1.png)
