@@ -70,6 +70,7 @@ This repo also has recommmendations for setting up a platform-independent develo
   * Put source code in `./src` and figures in `./figs`. 
   * Use one file for each question, not one file for all questions.
   * Present results in the README.md and provide instructions for reproducing them from the command-line.
+  * Format your results nicely with [markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 * For projects...
   * Use miniconda and share your conda environment with a YML file (see [conda.md](conda.md)).
   * Assume the audience for your README.md has your technical skill level.
