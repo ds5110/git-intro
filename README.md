@@ -41,7 +41,8 @@ This repo also has recommmendations for setting up a platform-independent develo
   * Cite all data sources and provide links to the original/authoritative sources.
   * If you get code and/or ideas from someone else, make sure you have their permission and 
   that you acknowledge their contribution.
-  * Acknowledging your predecessors has a side benefit: it's a good way to avoid plagiarism.
+  * Acknowledging your predecessors has a side benefit: it's a good way to avoid plagiarism. 
+  (LLMs often fail to acknowledge.)
 * Write clean code
   * Strive for self-documenting code.
   * Follow [PEP 8](https://peps.python.org/pep-0008/).
