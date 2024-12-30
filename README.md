@@ -46,14 +46,13 @@ This repo also has recommmendations for setting up a platform-independent develo
 * Write clean code in a well-organized repo
   * Strive for self-documenting code (e.g., follow [PEP 8](https://peps.python.org/pep-0008/).
   * Choose an appropriate layout for your project repository.
-  * For 5110 assignments, use one file per question, not one file for multiple questions.
   * Apply the DRY principle (Don't Repeat Yourself). 
     * For example, if multiple files use the same code, then put reused code in a module and import it.
 * Use [Make](https://www.gnu.org/software/make/)
   * Make makes it particularly easy to provide clear instructions for every step in the pipeline, including data access.
   * If you're not sure why, then read: [Why Use Make?](https://bost.ocks.org/mike/make/) by the legendary Mike Bostock
   * Use the 6-month rule: document things so that, after 6 months away, you can instantly pick up where you left off.
-* Simple websites and automated workflows, you have choices...
+* For project websites and automated workflows, you have choices...
   * Plan on using [github pages](https://docs.github.com/en/pages/quickstart) to showcase your project portfolio.
   * There are many tools for automating workflows. With some notable exceptions, they cost money. 
   * They always cost money when scaled up for production in a secure environment. 
@@ -70,13 +69,13 @@ This repo also has recommmendations for setting up a platform-independent develo
 * For assignments...
   * Put source code in `./src` and figures in `./figs`. 
   * Use one file for each question, not one file for all questions.
-  * Use `./docs` for a public facing github-pages site, and make sure it's understandable by a general audience.
-  (That's for portfolio projects, but not homework or in-class exercises.)
-  * Use your README.md for a technical audience (such as yourself, when applying the 6-month rule).
+  * Your README.md should show your results and provide instructions to reproduce them on the command-line.
 * For projects...
-  * Use miniconda and share your conda environment with a YML file (see [conda.md](conda.md))
+  * Use miniconda and share your conda environment with a YML file (see [conda.md](conda.md)).
+  * Assume the audience for your README.md has your technical skill level.
+  * Use `./docs` for a public facing github-pages site, and make sure it's understandable to a general audience.
+  (That's for portfolio projects, but not homework or in-class exercises.)
   * Consider adding [a license](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) to your repo.
-* If you're not sure how to set up your development environment, see [setup.md](setup.md).
 * If you find any mistakes in this repo, please let me know.
 
 ## Example assignment layout
