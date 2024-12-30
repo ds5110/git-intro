@@ -37,7 +37,7 @@ This repo also has recommmendations for setting up a platform-independent develo
   * Document your data source(s) and show how to access the original source(s). 
   * If necessary, provide sample/simulated data
   to enable testing/verification by others.
-* Acknowledge
+* Acknowledge, acknowledge, acknowledge
   * Cite all data sources and provide links to the original/authoritative sources.
   * If you get code and/or ideas from someone else, make sure you have their permission and 
   that you acknowledge their contribution.
