@@ -4,7 +4,7 @@ This README has guidelines for creating a reproducible data-science pipeline.
 
 DS 5110 assignments must be reproducible from the command-line -- Jupyter notebooks are not allowed.
 
-Other documents in this repo have recommmendations for setting up a platform-independent environment.
+This repo also has recommmendations for setting up a platform-independent development environment.
 
 ## Repo contents
 
