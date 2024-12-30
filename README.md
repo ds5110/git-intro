@@ -6,9 +6,9 @@ DS 5110 assignments must be reproducible from the command-line -- Jupyter notebo
 
 This repo also has recommmendations for setting up a platform-independent development environment.
 
-## Repo contents
+## Contents
 
-* [README.md](README.md) (this document): guidelines for assignment submission in DS 5110 (github classroom)
+* [README.md](README.md) (this document): guidelines for assignment submission in DS 5110 with github classroom.
 * [setup.md](setup.md): opinionated recommendations (with references) for a development environment
 * [conda.md](conda.md): cheat sheet & intro to software package management (cross-platform, polyglot, open-source)
 * [git.md](git.md): intro and extensive references for learning and using command-line git
