@@ -43,10 +43,12 @@ This repo also has recommmendations for setting up a platform-independent develo
   that you acknowledge their contribution.
   * Acknowledging your predecessors has a side benefit: it's a good way to avoid plagiarism. 
   (LLMs often fail to acknowledge.)
-* Write clean code
-  * Strive for self-documenting code.
-  * Follow [PEP 8](https://peps.python.org/pep-0008/).
-  * Apply the DRY principle (Don't Repeat Yourself). For example, if multiple files use the same code, then put reused code in a module and import it.
+* Write clean code in a well-organized repo
+  * Strive for self-documenting code (e.g., follow [PEP 8](https://peps.python.org/pep-0008/).
+  * Choose an appropriate layout for your project repository.
+  * For 5110 assignments, use one file per question, not one file for multiple questions.
+  * Apply the DRY principle (Don't Repeat Yourself). 
+    * For example, if multiple files use the same code, then put reused code in a module and import it.
 * Use [Make](https://www.gnu.org/software/make/)
   * Make makes it particularly easy to provide clear instructions for every step in the pipeline, including data access.
   * If you're not sure why, then read: [Why Use Make?](https://bost.ocks.org/mike/make/) by the legendary Mike Bostock
