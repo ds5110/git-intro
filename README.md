@@ -53,11 +53,13 @@ This repo also has recommmendations for setting up a platform-independent develo
   * Make makes it particularly easy to provide clear instructions for every step in the pipeline, including data access.
   * If you're not sure why, then read: [Why Use Make?](https://bost.ocks.org/mike/make/) by the legendary Mike Bostock
   * Use the 6-month rule: document things so that, after 6 months away, you can instantly pick up where you left off.
+* Simple websites and automated workflows, you have choices...
+  * Plan on using [github pages](https://docs.github.com/en/pages/quickstart) to showcase your project portfolio.
   * There are many tools for automating workflows. With some notable exceptions, they cost money. 
-  They always cost money when scaled up for production in a secure environment. 
+  * They always cost money when scaled up for production in a secure environment. 
   To automate your github-pages site, I recommend [Github Actions](https://docs.github.com/en/actions).
   And if you need to scale or deploy securely: [Observable Cloud](https://observablehq.com/platform/cloud).
-* [gitignore](https://git-scm.com/docs/gitignore) large and/or private data
+* Use [gitignore](https://git-scm.com/docs/gitignore) for big and/or private data
   * Don't add large data files or private data (e.g., passwords) to your git history! 
   * Size is important because Github has a [50 MB limit for files](https://docs.github.com/en/enterprise-cloud@latest/repositories/working-with-files/managing-large-files/about-large-files-on-github), 
   so if you commit a large file, you'll have to get it out ([not fun](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)).
