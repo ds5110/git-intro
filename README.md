@@ -20,8 +20,8 @@ This repo also has recommmendations for setting up a platform-independent develo
   * Reproducibility is paramount -- if someone else can't reproduce your results, there's no point.
   * [Jupyter notebooks have reproducibility problems](https://www.nature.com/articles/d41586-021-01174-w),
   so they're not acceptable for assignment submission.
-  * ...but they're great for prototyping, in-class exercises and publishing books, like 
-  [this awesome one](https://github.com/jakevdp/PythonDataScienceHandbook)!
+  * ...but they're great for prototyping, in-class exercises and publishing, 
+  like [this awesome book](https://github.com/jakevdp/PythonDataScienceHandbook)!
   * Related comments from one of our part-time MSDS students who's also a corporate executive 
   and spends most of her time working in the real world...
     > I asked a Senior Engineer about Jupyter vs. command line, and why we use Notebooks and he said, "We run 
