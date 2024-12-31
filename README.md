@@ -58,8 +58,8 @@ This repo also has recommmendations for setting up a platform-independent develo
   * Instead, provide instructions for downloading file(s) into `./data` and make sure 
   to `.gitignore` that directory or the files in it (see [git.md](git.md)).
   Or you may want to look into [git-lfs](https://docs.github.com/en/repositories/working-with-files/managing-large-files/configuring-git-large-file-storage).
-  * Size is important because Github has a [50 MB limit for files](https://docs.github.com/en/enterprise-cloud@latest/repositories/working-with-files/managing-large-files/about-large-files-on-github), 
-  so if you accidentally commit a large and/or private file, you'll have to get it out 
+  * Size is important because Github has a [50 MB limit for files](https://docs.github.com/en/enterprise-cloud@latest/repositories/working-with-files/managing-large-files/about-large-files-on-github).
+  Be warned: if you accidentally commit a large and/or private file, you'll have to get it out 
   ([not fun](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)).
 * For assignments...
   * Put source code in `./src` and figures in `./figs`. 
