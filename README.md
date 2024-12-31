@@ -75,8 +75,10 @@ This repo also has recommmendations for setting up a platform-independent develo
 * For project websites and automated workflows, you have choices...
   * Plan on using [github pages](https://docs.github.com/en/pages/quickstart) to showcase your project
   to a general audience, like the C-suite for the company where you want a job.
-  * There are many tools for automating workflows. With some notable exceptions, they cost money. 
-  * They always cost money when scaled up for production in a secure environment.
+  * There are many tools for automating workflows. 
+  * To automate your github-pages site, 
+  I recommend [Github Actions](https://docs.github.com/en/actions). It's free for small, publicly accessible projects.
+* It always costs money to scale up for production in a secure environment.
   To automate your github-pages site, I recommend [Github Actions](https://docs.github.com/en/actions).
   And if you need to scale or deploy securely: [Observable Cloud](https://observablehq.com/platform/cloud).
 * If you find any mistakes in this repo, please let me know.
