@@ -45,7 +45,7 @@ This repo also has recommmendations for setting up a platform-independent develo
   (LLMs often fail to acknowledge.)
 * Write clean code in a well-organized repo
   * Strive for self-documenting code (e.g., follow [PEP 8](https://peps.python.org/pep-0008/)). But that's not all...
-  * Choose an appropriate layout for your project repository.
+  * Choose an appropriate layout for your project repository (see below for 5110 assignments).
   * Apply the DRY principle (Don't Repeat Yourself). 
     * For example, if multiple files use the same code, then put reused code in a module and import it.
 * Use [Make](https://www.gnu.org/software/make/)
