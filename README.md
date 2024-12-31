@@ -58,7 +58,7 @@ This repo also has recommmendations for setting up a platform-independent develo
   * Size is important because Github has a [50 MB limit for files](https://docs.github.com/en/enterprise-cloud@latest/repositories/working-with-files/managing-large-files/about-large-files-on-github), 
   so if you commit a large file, you'll have to get it out ([not fun](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)).
   * Instead, provide instructions for downloading file(s) into `./data` and make sure 
-  to `.gitignore` that directory (see [git.md](git.md)).
+  to `.gitignore` that directory or the files in it (see [git.md](git.md)).
   * ...or you may want to look into [git-lfs](https://docs.github.com/en/repositories/working-with-files/managing-large-files/configuring-git-large-file-storage).
   * Whatever you do, provide clear instructions for downloading/acquiring data
   from an authoritative source and acknowledge that source.
