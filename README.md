@@ -54,7 +54,8 @@ This repo also has recommmendations for setting up a platform-independent develo
   * Use the 6-month rule: document things so that, after 6 months away, you can instantly pick up where you left off.
   Side benefit: someone else with your skills should be able to reproduce your results.
 * For project websites and automated workflows, you have choices...
-  * Plan on using [github pages](https://docs.github.com/en/pages/quickstart) to showcase your project portfolio.
+  * Plan on using [github pages](https://docs.github.com/en/pages/quickstart) to showcase your project
+  to a general audience, like the C-suite for company where you want a job.
   * There are many tools for automating workflows. With some notable exceptions, they cost money. 
   * They always cost money when scaled up for production in a secure environment.
   To automate your github-pages site, I recommend [Github Actions](https://docs.github.com/en/actions).
