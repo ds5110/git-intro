@@ -55,12 +55,12 @@ This repo also has recommmendations for setting up a platform-independent develo
   Side benefit: someone else with your skills should be able to reproduce your results.
 * Use [.gitignore](https://git-scm.com/docs/gitignore) for big and/or private data
   * Don't add large data files or private data (e.g., passwords) to your git history! 
-  Instead, provide instructions for downloading file(s) into `./data` and make sure 
+  * Instead, provide instructions for downloading file(s) into `./data` and make sure 
   to `.gitignore` that directory or the files in it (see [git.md](git.md)).
+  Or you may want to look into [git-lfs](https://docs.github.com/en/repositories/working-with-files/managing-large-files/configuring-git-large-file-storage).
   * Size is important because Github has a [50 MB limit for files](https://docs.github.com/en/enterprise-cloud@latest/repositories/working-with-files/managing-large-files/about-large-files-on-github), 
   so if you accidentally commit a large and/or private file, you'll have to get it out 
   ([not fun](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)).
-  * ...or you may want to look into [git-lfs](https://docs.github.com/en/repositories/working-with-files/managing-large-files/configuring-git-large-file-storage).
 * For assignments...
   * Put source code in `./src` and figures in `./figs`. 
   * Use one file for each question, not one file for all questions.
