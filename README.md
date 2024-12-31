@@ -49,13 +49,13 @@ This repo also has recommmendations for setting up a platform-independent develo
   * Apply the DRY principle (Don't Repeat Yourself). 
     * For example, if multiple files use the same code, then put reused code in a module and import it.
 * Use [Make](https://www.gnu.org/software/make/)
-  * Make makes it particularly easy to provide clear instructions for every step in the pipeline, including data access.
+  * Make makes it particularly easy to provide clear instructions for every step in a pipeline, including data access.
   * If you're not sure why, then read: [Why Use Make?](https://bost.ocks.org/mike/make/) by the legendary Mike Bostock
   * Use the 6-month rule: document things so that, after 6 months away, you can instantly pick up where you left off.
 * For project websites and automated workflows, you have choices...
   * Plan on using [github pages](https://docs.github.com/en/pages/quickstart) to showcase your project portfolio.
   * There are many tools for automating workflows. With some notable exceptions, they cost money. 
-  * They always cost money when scaled up for production in a secure environment. 
+  * They always cost money when scaled up for production in a secure environment.
   To automate your github-pages site, I recommend [Github Actions](https://docs.github.com/en/actions).
   And if you need to scale or deploy securely: [Observable Cloud](https://observablehq.com/platform/cloud).
 * Use [gitignore](https://git-scm.com/docs/gitignore) for big and/or private data
