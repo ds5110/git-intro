@@ -11,7 +11,7 @@ This repo also has recommmendations for setting up a platform-independent develo
 * [README.md](README.md) (this document): guidelines for github-classroom assignment submission in DS 5110
 * [setup.md](setup.md): opinionated recommendations (with references) for a development environment
 * [conda.md](conda.md): cheat sheet & intro to package management (cross-platform, polyglot, open-source)
-* [git.md](git.md): intro and extensive references for learning and using command-line git
+* [git.md](git.md): intro and extensive references for learning and using git on the command line
 * [github-classroom.md](github-classroom.md): github-classroom workflow for instructors & TAs
 
 ## Reproducibility
