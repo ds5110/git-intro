@@ -60,7 +60,7 @@ This repo also has recommmendations for setting up a platform-independent develo
   * Instead, provide instructions for downloading file(s) into `./data` and make sure 
   to `.gitignore` that directory (see [git.md](git.md)).
   * ...or you may want to look into [git-lfs](https://docs.github.com/en/repositories/working-with-files/managing-large-files/configuring-git-large-file-storage).
-  * Whatever you do, provide clear instructions for downloading/acquiring the file 
+  * Whatever you do, provide clear instructions for downloading/acquiring data
   from an authoritative source and acknowledge that source.
 * For assignments...
   * Put source code in `./src` and figures in `./figs`. 
