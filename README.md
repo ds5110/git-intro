@@ -47,7 +47,7 @@ This repo also has recommmendations for setting up a platform-independent develo
   * Strive for self-documenting code (e.g., follow [PEP 8](https://peps.python.org/pep-0008/)). But that's not all...
   * Choose an appropriate layout for your project repository (see below for 5110 assignments).
   * Apply the DRY principle (Don't Repeat Yourself). 
-    * For example, if multiple files use the same code, then put reused code in a module and import it.
+  For example, if multiple files use the same code, then put reused code in a module and import it.
 * Use [Make](https://www.gnu.org/software/make/)
   * Make makes it particularly easy to provide clear instructions for every step in a pipeline, including data access.
   * If you're not sure why, then read: [Why Use Make?](https://bost.ocks.org/mike/make/) by the legendary Mike Bostock
