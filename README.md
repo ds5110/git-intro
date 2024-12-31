@@ -53,11 +53,12 @@ This repo also has recommmendations for setting up a platform-independent develo
   * If you're not sure why, then read: [Why Use Make?](https://bost.ocks.org/mike/make/) by the legendary Mike Bostock
   * Use the 6-month rule: document things so that, after 6 months away, you can instantly pick up where you left off.
   Side benefit: someone else with your skills should be able to reproduce your results.
-* Use [gitignore](https://git-scm.com/docs/gitignore) for big and/or private data
+* Use [.gitignore](https://git-scm.com/docs/gitignore) for big and/or private data
   * Don't add large data files or private data (e.g., passwords) to your git history! 
   * Size is important because Github has a [50 MB limit for files](https://docs.github.com/en/enterprise-cloud@latest/repositories/working-with-files/managing-large-files/about-large-files-on-github), 
   so if you commit a large file, you'll have to get it out ([not fun](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)).
-  * Instead, download the file(s) into `./data` and make sure to `.gitignore` that directory (see [git.md](git.md)).
+  * Instead, provide instructions for downloading file(s) into `./data` and make sure 
+  to `.gitignore` that directory (see [git.md](git.md)).
   * ...or you may want to look into [git-lfs](https://docs.github.com/en/repositories/working-with-files/managing-large-files/configuring-git-large-file-storage).
   * Either way, if you keep a local copy of data in your repo, 
   provide clear instructions for downloading/acquiring the file from the source (for reproducibility).
