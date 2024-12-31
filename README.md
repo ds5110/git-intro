@@ -44,7 +44,7 @@ This repo also has recommmendations for setting up a platform-independent develo
   * Acknowledging your predecessors has a side benefit: it's a good way to avoid plagiarism. 
   (LLMs often fail to acknowledge.)
 * Write clean code in a well-organized repo
-  * Strive for self-documenting code (e.g., follow [PEP 8](https://peps.python.org/pep-0008/).
+  * Strive for self-documenting code (e.g., follow [PEP 8](https://peps.python.org/pep-0008/)).
   * Choose an appropriate layout for your project repository.
   * Apply the DRY principle (Don't Repeat Yourself). 
     * For example, if multiple files use the same code, then put reused code in a module and import it.
