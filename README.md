@@ -53,13 +53,6 @@ This repo also has recommmendations for setting up a platform-independent develo
   * If you're not sure why, then read: [Why Use Make?](https://bost.ocks.org/mike/make/) by the legendary Mike Bostock
   * Use the 6-month rule: document things so that, after 6 months away, you can instantly pick up where you left off.
   Side benefit: someone else with your skills should be able to reproduce your results.
-* For project websites and automated workflows, you have choices...
-  * Plan on using [github pages](https://docs.github.com/en/pages/quickstart) to showcase your project
-  to a general audience, like the C-suite for the company where you want a job.
-  * There are many tools for automating workflows. With some notable exceptions, they cost money. 
-  * They always cost money when scaled up for production in a secure environment.
-  To automate your github-pages site, I recommend [Github Actions](https://docs.github.com/en/actions).
-  And if you need to scale or deploy securely: [Observable Cloud](https://observablehq.com/platform/cloud).
 * Use [gitignore](https://git-scm.com/docs/gitignore) for big and/or private data
   * Don't add large data files or private data (e.g., passwords) to your git history! 
   * Size is important because Github has a [50 MB limit for files](https://docs.github.com/en/enterprise-cloud@latest/repositories/working-with-files/managing-large-files/about-large-files-on-github), 
@@ -79,6 +72,13 @@ This repo also has recommmendations for setting up a platform-independent develo
   * Use `./docs` for a public facing github-pages site, and make sure it's understandable to a general audience.
   (That's for portfolio projects, but not homework or in-class exercises.)
   * Consider adding [a license](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) to your repo.
+* For project websites and automated workflows, you have choices...
+  * Plan on using [github pages](https://docs.github.com/en/pages/quickstart) to showcase your project
+  to a general audience, like the C-suite for the company where you want a job.
+  * There are many tools for automating workflows. With some notable exceptions, they cost money. 
+  * They always cost money when scaled up for production in a secure environment.
+  To automate your github-pages site, I recommend [Github Actions](https://docs.github.com/en/actions).
+  And if you need to scale or deploy securely: [Observable Cloud](https://observablehq.com/platform/cloud).
 * If you find any mistakes in this repo, please let me know.
 
 ## Example assignment layout
