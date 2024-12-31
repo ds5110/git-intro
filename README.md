@@ -78,7 +78,7 @@ This repo also has recommmendations for setting up a platform-independent develo
   to a general audience, like the C-suite for the company where you want a job.
   * There are many tools for automating workflows. They're never free for production/secure sites.
   To automate the workflow in your publicly available github-pages site, 
-  I recommend [Github Actions](https://docs.github.com/en/actions). It's free for small projects.
+  I recommend [github actions](https://docs.github.com/en/actions). It's free for small projects.
   * If you need to scale things up and/or deploy securely, I recommend: [Observable Cloud](https://observablehq.com/platform/cloud).
 * If you find any mistakes in this repo, please let me know.
 
