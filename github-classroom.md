@@ -55,5 +55,5 @@ Do this at the beginning of the semester
   * NOTE: TAs must be "owners" of the associated "organization"
 * Register students
   * Easy with a list of email addresses (add them all at once)
-  * Currently it's not possible to connect github-classroom directly to canvas
+  * Currently it's not possible to connect github-classroom directly to canvas, but that may have changed.
   * Ref: https://docs.github.com/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/connect-a-learning-management-system-to-github-classroom#connecting-to-canvas-moodle-sakai-and-other-lmses

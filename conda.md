@@ -1,32 +1,35 @@
 # conda
 
-Instructions for setting up and using conda environments
+Recommendations for setting up and using conda
 
-Conda is an open-source package management system and environment management system 
-that runs on all platforms. For Windows users, I recommend first setting up
+Conda is a system-level binary package and environment manager. It runs on all major operating systems and platforms.
+
+## First things first
+
+Recommendations below assume that you're using Linux, macOS (basically Linux under the hood) or WSL (Linux in a VM).
+
+Windows users, before anything else: I highly recommend that you either buy a Mac or set up 
 [WSL](https://learn.microsoft.com/en-us/windows/wsl/about) (see [setup.md](setup.md)).
 
 ## 1. Install miniconda
 
 [Miniconda](https://docs.conda.io/projects/conda/en/stable/glossary.html#miniconda) is a free 
 installer for conda.
-It includes a minimal distribution of Python and friends.
 
-* I recommend the [command-line install](https://docs.conda.io/projects/miniconda/en/latest/)
-  * Main [miniconda install instructions](https://docs.conda.io/projects/conda/en/stable/user-guide/install/index.html)
-  * Note: you can install miniconda or anaconda, the references below describe the differences. I prefer miniconda.
-    * anaconda includes conda, but not the other way around -- anaconda is a distribution
-* [conda documentation](https://docs.conda.io/projects/conda/en/stable/)
-* Note: I created a shell script to install miniconda on my Mac (24 Nov 2023)...
-  ```
-  bash my_install.sh
-  ```
+It includes Python 3.x and a minimal distribution of Python friends.
+
+* [Conda documentation](https://docs.conda.io/projects/conda/en/stable/)
+* [Conda install docs](https://docs.conda.io/projects/conda/en/stable/) recommend installing conda via miniconda.
+  * I agree and I recommend the [command-line install](https://docs.conda.io/projects/miniconda/en/latest/) 
+  * Windows users!! Remember: if you're using WSL, then you should install the Linux version from the WSL terminal!!
+* I do not recommend that you install Anaconda. That said, you can use it if you already have it.
+  * Q: Miniconda or Anaconda? A: Miniconda.  References below describe the differences.
+  * In a nutshell: Anaconda includes conda, but not the other way around -- Anaconda is a distribution.
 
 ### Why miniconda?
 
-* Recommended by Jake VanderPlas, the author of [Python Data Science Handbook (PDS)](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/00.00-Preface.ipynb)
-  * [This link](https://jakevdp.github.io/PythonDataScienceHandbook/00.00-preface.html#Installation-Considerations) points to a Jupyter notebook on github, where you'll see a recommendation to use miniconda.
-  * It's the first edition of the book, which was updated in 2022.  The more recent edition makes the same recommendation.
+* Recommended by Jake VanderPlas, the author of [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/00.00-Preface.ipynb)
+  * Jake's [installation considerations](https://jakevdp.github.io/PythonDataScienceHandbook/00.00-preface.html#Installation-Considerations)
 * Recommended by Wes McKinney lead developer of Pandas and author or [Python for Data Analysis, 3rd Ed (2022)](https://wesmckinney.com)
   * Section 1.4 of [Python for Data Analysis, 3rd Ed (2022)](https://wesmckinney.com/book/preliminaries.html#installation_and_setup) has the recommendation
 * [Conda myths and misconceptions](https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/)
@@ -43,6 +46,7 @@ If you don't have them already, you can install `make` and `git` with conda...
 conda install make
 conda install git
 ```
+I recommend both, even if you're using a Mac and you already have Apple's version of git.
 
 ## 3. Use conda environments
 
@@ -54,7 +58,7 @@ Conda installs from [channels](https://docs.conda.io/projects/conda/en/stable/us
 
 * When you install miniconda3, you use the default channel.
 * However, if you encounter problems, I recommend the open source "conda-forge" channel.
-* conda-forge is not the default channel, but you can make it the default. 
+* conda-forge is not the default channel, but you can make it the default.
 * Do **not** mix channels, especially with geospatial software (more info below).
 ```
 conda config --show channels              # lists default channel(s)
@@ -63,7 +67,7 @@ conda config --add channels conda-forge   # set conda-forge as the default chann
 
 ### Create and activate a conda environment
 
-Create an environment with a specific version of python
+You can create an environment with a specific version of python:
 ```
 conda create -n myenv python=3.9
 ```
@@ -79,12 +83,18 @@ conda deactivate
 
 * [Manage environments](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) -- conda.io
   * [Creating an environment with commands](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands)
+* vscode: 
+  * Warning: as vscode is getting better, this recommendation for configuring vscode may now be out of date.
+  * You can manually specify the path to the conda executable to use for activation 
+  (version 4.4+). To do so, open the Command Palette (⇧⌘P).
+  * You get a dropdown menu and you can pick the conda environment of your choice
+  * On a mac, the detault was in `/usr/bin`, so you need to select the miniconda version
 
-### Install libraries in an environment
+### Install libraries in a conda environment
 
 You can use conda to create multiple environments with various installed libraries.
 
-* create a new environment called "myenv" and install the latest scikit-learn and friends from conda-forge
+* create a new environment called "myenv" and install (by hand) the latest scikit-learn and friends from conda-forge
 ```
 conda create --name myenv
 conda activate myenv
@@ -94,6 +104,7 @@ conda install -c conda-forge python
 conda install -c conda-forge pandas
 conda install -c conda-forge matplotlib
 conda install -c conda-forge make
+conda install -c conda-forge git
 ```
 
 * deactivate an environment
@@ -132,15 +143,8 @@ Then I used the `--from-history` option to get hints on editing/trimming the fil
 ```
 conda env export --from-history
 ```
-I settled on this for my environment.yml...
-```
-channels:
-  - conda-forge
-  - defaults
-dependencies:
-  - seaborn=0.11.2
-  - pyqt
-```
+Here's my latest [environment.yml](environment.yml).
+
 Ref: [Sharing an environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment)
 
 ### Create an environment from a yml file
@@ -155,19 +159,43 @@ conda env remove --name myenv
 ```
 * Ref: [Creating an environment from an enviroment.yml file](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) -- conda.io
 
-### geospatial
+### Observable
 
-* geospatial software has dependencies that can cause problems if you mix channels
+To use [Framework](https://observablehq.com/framework/), and for web development in general, 
+you need [Node.js](https://nodejs.org/en).
+You can install Node.js from directly their site, or you can install it from conda-forge.
+The down side of conda-forge is that you might not have the latest version, but the up side is that 
+it's easier to delete everything that Node.js installs on your system.
+
+Note: for web development, I install Node, yarn (an npm alternative that's faster), 
+and Flask (a Python web framework) from conda-forge with [observable.yml](observable.yml),
+```
+conda env create -f observable.yml
+```
+
+then activate the environment
+```
+conda activate observable
+```
+
+then [install Framework](https://observablehq.com/framework/) with their recommendation:
+```
+npx @observablehq/framework@latest create
+```
+
+### Geospatial
+
+* Geospatial software has binary dependencies that can cause problems if you mix channels.
+  It gets really bad if you mix package managers.
 * see: [geopandas install](https://geopandas.org/en/stable/getting_started/install.html)
 * see also: [using multiple channels](https://conda-forge.org/docs/user/tipsandtricks.html#using-multiple-channels)
-* I use conda-forge, and this is an ENV.yml created for my "geo" environment...
+* I use conda-forge, and this is an geo.yml created for my "geo" environment...
 ```
-$ conda env export --from-history>ENV.yml
+$ conda env export --from-history>geo.yml
 $ cat ENV.yml
 name: geo
 channels:
   - conda-forge
-  - defaults
 dependencies:
   - python=3.10
   - conda==22.11.1
@@ -182,7 +210,7 @@ dependencies:
 prefix: /Users/pbogden/miniconda3
 ```
 
-* create a new environment called "newenv" from requirements.txt
+* to create a new environment called "newenv" from requirements.txt
 ```
 conda create --name newenv --file requirements.txt --channel conda-forge
 conda activate newenv

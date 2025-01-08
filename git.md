@@ -1,11 +1,11 @@
 
 # git
 
-An opinionated set of references for using git (from the command line)
+An opinionated set of recommendations (with references) for using git from the command line.
 
 ## context
 
-"I really never wanted to do source control management at all and felt that it was just about the least interesting thing in the computing world (with the possible exception of databases ;^), and I hated all SCM’s with a passion." -- Linus Torvalds, creator of git
+"I really never wanted to do source control management at all and felt that it was just about the least interesting thing in the computing world (with the possible exception of databases ;^), and I hated all SCM’s with a passion." -- Linus Torvalds, creator of git (and Linux)
 
 * [an interview with Linus Torvalds](https://www.linuxfoundation.org/blog/blog/10-years-of-git-an-interview-with-git-creator-linus-torvalds/)
 * [git book, 2nd edition](https://git-scm.com/book/en/v2) -- git-scm.com
@@ -13,34 +13,40 @@ An opinionated set of references for using git (from the command line)
 
 ## install
 
-* If you have a mac, you may already have a version of git in `/usr/bin/git` that works with mac's keychain.
-* I recommend that you [install git from conda-forge](https://anaconda.org/conda-forge/git)
+* If you have a Mac, you already have a version of git in `/usr/bin/git`. That version works with Mac's keychain 
+  for authentication.
+* I [install git from conda-forge](https://anaconda.org/conda-forge/git) and authenticate with SSH 
+  using standard Linux recommendations.
   ```
   conda install -c conda-forge git
   ```
- * Note: This version of git doesn't work with the Mac keychain.
+* Note: This version of git doesn't work with the Mac keychain, 
+  but I had trouble getting Mac's git to works well with SSH.
+* The alternative is to use Mac's built-in git and follow Github's 
+  [special instructions for Mac](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
+* Whatever you do, note that I do NOT recommend github desktop or github CLI (or becoming dependent
+  on any github proprietary stuff). Unlike github, git is used everywhere. Github is not. That said, we'll be using use github.
 
 ## authentication
 
-* If all you're doing is cloning a public repo, then you don't need to worry about authentication.
+* If all you're doing is cloning a public repo and working locally, 
+  then you don't need to worry about authentication. However, we'll be working with github a lot.
 * To clone a private github repo or update any kind of repo, you'll need to authenticate. You have some choices:
-  * You can type your github username and password
-    * This gets old fast.
+  * You can type your github username and password a lot (NOT recommended).
+    * That gets old fast.
   * You have a couple choices for automating things...
     * [github authentication](https://docs.github.com/en/authentication) has an overview and additional links.
-    * The two main choices are SSH and github's personal access tokens.  I've used both. I recommend SSH keys.
+    * The two main choices are SSH and github's personal access tokens.  I've used both.
+    * I recommend SSH keys.
+    * Whatever you do, it's worth spending the time to get this stuff to work on your platform.
   * [SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
     * SSH is an authentication standard that's used in various places.
     * If you set up SSH for github, you may be able to use the same SSH setup elsewhere.
     * In contrast, Github's personal access tokens are good for, well, github.
     * Note: github is not git but github uses git. So beware of becoming dependent on proprietary github stuff.
-* [generating ssh keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) -- github.com
-  * This link has instructions for creating ssh keys
-  * It requires openssh, which you can install with conda
-  ```
-  conda install -c conda-forge openssh 
-  ```
-* HTTPS or SSH?
+    (I do NOT recommend github desktop either.)
+  * With SSH, you'll need to [generate ssh keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) -- github.com
+* Are you using HTTPS or SSH?
   ```
   git remote -v
   ```
@@ -55,7 +61,7 @@ These tutorials are extensive. Some describe advanced usage of git and github --
   * [Beginner guide](https://www.atlassian.com/git/tutorials/what-is-version-control)
   * [Setting up a repository](https://www.atlassian.com/git/tutorials/setting-up-a-repository)
   * [Collaborating](https://www.atlassian.com/git/tutorials/syncing)
-* [github starter course](https://github.com/education/github-starter-course)
+* [github starter course](https://github.com/classroom-resources/github-starter-course)
   * The overview page has links to many detailed topics.
 * [github cli](https://docs.github.com/en/github-cli) -- github.com
   * The github CLI is NOT the same as "git" on the command line (I don't use it)
@@ -80,7 +86,7 @@ Reference: [Clone a repository](https://docs.github.com/en/repositories/creating
 
 **IMPORTANT:** Do NOT commit large files (> 50 MB) with git. List them in `.gitignore` instead!
 
-You can't push files larger than 100 MB to github.com, and you start getting nasty messages at 50 MB. So if you accidentally commit a large file with git, remove it **before** you push it!!
+You can't push files larger than 100 MB to github.com, and you start getting nasty messages at 50 MB. So if you accidentally commit a large file with git, remove it **before** you commit it!!
 
 You should also gitignore files with sensitive data (passwords, passkeys, etc.)!
 
@@ -151,6 +157,11 @@ To checkout a previous commit
 ```
 $ get checkout <tag/branch/commit id>
 ```
+If you made some changes and you want to revert then
+```
+git restore . # revert any changes that don't want to commit
+git clean -f  # delete any untracked files (beware -- it really deletes them)
+```
 You can reset to a previous commit (but you'll lose everything you did since then!!)
 ```
 $ get reset --hard <tag/branch/commit id>
@@ -191,13 +202,28 @@ git merge demo
 ```
 * You need to specify the upstream for the branch before you can "push" or "pull"
 
+To update a dev branch with changes that were made in main while you were working in dev...
+```
+git checkout main  # make sure main is up to date
+git pull
+git checkout demo
+git merge main     # or use `git rebase` -- see reference below
+```
+
 References: 
 
 * [git branch](https://git-scm.com/docs/git-branch) -- git-scm.com
 * [Git branching](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) -- git-scm.com
 * [About branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)
 * [Working with branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches#working-with-branches)
+* [Merging vs rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing) -- atlassian.com
 
 ## pull requests
 
 [Creating a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) -- github.com
+
+## Removing a file/directory from git history
+
+`git filter-repo` usage -- if you commit sensitive data (e.g. password) or you accidentally commit a huge file. Be careful how you deal with this.  The article on github.com is a good one...
+
+* [Removing sensitive data from a repository](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository) -- github.com

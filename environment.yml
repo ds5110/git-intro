@@ -1,7 +1,17 @@
-name: myenv
+name: base
 channels:
   - conda-forge
+  - defaults
 dependencies:
-  - seaborn=0.11.2
-  - make
+  - python=3.11
   - git
+  - make
+  - pandas
+  - conda-forge::seaborn
+  - conda-forge::geopandas
+  - conda-forge::geojson
+  - conda-forge::contextily
+  - conda-forge::imageio
+  - conda-forge::aspell
+  - conda-forge::git-filter-repo
+prefix: /Users/pbogden/miniconda3
