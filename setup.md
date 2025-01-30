@@ -54,6 +54,7 @@ If you're using macOS or Linux, skip this section. And if you have a modern lapt
   ```
   wsl --install
   ```
+* Follow [their instructions for setting up a development environment](https://learn.microsoft.com/en-us/windows/wsl/setup/environment)
 * Follow [their instructions for installing vscode](https://code.visualstudio.com/docs/remote/wsl).
 * From now on, you should use the WSL terminal -- NOT powershell!!
 * Verify that you're using Linux...

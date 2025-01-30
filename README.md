@@ -89,7 +89,7 @@ Suppose the assignment asks you to reproduce the first chart in Figure 1.1 of
 
 ### Step 1: Data access
 
-Download the CSV file from the [ISL](http://statlearning.com) website with the following command
+Download the CSV file that's used in [ISL](http://statlearning.com) with the following command
 ```
 make data/Wage.csv
 ```
