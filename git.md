@@ -114,9 +114,9 @@ After you make a change in to your local repository, check to see what you chang
 ```
 $ git status
 ```
-Stage some or all of the changes (`git add .` stages all of them)
+Stage the changes in the file called "filename" (`git add .` stages all of them)
 ```
-$ git add .
+$ git add filename
 ```
 Then commit the staged changes with a message
 ```
