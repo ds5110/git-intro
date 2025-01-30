@@ -43,7 +43,7 @@ This repo also has recommmendations for setting up a platform-independent develo
   * If you get code and/or ideas from someone else, make sure you have their permission and 
   that you acknowledge their contribution.
   * Acknowledging your predecessors has a side benefit: it's a good way to avoid plagiarism. 
-  (In addition to hallucinating (lying?), LLMs often fail to acknowledge.)
+  Note: in addition to hallucinating (lying?), LLMs often fail to acknowledge.
 * Write clean code in a well-organized repo
   * Strive for self-documenting code (e.g., follow [PEP 8](https://peps.python.org/pep-0008/)). But that's not all...
   * Choose an appropriate layout for your project repository (see below for 5110 assignments).
