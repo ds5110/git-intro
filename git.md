@@ -122,7 +122,7 @@ Then commit the staged changes with a message
 ```
 $ git commit -m "I made a small but super-important change to such and such."
 ```
-Verify things (you can do this a lot -- it's just a sanity check)
+Verify things (I do this a lot -- it's often just a sanity check)
 ```
 $ git status
 ```
