@@ -13,6 +13,7 @@ This repo also has recommmendations for setting up a platform-independent develo
 * [conda.md](conda.md): cheat sheet & intro to package management (cross-platform, polyglot, open-source)
 * [git.md](git.md): intro and extensive references for learning and using git on the command line
 * [github-classroom.md](github-classroom.md): github-classroom workflow for instructors & TAs
+* Additional resources from an awesome TA: [Useful for DS 5110](https://github.com/charVANder/Useful-for-DS5110)
 
 ## Reproducibility
 
@@ -42,7 +43,7 @@ This repo also has recommmendations for setting up a platform-independent develo
   * If you get code and/or ideas from someone else, make sure you have their permission and 
   that you acknowledge their contribution.
   * Acknowledging your predecessors has a side benefit: it's a good way to avoid plagiarism. 
-  (LLMs often fail to acknowledge.)
+  Note: in addition to hallucinating (lying?), LLMs often fail to acknowledge.
 * Write clean code in a well-organized repo
   * Strive for self-documenting code (e.g., follow [PEP 8](https://peps.python.org/pep-0008/)). But that's not all...
   * Choose an appropriate layout for your project repository (see below for 5110 assignments).
