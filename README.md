@@ -34,7 +34,7 @@ This repo also has recommmendations for setting up a platform-independent develo
     > I had downloaded Github Desktop and was using that without realizing that is what I was doing, 
     > which also contributed to my confusion. I removed it.
 * Document the entire pipeline
-  * The **entire** pipeline must be reproducible from the command line, from data source(s) to final result.
+  * The **entire** pipeline must be reproducible from the command line; original data source(s) to final result.
   * Document **authoritative** data source(s), and show how to access those source(s).
   * If necessary, provide sample/simulated data cleansed of PII to enable testing/verification by others.
 * Acknowledge, acknowledge, acknowledge
