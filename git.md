@@ -30,7 +30,8 @@ An opinionated set of recommendations (with references) for using git from the c
 ## authentication
 
 * If all you're doing is cloning a public repo and working locally, 
-  then you don't need to worry about authentication. However, we'll be working with github a lot.
+  then you don't need to worry about authentication. However, we'll be working with github a lot
+  and pushing to public and private repos (created by github-classroom).
 * To clone a private github repo or update any kind of repo, you'll need to authenticate. You have some choices:
   * You can type your github username and password a lot (NOT recommended).
     * That gets old fast.
@@ -40,7 +41,7 @@ An opinionated set of recommendations (with references) for using git from the c
     * I recommend SSH keys.
     * Whatever you do, it's worth spending the time to get this stuff to work on your platform.
   * [SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-    * SSH is an authentication standard that's used in various places.
+    * SSH is an authentication standard that's used all over the place.
     * If you set up SSH for github, you may be able to use the same SSH setup elsewhere.
     * In contrast, Github's personal access tokens are good for, well, github.
     * Note: github is not git but github uses git. So beware of becoming dependent on proprietary github stuff.
@@ -113,15 +114,15 @@ After you make a change in to your local repository, check to see what you chang
 ```
 $ git status
 ```
-Stage some or all of the changes (`git add .` stages all of them)
+Stage the changes in the file called "filename" (`git add .` stages all of them)
 ```
-$ git add .
+$ git add filename
 ```
 Then commit the staged changes with a message
 ```
 $ git commit -m "I made a small but super-important change to such and such."
 ```
-Verify things (you can do this a lot -- it's just a sanity check)
+Verify things (I do this a lot -- it's often just a sanity check)
 ```
 $ git status
 ```
