@@ -3,10 +3,11 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.11
+  - python=3.13
   - git
   - make
-  - pandas
+  - numpy=2.2
+  - pandas=2.2
   - conda-forge::seaborn
   - conda-forge::geopandas
   - conda-forge::geojson
