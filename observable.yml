@@ -1,7 +1,6 @@
 name: observable
 channels:
   - conda-forge
-  - defaults
 dependencies:
   - conda-forge::nodejs
   - conda-forge::yarn
