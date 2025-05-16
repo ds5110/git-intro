@@ -1,30 +1,37 @@
 # conda
 
-Recommendations for setting up and using conda
+Recommendations for setting up and using Conda.
 
-Conda is a system-level binary package and environment manager. It runs on all major operating systems and platforms.
+Conda is a system-level binary package and environment manager that runs on all 
+major operating systems and platforms. 
+
+I recommend Miniconda, but not Anaconda.
+And for various reasons, I recommend the [conda-forge](https://conda-forge.org/docs/) distribution.
+Note: We'll do everything with open source software.
+There's no need to pay any licensing fees.
+
+Note: There's a Conda alternative called Mamba, which is recommended by some folks
+(e.g., Berkeley: [Conda and Mamba](https://statistics.berkeley.edu/computing/conda)). 
+As of May 2025, [Northeastern's Research Computing still recommends Conda](https://rc-docs.northeastern.edu/en/latest/software/packagemanagers/conda.html), so I will too, at least for now.
 
 ## First things first
 
-Recommendations below assume that you're using Linux, macOS (basically Linux under the hood) or WSL (Linux in a VM).
+Recommendations below assume that you're using Linux, 
+macOS (basically Linux under the hood) or WSL (Linux in a VM).
 
 Windows users, before anything else: I highly recommend that you either buy a Mac or set up 
 [WSL](https://learn.microsoft.com/en-us/windows/wsl/about) (see [setup.md](setup.md)).
 
 ## 1. Install miniconda
 
-[Miniconda](https://docs.conda.io/projects/conda/en/stable/glossary.html#miniconda) is a free 
-installer for conda.
-
+[Miniconda](https://docs.conda.io/projects/conda/en/stable/glossary.html#miniconda) 
+is a free installer for Conda.
 It includes Python 3.x and a minimal distribution of Python friends.
-
+* I recommend the [command-line (terminal) install](https://www.anaconda.com/docs/getting-started/miniconda/install)
+  * Windows users: if you're using WSL, then install the Linux version from the WSL terminal!!
 * [Conda documentation](https://docs.conda.io/projects/conda/en/stable/)
-* [Conda install docs](https://docs.conda.io/projects/conda/en/stable/) recommend installing conda via miniconda.
-  * I agree and I recommend the [command-line install](https://docs.conda.io/projects/miniconda/en/latest/) 
-  * Windows users!! Remember: if you're using WSL, then you should install the Linux version from the WSL terminal!!
-* I do not recommend that you install Anaconda. That said, you can use it if you already have it.
-  * Q: Miniconda or Anaconda? A: Miniconda.  References below describe the differences.
-  * In a nutshell: Anaconda includes conda, but not the other way around -- Anaconda is a distribution.
+  * Although I do not recommend Anaconda, you can use it if you already have it.
+  * In a nutshell: Anaconda includes Conda and many other things. And it's missing some things.
 
 ### Why miniconda?
 
@@ -56,10 +63,9 @@ I recommend both, even if you're using a Mac and you already have Apple's versio
 
 Conda installs from [channels](https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/channels.html)
 
-* When you install miniconda3, you use the default channel.
-* However, if you encounter problems, I recommend the open source "conda-forge" channel.
-* conda-forge is not the default channel, but you can make it the default.
-* Do **not** mix channels, especially with geospatial software (more info below).
+* When you install miniconda3, it sets a "default" channel called "default". 
+* I recommend the "conda-forge" channel, and you you can make it the default.
+* Beware of mixing channels, especially with geospatial software (more info below).
 ```
 conda config --show channels              # lists default channel(s)
 conda config --add channels conda-forge   # set conda-forge as the default channel
