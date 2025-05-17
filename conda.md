@@ -17,7 +17,7 @@ As of May 2025, [Northeastern's Research Computing still recommends Conda](https
 ## First things first
 
 Recommendations below assume that you're using Linux, 
-macOS (basically Linux under the hood) or WSL (Linux in a VM).
+macOS (basically Linux under the hood) or WSL (Windows Subsystem for Linux).
 
 Windows users, before anything else: I highly recommend that you either buy a Mac or set up 
 [WSL](https://learn.microsoft.com/en-us/windows/wsl/about) (see [setup.md](setup.md)).
@@ -33,7 +33,7 @@ It includes Python 3.x and a minimal distribution of Python friends.
   * Although I do not recommend Anaconda, you can use it if you already have it.
   * In a nutshell: Anaconda includes Conda and many other things. And it's missing some things.
 
-### Why miniconda?
+#### Why miniconda?
 
 * Recommended by Jake VanderPlas, the author of [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/00.00-Preface.ipynb)
   * Jake's [installation considerations](https://jakevdp.github.io/PythonDataScienceHandbook/00.00-preface.html#Installation-Considerations)

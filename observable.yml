@@ -4,7 +4,6 @@ channels:
 dependencies:
   - conda-forge::nodejs
   - conda-forge::yarn
-  - werkzeug==3.0
-  - flask==3.0
+  - werkzeug==3.1
+  - flask==3.1
   - make
-  - git

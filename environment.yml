@@ -1,10 +1,8 @@
-name: base
+name: ds
 channels:
   - conda-forge
-  - defaults
 dependencies:
   - python=3.13
-  - git
   - make
   - numpy=2.2
   - pandas=2.2
