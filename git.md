@@ -13,30 +13,28 @@ An opinionated set of recommendations (with references) for using git from the c
 
 ## install
 
-* If you have a Mac, you already have a version of git in `/usr/bin/git`. That version works with Mac's keychain 
-  for authentication.
-* I [install git from conda-forge](https://anaconda.org/conda-forge/git) and authenticate with SSH 
-  using standard Linux recommendations.
+* Depending on your operating system, you may already have git.
+* If you have a Mac, you have a version of git in `/usr/bin/git`. 
+* Or you can install git from conda-forge...
   ```
   conda install -c conda-forge git
   ```
-* Note: This version of git doesn't work with the Mac keychain, 
-  but I had trouble getting Mac's git to works well with SSH.
-* The alternative is to use Mac's built-in git and follow Github's 
-  [special instructions for Mac](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
-* Whatever you do, note that I do NOT recommend github desktop or github CLI (or becoming dependent
-  on any github proprietary stuff). Unlike github, git is used everywhere. Github is not. That said, we'll be using use github.
+* Whatever you do, note that I do NOT recommend github desktop or github CLI (or becoming 
+  dependent on any github proprietary stuff). Unlike github, git is used everywhere. 
+  Github is not. That said, we'll be using github.
 
 ## authentication
 
 * If all you're doing is cloning a public repo and working locally, 
   then you don't need to worry about authentication. However, we'll be working with github a lot
   and pushing to public and private repos (created by github-classroom).
-* To clone a private github repo or update any kind of repo, you'll need to authenticate. You have some choices:
+* To clone a private github repo or update any kind of repo, you'll need to authenticate. 
+  You have some choices:
   * You can type your github username and password a lot (NOT recommended).
     * That gets old fast.
   * You have a couple choices for automating things...
-    * [github authentication](https://docs.github.com/en/authentication) has an overview and additional links.
+    * [github authentication](https://docs.github.com/en/authentication) has an overview 
+    and additional links.
     * The two main choices are SSH and github's personal access tokens.  I've used both.
     * I recommend SSH keys.
     * Whatever you do, it's worth spending the time to get this stuff to work on your platform.
