@@ -138,11 +138,10 @@ conda remove --name myenv --all
 
 * [Remove an environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#removing-an-environment) -- conda.io
 
-### Share an environment
+### YML files
 
-If you're using special software, or you need a specific version, then use 
-[conda](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) 
-and provide instructions with an `environment.yml` file.
+Use YML files to [manage](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html),
+and [share](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment) your conda environments.
 I created an environment.yml for this repo by first running this command
 ```
 conda env export > environment.yml
@@ -152,8 +151,6 @@ Then I used the `--from-history` option to get hints on editing/trimming the fil
 conda env export --from-history
 ```
 Here's my latest [environment.yml](environment.yml).
-
-Ref: [Sharing an environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment)
 
 ### Create an environment from a yml file
 
@@ -169,22 +166,16 @@ conda env remove --name myenv
 
 ### Web dev
 
-To use [Framework](https://observablehq.com/framework/), and for web development in general, 
-you need [Node.js](https://nodejs.org/en).
-You can install Node.js from from nodejs.org, and it's also available from conda-forge.
-
-My [framework.yml](framework.yml) has several things for web development, including Node.js,
-Flask (a Python back-end framework) and yarn (an faster npm alternative).
+For web development, you need [Node.js](https://nodejs.org/en).
+You can install Node.js directly from from nodejs.org, and it's also available from conda-forge.
+I use [Observable Framework](https://observablehq.com/framework/) and several other things.
+My [framework.yml](framework.yml) includes Node.js, Flask (a Python back-end framework) 
+and yarn (an faster npm alternative). So I use
 ```
 conda env create -f framework.yml
-```
-
-then activate the environment
-```
 conda activate framework
 ```
-
-then [install Observable Framework](https://observablehq.com/framework/) with
+and then [install Observable Framework](https://observablehq.com/framework/) with
 ```
 npx @observablehq/framework@latest create
 ```
