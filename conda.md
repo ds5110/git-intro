@@ -5,10 +5,13 @@ Recommendations for setting up and using Conda.
 Conda is a system-level binary package and environment manager that runs on all 
 major operating systems and platforms. 
 
-I recommend Miniconda, but not Anaconda.
-And for various reasons, I recommend the [conda-forge](https://conda-forge.org/docs/) distribution.
+I recommend [Miniconda](https://docs.conda.io/projects/conda/en/stable/glossary.html#miniconda),
+which is a free installer for Conda.
 Note: We'll do everything with open source software.
 There's no need to pay any licensing fees.
+For this and other reasons, 
+I recommend the [conda-forge](https://conda-forge.org/docs/) distribution.
+I do not recommend Anaconda.
 
 Note: There's a Conda alternative called Mamba, which is recommended by some folks
 (e.g., Berkeley: [Conda and Mamba](https://statistics.berkeley.edu/computing/conda)). 
@@ -48,12 +51,11 @@ It includes Python 3.x and a minimal distribution of Python friends.
 
 ## 2. Install some basics
 
-If you don't have them already, you can install `make` and `git` with conda...
+If you don't have it already [install `make`](https://anaconda.org/conda-forge/make/) from
+the conda-forge channel (more on channels below)...
 ```
-conda install make
-conda install git
+conda install conda-forge::make
 ```
-I recommend both, even if you're using a Mac and you already have Apple's version of git.
 
 ## 3. Use conda environments
 
@@ -63,9 +65,11 @@ I recommend both, even if you're using a Mac and you already have Apple's versio
 
 Conda installs from [channels](https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/channels.html)
 
-* When you install miniconda3, it sets a "default" channel called "default". 
-* I recommend the "conda-forge" channel, and you you can make it the default.
-* Beware of mixing channels, especially with geospatial software (more info below).
+* When you install miniconda3, it sets a "default" channel called "default".
+* I recommend the "conda-forge" channel, which is open source. 
+* You can set "conda-forge" as the default channel, as I've done.
+* Anaconda is a distribution that has issues, which you can read about elsewhere. I don't use it.
+* Beware of mixing channels, especially with geospatial software (more on that below).
 ```
 conda config --show channels              # lists default channel(s)
 conda config --add channels conda-forge   # set conda-forge as the default channel
@@ -73,7 +77,7 @@ conda config --add channels conda-forge   # set conda-forge as the default chann
 
 ### Create and activate a conda environment
 
-You can create an environment with a specific version of python:
+You can create an environment called "myenv" with a specific version of python:
 ```
 conda create -n myenv python=3.9
 ```
@@ -100,30 +104,28 @@ conda deactivate
 
 You can use conda to create multiple environments with various installed libraries.
 
-* create a new environment called "myenv" and install (by hand) the latest scikit-learn and friends from conda-forge
+* You can create a new environment called "myenv" and install (by hand) the 
+  latest scikit-learn and friends from conda-forge
 ```
 conda create --name myenv
 conda activate myenv
-conda install -c conda-forge scikit-learn
-conda install -c conda-forge seaborn
-conda install -c conda-forge python
-conda install -c conda-forge pandas
-conda install -c conda-forge matplotlib
-conda install -c conda-forge make
-conda install -c conda-forge git
+conda install -c conda-forge::python
+conda install -c conda-forge::scikit-learn
+conda install -c conda-forge::seaborn
+conda install -c conda-forge::pandas
+conda install -c conda-forge::matplotlib
+conda install -c conda-forge::make
 ```
-
-* deactivate an environment
-```
-conda deactivate
-```
-
-* activate the "myenv" environment
+* Rather than install by hand, I recommend YML files (see below)
+* Once installed, activate the "myenv" environment
 ```
 conda activate myenv
 ```
-
-* list all environments
+* And deactivate the currently activated environment
+```
+conda deactivate
+```
+* List all installed environments
 ```
 conda env list
 ```
