@@ -10,18 +10,15 @@ Instructions for setting up a Python environment for data science -- some opinio
 
 Anyone should be able to run your code from the command line on some flavor of Linux.
 
-* If you're using a Mac, you're all set -- the built-in terminal is great and, under the hood, macOS is a "flavor" of Linux (my favorite). So, if you're using Linux or a Mac, proceed immediately to the next section.
-* If you're using Windows and you don't want to buy a Mac, I recommend Windows Subsystem for Linux, also known as WSL [(see below)](#WSL).
-  * On windows, it's important that you install WSL first. 
-* In the old days, when WSL was young (last year, more or less), I'd recommend the following sequence, but not anymore:
-  * ~~Then proceed below using WSL, NOT windows!!~~
-  * ~~Once you install WSL, use the WSL terminal (**NOT** powershell) and install things for Linux (NOT windows!!)~~
-* microsoft has since put some effort into fixing WSL so that windows works well with Linux, so nowadays, follow...
-  * [their instructions for installing vscode](https://code.visualstudio.com/docs/remote/wsl) after you install WSL
-  * You'll almost surely need the so-called "WSL extension", which apparently fixes a lot of the issues that I had in the "old days" (i.e., early 2024)
-  * Once you get your windows machine to work like Linux, then it's time to celebrate.
-* After you get WSL and vscode working. Then proceed below using WSL, NOT windows!!
-  * And when you're working outside vscode, make sure you're using the WSL terminal (**NOT** powershell).
+* If you're already using Linux, great.
+* If you're using a Mac, you're all set. 
+  The built-in terminal is great and, under the hood, macOS is a "flavor" of Linux (my favorite). 
+  So, if you're using Linux or a Mac, proceed immediately to the next section.
+* If you're using Windows and you don't want to buy a Mac, 
+  I recommend Windows Subsystem for Linux (WSL)
+  * There's good documentation on 
+  [Developing with WSL](https://code.visualstudio.com/docs/remote/wsl).
+  * For us, the WSL terminal works, PowerShell does not.
 
 ## 1. Install miniconda
 
@@ -31,19 +28,19 @@ Anyone should be able to run your code from the command line on some flavor of L
 
 You need a text editor. I recommend vscode -- a free visual text editor and aspiring IDE owned by microsoft.
 
-* install instructions: https://code.visualstudio.com/download
-* if you're using WSL, then look here: https://code.visualstudio.com/docs/remote/wsl
-* note: vscode has issues and it's quirky (especially if you're using a Mac) but it's getting better all the time
+* Install instructions: https://code.visualstudio.com/download
+* If you're using WSL, follow their directions.
+* vscode has issues and it's quirky (especially if you're using a Mac) but it's 
+  getting better all the time
 * vscode is extremely popular in the real world
 
-## 3. Install make and git
+## 3. Install make
 
 If you don't have them already, then you can install them with conda...
 ```
-conda install -c conda-forge make
-conda install -c conda-forge git
+conda install conda-forge::make
 ```
-If you're using a Mac, I recommend the conda version of git so you can use SSH to authenticate on github.
+See: https://anaconda.org/conda-forge/make/
 
 ## WSL
 
@@ -62,7 +59,7 @@ If you're using macOS or Linux, skip this section. And if you have a modern lapt
   which curl
   ```
   should return: `/usr/bin/curl`
-* The instructions below are getting old -- WSL seems to be improving.
+* The instructions below are getting old. I'm keeping themm for reference. WSL is improving.
 * Enable copy/paste into the terminal from the clipboard
   * [Copy and Paste Arrives for Linux/WSL Consoles](https://devblogs.microsoft.com/commandline/copy-and-paste-arrives-for-linuxwsl-consoles/), hooray! -- microsoft.com
   * Since WSL keeps improving, you should check because this may already work on your machine.
@@ -71,16 +68,11 @@ If you're using macOS or Linux, skip this section. And if you have a modern lapt
   * Use the directions for [Installing on Linux](https://docs.conda.io/projects/conda/en/stable/user-guide/install/linux.html)
   * Download the miniconda installer
     * Go to: https://docs.conda.io/en/latest/miniconda.html
-    * Download the installer for your architecture (I had to use the nonstandard "Miniconda Linux-aarch64 64-bit")
+    * Download the installer for your architecture
     * The browser will download the file to your windows C drive
 * Where's the C drive?
   * The C drive is available in Linux as `/mnt/c`
   * In my case, it downloaded to `/mtn/c/Users/pbogj/Downloads`
-* Use the built-in Linux `sha256sum` command for [cryptographic hash verification](https://docs.conda.io/projects/conda/en/stable/user-guide/install/download.html#cryptographic-hash-verification)
-  * On the command line, it'll be something like...
-  ```
-  sha256sum /mnt/c/Documents\ and\ Settings/your.name/Downloads/Miniconda3-latest-Linux-X86_64.sh
-  ```
 * Install miniconda from the command line with something like...
   ```
   bash /mnt/c/Documents\ and\ Settings/your.name/Downloads/Miniconda3-latest-Linux-X86_64.sh
@@ -98,26 +90,13 @@ If you're using macOS or Linux, skip this section. And if you have a modern lapt
   ```
   which should return something like `Python 3.9.12`
 
-## vscode terminal on Mac
+## ignore stuff below here
 
-* The problem: vscode's integrated terminal wasn't using my conda environment
-  * Why, you ask? Not sure. Maybe Microsoft still doesn't play real well with Mac?
-  * UPDATE (late 2024): vscode seems to have improved, so instructions below are probably out of date...
-* The solution:
-  * In vscode, navigate to `code->preference->setting->Features->Terminal->Integrated>Env:Osx` 
-  * Choose `edit in settings.json`
-  * Add the following
-```
-"terminal.integrated.env.osx": {  
-          "PATH": null
- }
-```
-* Restart vscode (e.g., from the command line: `vscode .`)
-  * Then `which python` will point to python in the conda environment
+It's just for my reference because I was using a very old Mac...
 
-## vscode -- enable key repeating on Mac when using vim mode
+### vscode -- enable key repeating on Mac when using vim mode
 
-On the command line...
+Hard to believe that I had to do this. On the command line...
 ```
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 defaults write com.microsoft.VSCodeInsiders ApplePressAndHoldEnabled -bool false
