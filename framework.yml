@@ -1,4 +1,4 @@
-name: observable
+name: framework
 channels:
   - conda-forge
 dependencies:

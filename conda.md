@@ -165,62 +165,36 @@ conda env remove --name myenv
 ```
 * Ref: [Creating an environment from an enviroment.yml file](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) -- conda.io
 
-### Observable
+### Web dev
 
 To use [Framework](https://observablehq.com/framework/), and for web development in general, 
 you need [Node.js](https://nodejs.org/en).
-You can install Node.js from directly their site, or you can install it from conda-forge.
-The down side of conda-forge is that you might not have the latest version, but the up side is that 
-it's easier to delete everything that Node.js installs on your system.
+You can install Node.js from from nodejs.org, and it's also available from conda-forge.
 
-Note: for web development, I install Node, yarn (an npm alternative that's faster), 
-and Flask (a Python web framework) from conda-forge with [observable.yml](observable.yml),
+My [framework.yml](framework.yml) has several things for web development, including Node.js,
+Flask (a Python back-end framework) and yarn (an faster npm alternative).
 ```
-conda env create -f observable.yml
+conda env create -f framework.yml
 ```
 
 then activate the environment
 ```
-conda activate observable
+conda activate framework
 ```
 
-then [install Framework](https://observablehq.com/framework/) with their recommendation:
+then [install Observable Framework](https://observablehq.com/framework/) with
 ```
 npx @observablehq/framework@latest create
 ```
 
 ### Geospatial
 
-* Geospatial software has binary dependencies that can cause problems if you mix channels.
-  It gets really bad if you mix package managers.
+* Geospatial software has dependencies that can cause problems.
+  It can get especially bad if you mix package managers!
 * see: [geopandas install](https://geopandas.org/en/stable/getting_started/install.html)
 * see also: [using multiple channels](https://conda-forge.org/docs/user/tipsandtricks.html#using-multiple-channels)
-* I use conda-forge, and this is an geo.yml created for my "geo" environment...
-```
-$ conda env export --from-history>geo.yml
-$ cat ENV.yml
-name: geo
-channels:
-  - conda-forge
-dependencies:
-  - python=3.10
-  - conda==22.11.1
-  - setuptools
-  - pip
-  - wheel
-  - conda-content-trust
-  - python.app
-  - geopandas
-  - contextily
-  - pyqt
-prefix: /Users/pbogden/miniconda3
-```
 
-* to create a new environment called "newenv" from requirements.txt
-```
-conda create --name newenv --file requirements.txt --channel conda-forge
-conda activate newenv
-```
+### Conda docs
 
 * [conda docs](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 * [conda cheatsheet](https://docs.conda.io/projects/conda/en/latest/_downloads/843d9e0198f2a193a3484886fa28163c/conda-cheatsheet.pdf)
