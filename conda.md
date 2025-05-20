@@ -93,12 +93,7 @@ conda deactivate
 
 * [Manage environments](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) -- conda.io
   * [Creating an environment with commands](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands)
-* vscode: 
-  * Warning: as vscode is getting better, this recommendation for configuring vscode may now be out of date.
-  * You can manually specify the path to the conda executable to use for activation 
-  (version 4.4+). To do so, open the Command Palette (⇧⌘P).
-  * You get a dropdown menu and you can pick the conda environment of your choice
-  * On a mac, the detault was in `/usr/bin`, so you need to select the miniconda version
+* vscode instructions for conda environments: https://code.visualstudio.com/docs/python/environments
 
 ### Install libraries in a conda environment
 
