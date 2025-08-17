@@ -149,11 +149,11 @@ Here's my latest [environment.yml](environment.yml).
 
 ### Create an environment from a yml file
 
-You can create an environment from a .yml file as follows:
+Create an environment called "myenv" from a YML file:
 ```
 conda env create --name myenv -f environment.yml
 ```
-Remove an environment with:
+Remove the "myenv" environment with:
 ```
 conda env remove --name myenv
 ```

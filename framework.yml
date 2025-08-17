@@ -2,8 +2,8 @@ name: framework
 channels:
   - conda-forge
 dependencies:
-  - conda-forge::nodejs
-  - conda-forge::yarn
+  - nodejs
+  - yarn
   - werkzeug==3.1
   - flask==3.1
   - make
