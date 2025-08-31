@@ -45,7 +45,7 @@ If you find a mistake, please submit a pull request (or let me know).
   * Acknowledging your predecessors has a side benefit: it's a good way to avoid plagiarism. 
   Note: in addition to hallucinating (lying?), LLMs often fail to acknowledge.
 * Write clean code in a well-organized repo
-  * Strive for self-documenting code (e.g., follow [PEP 8](https://peps.python.org/pep-0008/)). But that's not all...
+  * Strive for self-documenting code (e.g., follow [PEP 8](https://peps.python.org/pep-0008/) in Python). But that's not all...
   * Choose an appropriate layout for your project repository (see below for 5110 assignments).
   * Apply the DRY principle (Don't Repeat Yourself). 
   For example, if multiple files use the same code, then put reused code in a module and import it.
@@ -82,7 +82,6 @@ If you find a mistake, please submit a pull request (or let me know).
   * There are many tools for automating workflows. They're never free for production/secure sites.
   To automate the workflow for your publicly available github-pages site, 
   I recommend [github actions](https://docs.github.com/en/actions). It's free for small projects.
-  * If you need to scale things up and/or deploy securely, I recommend: [Observable Cloud](https://observablehq.com/platform/cloud).
 
 ## Example assignment layout
 
