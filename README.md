@@ -5,6 +5,7 @@ Guidelines for creating a reproducible data-science pipeline.
 DS 5110 assignments must be reproducible from the command-line -- Jupyter notebooks are not allowed.
 
 This repo also has recommmendations for setting up a platform-independent development environment.
+If you find a mistake, please submit a pull request (or let me know).
 
 ## Contents
 
@@ -17,7 +18,7 @@ This repo also has recommmendations for setting up a platform-independent develo
 
 ## Reproducibility
 
-* Create reproducible pipelines
+* Create reproducible repositories
   * Reproducibility is paramount -- if someone else can't reproduce your results, there's no point.
   * [Jupyter notebooks have reproducibility problems](https://www.nature.com/articles/d41586-021-01174-w),
   so they're not acceptable for assignment submission.
@@ -33,8 +34,8 @@ This repo also has recommmendations for setting up a platform-independent develo
     >
     > I had downloaded Github Desktop and was using that without realizing that is what I was doing, 
     > which also contributed to my confusion. I removed it.
-* Document the entire pipeline
-  * The **entire** pipeline must be reproducible from the command line; original data source(s) to final result.
+* Document your repository
+  * Everything must be reproducible from the command line
   * Document **authoritative** data source(s), and show how to access those source(s).
   * If necessary, provide sample/simulated data cleansed of PII to enable testing/verification by others.
 * Acknowledge, acknowledge, acknowledge
@@ -48,11 +49,6 @@ This repo also has recommmendations for setting up a platform-independent develo
   * Choose an appropriate layout for your project repository (see below for 5110 assignments).
   * Apply the DRY principle (Don't Repeat Yourself). 
   For example, if multiple files use the same code, then put reused code in a module and import it.
-* Use [Make](https://www.gnu.org/software/make/)
-  * Make makes it particularly easy to provide clear instructions for every step in a pipeline, including data access.
-  * If you're not sure why, then read: [Why Use Make?](https://bost.ocks.org/mike/make/) by the legendary Mike Bostock
-  * Use the 6-month rule: document things so that, after 6 months away, you can instantly pick up where you left off.
-  Side benefit: someone else with your skills should be able to reproduce your results.
 * Use [.gitignore](https://git-scm.com/docs/gitignore) for big and/or private data
   * Don't add large data files or private data (e.g., passwords) to your git history! 
   * Instead, provide instructions for downloading file(s) into `./data` and make sure 
@@ -61,6 +57,14 @@ This repo also has recommmendations for setting up a platform-independent develo
   * Size is important because Github has a [50 MB limit for files](https://docs.github.com/en/enterprise-cloud@latest/repositories/working-with-files/managing-large-files/about-large-files-on-github).
   Be warned: if you accidentally commit a large and/or private file, you'll have to get it out 
   ([not fun](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)).
+
+## For assignments and projects
+
+* Use [Make](https://www.gnu.org/software/make/)
+  * Make makes it particularly easy to provide clear instructions for every step in a pipeline, including data access.
+  * If you're not sure why, then read: [Why Use Make?](https://bost.ocks.org/mike/make/) by the legendary Mike Bostock
+  * Use the 6-month rule: document things so that, after 6 months away, you can instantly pick up where you left off.
+  Side benefit: someone else with your skills should be able to reproduce your results.
 * For assignments...
   * Put source code in `./src` and figures in `./figs`. 
   * Use one file for each question, not one file for all questions.
@@ -79,7 +83,6 @@ This repo also has recommmendations for setting up a platform-independent develo
   To automate the workflow for your publicly available github-pages site, 
   I recommend [github actions](https://docs.github.com/en/actions). It's free for small projects.
   * If you need to scale things up and/or deploy securely, I recommend: [Observable Cloud](https://observablehq.com/platform/cloud).
-* If you find any mistakes in this repo, please let me know.
 
 ## Example assignment layout
 
