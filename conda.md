@@ -161,19 +161,7 @@ conda env remove --name myenv
 
 ### Web dev
 
-For web development, you need [Node.js](https://nodejs.org/en), which includes npm.
-You need it to develop with [Observable Framework](https://observablehq.com/framework/).
-You can install Node.js directly from from nodejs.org; it's also available from conda-forge.
-My [framework.yml](framework.yml) includes Node.js, Flask (a Python back-end framework) 
-and yarn (a fast npm alternative).
-```
-conda env create -f framework.yml
-conda activate framework
-```
-and then [install Observable Framework](https://observablehq.com/framework/) with
-```
-npx @observablehq/framework@latest create
-```
+For web development (e.g., [Observable Framework](https://observablehq.com/framework/)), see [node.md](node.md)
 
 ### Geospatial
 
