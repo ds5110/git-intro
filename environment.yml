@@ -3,7 +3,6 @@ channels:
   - conda-forge
 dependencies:
   - python=3.13
-  - make
   - numpy=2.2
   - pandas=2.2
   - conda-forge::seaborn

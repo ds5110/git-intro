@@ -7,6 +7,10 @@ DS 5110 assignments must be reproducible from the command-line -- Jupyter notebo
 This repo also has recommmendations for setting up a platform-independent development environment.
 If you find a mistake, please submit a pull request (or let me know).
 
+## make & git
+
+I'm using the versions that come with Mac's command-line tools
+
 ## Contents
 
 * [README.md](README.md) (this document): guidelines for github-classroom assignment submission in DS 5110
@@ -71,7 +75,7 @@ If you find a mistake, please submit a pull request (or let me know).
   * Present results in the README.md and provide instructions for reproducing them from the command-line.
   * Format your results nicely with [markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 * For projects...
-  * Use miniconda and share your conda environment with a YML file (see [conda.md](conda.md)).
+  * Use miniforge and share your conda environment with a YML file (see [conda.md](conda.md)).
   * Assume the audience for your README.md has your technical skill level.
   * Use `./docs` for a public facing github-pages site, and make sure it's understandable to a general audience.
   (That's for portfolio projects, but not homework or in-class exercises.)

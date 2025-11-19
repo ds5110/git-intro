@@ -6,4 +6,3 @@ dependencies:
   - yarn
   - werkzeug==3.1
   - flask==3.1
-  - make
