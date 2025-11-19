@@ -9,7 +9,8 @@ If you find a mistake, please submit a pull request (or let me know).
 
 ## make & git
 
-I'm using the versions that come with Mac's command-line tools
+* I'm using the versions that come with Mac's command-line tools
+* **TODO** Clean up [git-intro](https://github.com/ds5110/git-intro)
 
 ## Contents
 
