@@ -1,8 +1,0 @@
-name: framework
-channels:
-  - conda-forge
-dependencies:
-  - nodejs
-  - yarn
-  - werkzeug==3.1
-  - flask==3.1
