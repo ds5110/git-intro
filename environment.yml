@@ -12,4 +12,3 @@ dependencies:
   - conda-forge::imageio
   - conda-forge::aspell
   - conda-forge::git-filter-repo
-prefix: /Users/pbogden/miniconda3
