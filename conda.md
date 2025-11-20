@@ -12,20 +12,21 @@ I recommend [conda-forge](https://conda-forge.org/) and [miniforge](https://gith
 #### Why conda-forge and miniforge?
 
 * There's been a growing division between Anaconda (proprietary) and 
-  [Conda-Forge](https://conda-forge.org/) (open source).
-  They are 2 different software "distributions" that use "conda".
-  [Conda](https://docs.conda.io/en/latest/) is an environment and package manager for any language (not just Python).
-* The minimal installer for Anaconda is miniconda. The open counterpart to miniconda is miniforge.
-* Channel incompatibilies developed in 2024. Since incompatibilities are relatively recent, 
-  you won't see them discussed in recent data science books that recommend miniconda, such as...
+  [Conda-Forge](https://conda-forge.org/) (open source).  They both use conda.
+* The minimal installer for Anaconda is miniconda; it's open counterpart is miniforge.
+* [Conda](https://docs.conda.io/en/latest/) is an environment and package manager for any language (not just Python).
+* Conda uses [channels](https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/channels.html), 
+  which are software distributions.
+* Don't mix channels.
+  If you do, then you risk mysterious errors or dependency resolution problems that can be hard to debug
+  ("impossible" might be a more appropriate word).
+  That said, if you're already using conda and it works for you, then you may not need this document.
+* Problems developed in 2024 when Anaconda's default channel developed incompatibilities with conda forge.
+  That means you won't see them discussed in some recent data science books that recommend miniconda, such as...
   * Jake VanderPlas, the author of 
   [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook)
   * Wes McKinney lead developer of Pandas and author of 
   [Python for Data Analysis, 3rd Ed (2022)](https://wesmckinney.com)
-* Don't mix channels.
-If you do, then you risk mysterious errors or dependency resolution problems that can be hard to debug
-("impossible" might be a more appropriate word).
-That said, if you're already using conda and it works for you, then you may not need this document.
 
 ## First things first
 
