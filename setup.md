@@ -53,17 +53,17 @@ conda install conda-forge::make
 If you're using macOS or Linux, skip this section. If you're using Windows, 
 then WSL is a super easy install... 
 
-* [Install WSL](https://learn.microsoft.com/en-us/windows/wsl/install) -- these are Microsoft docs.
+* [Install WSL](https://learn.microsoft.com/en-us/windows/wsl/install) -- microsoft.com
   * Very easy. Open powershell...
   ```
   wsl --install
   ```
-* Follow [Microsoft instructions for setting up a development environment](https://learn.microsoft.com/en-us/windows/wsl/setup/environment)
+* Follow [Microsoft instructions for setting up a development environment](https://learn.microsoft.com/en-us/windows/wsl/setup/environment).
 * Follow [Microsoft instructions for installing vscode](https://code.visualstudio.com/docs/remote/wsl).
 * From now on, use the WSL terminal -- NOT powershell!!
-* Verify that you're using Linux, for example...
+* To verify that you're using Linux, try...
   ```
   which curl
   ```
   should return: `/usr/bin/curl`
-* Q: Where's the C drive?  A: The C drive is available in Linux as `/mnt/c`
+* Q: Where's the C drive?  A: It's available in Linux as `/mnt/c`
