@@ -53,15 +53,10 @@ It includes Python 3.x and a minimal distribution of Python friends.
 
 ## 2. Use conda environments
 
-* [conda environments](https://docs.conda.io/projects/conda/en/stable/glossary.html#conda-environment) -- docs.conda.io
-* See the [common conda coommands](#common-conda-commands) section below.
-
-## 3. Install make
-
-If you don't have it already, you can [install `make` from conda-forge](https://github.com/conda-forge/make-feedstock).
-```
-conda install conda-forge::make
-```
+* What's a conda environment? A: 
+  [conda environment](https://docs.conda.io/projects/conda/en/stable/glossary.html#conda-environment) -- docs.conda.io
+* [conda user guide](https://docs.conda.io/projects/conda/en/latest/user-guide/index.html) -- docs.conda.io
+* I've added some [common conda commands](#common-conda-commands) in the section below.
 
 ### Channels
 
@@ -76,6 +71,8 @@ Conda installs from [channels](https://docs.conda.io/projects/conda/en/stable/us
 conda config --show channels              # lists default channel(s)
 conda config --add channels conda-forge   # set conda-forge as the default channel
 ```
+
+## Common conda commands
 
 ### Create and activate a conda environment
 
