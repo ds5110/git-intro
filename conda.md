@@ -45,9 +45,9 @@ It includes Python 3.x and a minimal distribution of Python friends.
   * Jake VanderPlas, the author of [Python Data Science Handbook, 2nd Ed (2022)](https://github.com/jakevdp/PythonDataScienceHandbook/) -- github.com
   * Wes McKinney lead developer of Pandas and author or [Python for Data Analysis, 3rd Ed (2022)](https://wesmckinney.com)
 * And then there's pip!
-  * Jake VanderPlas talks about pip & conda in an old (2016) but still interesting/relevant blog post:
+  * Jake VanderPlas talks about pip & conda in an old (2016) but still interesting and relevant blog post:
   [Conda myths and misconceptions](https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/)
-* Avoid pip if you can. And if you can't, thenl at least be careful about it.
+* Avoid pip if you can. And if you can't, then at least be careful about it.
   * See: [Using pip in an environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#using-pip-in-an-environment) -- conda.io
   * The link has best practices for using conda and pip
 
@@ -58,14 +58,13 @@ It includes Python 3.x and a minimal distribution of Python friends.
 * [conda user guide](https://docs.conda.io/projects/conda/en/latest/user-guide/index.html) -- docs.conda.io
 * I've added some [common conda commands](#common-conda-commands) in the section below.
 
-### Channels
+### 3. Don't mix channels
 
 Conda installs from [channels](https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/channels.html)
 
-* When you install miniconda3, it sets a "default" channel called "default".
 * I recommend the "conda-forge" channel, which is open source. 
-* You can set "conda-forge" as the default channel, as I've done.
-* Anaconda is a distribution that has issues, which you can read about elsewhere. I don't use it.
+* When you install miniconda or Anacoda, they set a default channel called "default".
+* Their "default" conflicts
 * Beware of mixing channels, especially with geospatial software (more on that below).
 ```
 conda config --show channels              # lists default channel(s)
