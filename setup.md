@@ -13,11 +13,13 @@ Anyone should be able to run your code from the command line on a "Unix-like" OS
 * If you're already using Linux, great.
 * If you're using a Mac, that's also great.
   The built-in terminal is all you need. Under the hood, macOS is Unix-like.
-* If you're using Windows and you don't want to buy a Mac, I recommend Windows Subsystem for Linux (WSL)
-  * WSL is a Microsoft setup for running Linux in Windows.
+* If you're using Windows and you don't want to buy a Mac, I recommend Windows Subsystem for Linux:
+  [WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
+  * WSL is a Microsoft's setup for running Linux in Windows
+  (additional notes [below](https://github.com/ds5110/git-intro/blob/main/setup.md#windows-users)).
   * There's good documentation on 
   [Developing with WSL](https://code.visualstudio.com/docs/remote/wsl).
-* Warning: the WSL terminal is not PowerShell!!  And the PowerShell is not Linux!
+  * Warning: the WSL terminal is not PowerShell, and the PowerShell is not Linux! This often causes confusion.
 
 ## 1. Install conda
 
@@ -49,19 +51,19 @@ conda install conda-forge::make
 ## Windows users
 
 If you're using macOS or Linux, skip this section. If you're using Windows, 
-then Windows Subsystem for Linux (WSL) is a super easy install... 
+then WSL is a super easy install... 
 
-* [Install WSL](https://learn.microsoft.com/en-us/windows/wsl/install) -- these are Microsoft docs.
+* [Install WSL](https://learn.microsoft.com/en-us/windows/wsl/install) -- microsoft.com
   * Very easy. Open powershell...
   ```
   wsl --install
   ```
-* Follow [Microsoft instructions for setting up a development environment](https://learn.microsoft.com/en-us/windows/wsl/setup/environment)
+* Follow [Microsoft instructions for setting up a development environment](https://learn.microsoft.com/en-us/windows/wsl/setup/environment).
 * Follow [Microsoft instructions for installing vscode](https://code.visualstudio.com/docs/remote/wsl).
 * From now on, use the WSL terminal -- NOT powershell!!
-* Verify that you're using Linux, for example...
+* To verify that you're using Linux, try...
   ```
   which curl
   ```
   should return: `/usr/bin/curl`
-* Q: Where's the C drive?  A: The C drive is available in Linux as `/mnt/c`
+* Q: Where's the C drive?  A: It's available in Linux as `/mnt/c`
