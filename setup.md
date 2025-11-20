@@ -15,7 +15,7 @@ Anyone should be able to run your code from the command line on a "Unix-like" OS
   The built-in terminal is all you need. Under the hood, macOS is Unix-like.
 * If you're using Windows and you don't want to buy a Mac, I recommend Windows Subsystem for Linux:
   [WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
-  * WSL is a Microsoft setup for running Linux in Windows.
+  * WSL is a Microsoft's setup for running Linux in Windows.
   * There's good documentation on 
   [Developing with WSL](https://code.visualstudio.com/docs/remote/wsl).
   * Warning: the WSL terminal is not PowerShell and the PowerShell is not Linux! This often causes confusion.
