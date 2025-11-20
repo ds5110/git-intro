@@ -9,6 +9,24 @@ You can get conda from [Anaconda](https://www.anaconda.com/docs/getting-started/
 or [miniconda](https://www.anaconda.com/docs/getting-started/miniconda/main), so you may already have it.
 I recommend [conda-forge](https://conda-forge.org/) and [miniforge](https://github.com/conda-forge/miniforge) instead (see below).
 
+#### Why miniforge?
+
+* There's been a growing division between Anaconda (proprietary) and 
+  [Conda-Forge](https://conda-forge.org/) (open source).
+  They are 2 different software "distributions" that use "conda".
+  [Conda](https://docs.conda.io/en/latest/) is an environment and package manager for any language (not just Python).
+* The minimal installer for Anaconda is miniconda. The open counterpart to miniconda is miniforge.
+* Channel incompatibilies developed in 2024. Since incompatibilities are relatively recent, 
+  you won't see them discussed in recent data science books that recommend miniconda, such as...
+  * Jake VanderPlas, the author of 
+  [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook)
+  * Wes McKinney lead developer of Pandas and author of 
+  [Python for Data Analysis, 3rd Ed (2022)](https://wesmckinney.com)
+* Don't mix channels.
+If you do, then you risk mysterious errors or dependency resolution problems that can be hard to debug
+("impossible" might be a more appropriate word).
+That said, if you're already using conda and it works for you, then you may not need this document.
+
 ## First things first
 
 Recommendations below assume that you're using Linux, MacOS or WSL. If not, then see [setup.md](setup.md).
@@ -16,16 +34,12 @@ Recommendations below assume that you're using Linux, MacOS or WSL. If not, then
 ## miniforge
 
 * Download the conda-forge installer -- https://conda-forge.org/download/
-  * Install as directed (I used `bash Miniforge3-$(uname)-$(uname -m).sh`
+  * Install as directed (I used `bash Miniforge3-$(uname)-$(uname -m).sh`)
   * It includes Python 3.x and a minimal distribution of Python friends.
 * "Miniforge is the preferred conda-forge installer"
 * If you already have conda, then you may want to [transition away from defaults](see: https://conda-forge.org/docs/user/transitioning_from_defaults/)
 I no longer recommend Anaconda or miniconda. I do recommend miniforge.
 * which has some scientific computing software that conflicts with Anaconda and miniconda's "defaults" channel.
-Don't mix channels.
-If you do, then you risk mysterious errors or dependency resolution problems that can be hard to debug
-("impossible" might be a more appropriate word).
-That said, if you're already using conda and it works for you, then you may not need this document.
 
 ## miniforge
 
@@ -50,20 +64,6 @@ It includes Python 3.x and a minimal distribution of Python friends.
 * [Conda documentation](https://docs.conda.io/projects/conda/en/stable/)
   * If you already have Anaconda or miniconda, then no need to change. Just beware!
   * In a nutshell: Anaconda includes conda and (too) many other things. And it's missing important things.
-
-#### Why miniforge?
-
-* There's been a growing division between Anaconda (proprietary) and 
-  [Conda-Forge](https://conda-forge.org/) (open source).
-  They are 2 different software "distributions" that use "conda".
-  [Conda](https://docs.conda.io/en/latest/) is an environment and package manager for any language (not just Python).
-* The minimal installer for Anaconda is miniconda. The open counterpart to miniconda is miniforge.
-* Channel incompatibilies developed in 2024. Since incompatibilities are relatively recent, 
-  you won't see them discussed in recent data science books that recommend miniconda, such as...
-  * Jake VanderPlas, the author of 
-  [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook)
-  * Wes McKinney lead developer of Pandas and author of 
-  [Python for Data Analysis, 3rd Ed (2022)](https://wesmckinney.com)
 
 #### What about pip?
 
