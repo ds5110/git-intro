@@ -17,7 +17,7 @@ Anyone should be able to run your code from the command line on a "Unix-like" OS
   * WSL is a Microsoft setup for running Linux in Windows.
   * There's good documentation on 
   [Developing with WSL](https://code.visualstudio.com/docs/remote/wsl).
-* Warning: the WSL terminal is not PowerShell!!  And the PowerShell is not Linux!
+  * Warning: the WSL terminal is not PowerShell!!  And the PowerShell is not Linux!
 
 ## 1. Install conda
 
