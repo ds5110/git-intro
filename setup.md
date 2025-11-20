@@ -1,31 +1,31 @@
 # setup
 
-Instructions for setting up a Python environment for data science -- some opinionated recommendations (with references).
+Opinionated recommendations for setting up a Python environment for data science (with references).
 
 * If you follow these recommendations (and related references), I can help you troubleshoot problems.
 * There are many ways to set things up. If you have something else that works, you can stay with it. 
-* However, beware that some installations and conflicting software versions can cause huge headaches.
+* However, beware that conflicting dependencies can cause huge headaches.
 
-## command-line reproducibility
+## command line
 
-Anyone should be able to run your code from the command line on some flavor of Linux.
+Anyone should be able to run your code from the command line on a "Unix-like" OS.
 
 * If you're already using Linux, great.
-* If you're using a Mac, you're all set.
-  The built-in terminal is great and, under the hood, macOS is a "flavor" of Linux (my favorite). 
-* If you're using Windows and you don't want to buy a Mac, 
-  I recommend Windows Subsystem for Linux (WSL)
+* If you're using a Mac, that's also great.
+  The built-in terminal is all you need. Under the hood, macOS is Unix-like.
+* If you're using Windows and you don't want to buy a Mac, I recommend Windows Subsystem for Linux (WSL)
+  * WSL is a Microsoft setup for running Linux in Windows.
   * There's good documentation on 
   [Developing with WSL](https://code.visualstudio.com/docs/remote/wsl).
-* Warning: the WSL terminal is not PowerShell!!  The PowerShell is not Linux!
+* Warning: the WSL terminal is not PowerShell!!  And the PowerShell is not Linux!
 
 ## 1. Install conda
 
-* Detailed instructions are here: [conda.md](conda.md)
+* See: [conda.md](conda.md)
 
 ## 2. Install vscode
 
-You need a text editor. I recommend vscode -- a free visual text editor and aspiring IDE owned by microsoft.
+You need a text editor. I recommend vscode.
 
 * Install instructions: https://code.visualstudio.com/download
 * If you're using WSL, follow their directions.
@@ -35,30 +35,33 @@ You need a text editor. I recommend vscode -- a free visual text editor and aspi
 
 ## 3. Install make and git
 
-If you don't have them already, then you can install them with conda...
+* If you're using Linux, then you probably have them already.
+* If you're using a Mac, you'll get them by installing Xcode Command Line Tools from Apple:
+  ```
+  xcode-select --install
+  ```
+You can get them from conda-forge...
 ```
 conda install conda-forge::git
 conda install conda-forge::make
 ```
-I use a Mac and I use `xcode-select --install` instead.
 
-## WSL
+## Windows users
 
 If you're using macOS or Linux, skip this section. If you're using Windows, 
 then Windows Subsystem for Linux (WSL) is a super easy install... 
 
-* [Install WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
-  * Very easy. Open powershell/command prompt (windows jargon for the built-in Windows terminal)
+* [Install WSL](https://learn.microsoft.com/en-us/windows/wsl/install) -- these are Microsoft docs.
+  * Very easy. Open powershell...
   ```
   wsl --install
   ```
-* Follow [their instructions for setting up a development environment](https://learn.microsoft.com/en-us/windows/wsl/setup/environment)
-* Follow [their instructions for installing vscode](https://code.visualstudio.com/docs/remote/wsl).
-* From now on, you should use the WSL terminal -- NOT powershell!!
-* Verify that you're using Linux...
+* Follow [Microsoft instructions for setting up a development environment](https://learn.microsoft.com/en-us/windows/wsl/setup/environment)
+* Follow [Microsoft instructions for installing vscode](https://code.visualstudio.com/docs/remote/wsl).
+* From now on, use the WSL terminal -- NOT powershell!!
+* Verify that you're using Linux, for example...
   ```
   which curl
   ```
   should return: `/usr/bin/curl`
 * Q: Where's the C drive?  A: The C drive is available in Linux as `/mnt/c`
-
