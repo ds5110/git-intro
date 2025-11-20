@@ -9,7 +9,7 @@ You can get conda from [Anaconda](https://www.anaconda.com/docs/getting-started/
 or [miniconda](https://www.anaconda.com/docs/getting-started/miniconda/main), so you may already have it.
 I recommend [conda-forge](https://conda-forge.org/) and [miniforge](https://github.com/conda-forge/miniforge) instead (see below).
 
-#### Why miniforge?
+#### Why conda-forge and miniforge?
 
 * There's been a growing division between Anaconda (proprietary) and 
   [Conda-Forge](https://conda-forge.org/) (open source).
