@@ -55,13 +55,14 @@ Download the installer -- https://conda-forge.org/download/ -- and install as di
 
 * What's a conda environment? A: 
   [conda environment](https://docs.conda.io/projects/conda/en/stable/glossary.html#conda-environment) -- docs.conda.io
-* [conda user guide](https://docs.conda.io/projects/conda/en/latest/user-guide/index.html) -- docs.conda.io
-* I've added some [common conda commands](#common-conda-commands) in the section below.
+* See: [conda user guide](https://docs.conda.io/projects/conda/en/latest/user-guide/index.html) -- docs.conda.io
+* I've added some [common conda commands](#common-conda-commands) below.
 
 ### 3. Don't mix channels
 
+See the discussion above.
 ```
-conda config --show channels              # lists channel(s)
+conda config --show channels              # lists channels
 ```
 
 ## Common conda commands
@@ -82,8 +83,10 @@ Deactivate the environment
 conda deactivate
 ```
 
+**References:**
+
 * [Manage environments](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) -- conda.io
-  * [Creating an environment with commands](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands)
+* [Creating an environment with commands](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands)
 * vscode instructions for conda environments: https://code.visualstudio.com/docs/python/environments
 
 ### Install libraries in a conda environment
@@ -122,7 +125,7 @@ conda env list
 conda remove --name myenv --all
 ```
 
-* [Remove an environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#removing-an-environment) -- conda.io
+Ref: [Remove an environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#removing-an-environment) -- conda.io
 
 ### YML files
 
@@ -144,11 +147,7 @@ Create an environment called "myenv" from a YML file:
 ```
 conda env create --name myenv -f environment.yml
 ```
-Remove the "myenv" environment with:
-```
-conda env remove --name myenv
-```
-* Ref: [Creating an environment from an enviroment.yml file](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) -- conda.io
+Ref: [Creating an environment from an enviroment.yml file](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) -- conda.io
 
 ### Web dev
 
