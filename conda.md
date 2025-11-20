@@ -35,8 +35,9 @@ It includes Python 3.x and a minimal distribution of Python friends.
 
 * There's been a growing division between Anaconda (proprietary) and 
   [Conda-Forge](https://conda-forge.org/) (open source).
-  They are 2 different software distributions, and they both use the same package manager, 
-  [Conda](https://docs.conda.io/en/latest/) is an environment and package manager for  any language (not just Python).
+  They are 2 different software distributions, and they both
+  [conda](https://docs.conda.io/en/latest/), which is an environment and package manager 
+  for  any language (not just Python).
   Since 2024, they've become incompatible.
 * The minimal installer for Anaconda is miniconda, and the open counterpart is miniforge.
   Since the split is relatively recent, you'll still see popular data science books referencing miniconda.
