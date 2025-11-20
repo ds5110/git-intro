@@ -4,6 +4,8 @@ Guidelines for creating a reproducible data-science pipeline.
 
 DS 5110 assignments must be reproducible from the command-line -- Jupyter notebooks are not allowed.
 
+If you find any mistakes in this repo, please submit a pull request.
+
 ## Contents
 
 * [README.md](README.md) (this document): guidelines for github-classroom assignment submission in DS 5110
