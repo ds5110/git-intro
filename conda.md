@@ -37,7 +37,7 @@ I recommend [conda-forge](https://conda-forge.org/) and [miniforge](https://gith
   [Conda myths and misconceptions](https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/)
 * Avoid pip if you can. And if you can't, then at least be careful about it.
   * See: [Using pip in an environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#using-pip-in-an-environment) -- conda.io
-  * The link has best practices for using conda and pip
+  * This link has best practices for using conda and pip
 
 ## First things first
 
