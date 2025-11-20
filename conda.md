@@ -16,8 +16,8 @@ I no longer recommend Anaconda or miniconda. I do recommend miniforge.
 
 ## First things first
 
-Recommendations below assume that you're using Linux, MacOS
-(basically, Linux under the hood) or WSL (Windows Subsystem for Linux).
+Recommendations below assume that you're using a Unix-like OS.
+Linux and macOS are great. WSL (Windows Subsystem for Linux) works too.
 
 Windows users, before anything else: I highly recommend that you either buy a Mac or set up 
 [WSL](https://learn.microsoft.com/en-us/windows/wsl/about) (see [setup.md](setup.md)).
@@ -54,6 +54,7 @@ It includes Python 3.x and a minimal distribution of Python friends.
 ## 2. Use conda environments
 
 * [conda environments](https://docs.conda.io/projects/conda/en/stable/glossary.html#conda-environment) -- docs.conda.io
+* See the [common conda coommands](#common-conda-commands) section below.
 
 ## 3. Install make
 
