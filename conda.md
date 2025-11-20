@@ -9,7 +9,7 @@ I no longer recommend Anaconda or miniconda. I do recommend miniforge.
 
 ## miniforge
 
-* Download the conda-forge installer -- https://conda-forge.org/download/
+* Download the installer -- https://conda-forge.org/download/
   * Install as directed (I used `bash Miniforge3-$(uname)-$(uname -m).sh`
 * "Miniforge is the preferred conda-forge installer and includes conda, mamba, and their dependencies."
 * If you already have conda, then see: https://conda-forge.org/docs/user/transitioning_from_defaults/
