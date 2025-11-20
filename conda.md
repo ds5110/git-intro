@@ -40,9 +40,9 @@ It includes Python 3.x and a minimal distribution of Python friends.
   for  any language (not just Python).
   Since 2024, they've become incompatible.
 * The minimal installer for Anaconda is miniconda, and the open counterpart is miniforge.
-  Since the split is relatively recent, you'll still see popular data science books referencing miniconda.
-  For example...
-  * Jake VanderPlas, the author of [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/00.00-Preface.ipynb)
+  Since incompatibilities are relatively recent, popular data science books will reference 
+  miniconda and not miniforge. For example...
+  * Jake VanderPlas, the author of [Python Data Science Handbook, 2nd Ed (2022)](https://github.com/jakevdp/PythonDataScienceHandbook/) -- github.com
   * Wes McKinney lead developer of Pandas and author or [Python for Data Analysis, 3rd Ed (2022)](https://wesmckinney.com)
 * And then there's pip!
   * Jake VanderPlas talks about pip & conda in an old (2016) but still interesting/relevant blog post:
