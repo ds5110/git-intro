@@ -1,10 +1,30 @@
 # conda
 
-Recommendations for setting up and using Conda.
+Opinionated recommendations for setting up and using Conda.
 
 Conda is a system-level binary package and environment manager that runs on all 
 major operating systems and platforms.
 
+You can get conda from [Anaconda](https://www.anaconda.com/docs/getting-started/getting-started) 
+or [miniconda](https://www.anaconda.com/docs/getting-started/miniconda/main), so you may already have it.
+I no longer recommend them because I recommend the [conda-forge](https://conda-forge.org/) "channel", 
+which has some scientific computing software that conflicts with Anaconda and miniconda's "defaults" channel.
+You don't want to mix channels.
+If you do, thenb you risk mysterious errors or dependency resolution problems that can be hard to debug
+("impossible" might be more appropriate).
+That said, if you're already using conda and it works for you, then you may not need this document.
+
+## First things first
+
+Recommendations below assume that you're using Linux, MacOS or WSL. If not, then see [setup.md](setup.md).
+
+## miniforge
+
+* Download the conda-forge installer -- https://conda-forge.org/download/
+  * Install as directed (I used `bash Miniforge3-$(uname)-$(uname -m).sh`
+  * It includes Python 3.x and a minimal distribution of Python friends.
+* "Miniforge is the preferred conda-forge installer"
+* If you already have conda, then you may want to [transition away from defaults](see: https://conda-forge.org/docs/user/transitioning_from_defaults/)
 I no longer recommend Anaconda or miniconda. I do recommend miniforge.
 
 ## miniforge
@@ -30,11 +50,26 @@ It includes Python 3.x and a minimal distribution of Python friends.
 * [Conda documentation](https://docs.conda.io/projects/conda/en/stable/)
   * If you already have Anaconda or miniconda, then no need to change. Just beware!
   * In a nutshell: Anaconda includes conda and (too) many other things. And it's missing important things.
+>>>>>>> 365118762d7bbe6336ed21865b26114a5d083ea2
 
 #### Why miniforge?
 
 * There's been a growing division between Anaconda (proprietary) and 
   [Conda-Forge](https://conda-forge.org/) (open source).
+<<<<<<< HEAD
+  They are 2 different software "distributions" that use "conda".
+  [Conda](https://docs.conda.io/en/latest/) is an environment and package manager for any language (not just Python).
+* The minimal installer for Anaconda is miniconda. The open counterpart to miniconda is miniforge.
+* Channel incompatibilies developed in 2024. Since incompatibilities are relatively recent, 
+  you won't see them discussed in recent data science books that recommend miniconda, such as...
+  * Jake VanderPlas, the author of 
+  [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook)
+  * Wes McKinney lead developer of Pandas and author of 
+  [Python for Data Analysis, 3rd Ed (2022)](https://wesmckinney.com)
+
+#### What about pip?
+
+=======
   They are 2 different software distributions, and they both
   [conda](https://docs.conda.io/en/latest/), which is an environment and package manager 
   for  any language (not just Python).
@@ -44,6 +79,7 @@ It includes Python 3.x and a minimal distribution of Python friends.
   miniconda and not miniforge. For example...
   * Jake VanderPlas, the author of [Python Data Science Handbook, 2nd Ed (2022)](https://github.com/jakevdp/PythonDataScienceHandbook/) -- github.com
   * Wes McKinney lead developer of Pandas and author or [Python for Data Analysis, 3rd Ed (2022)](https://wesmckinney.com)
+>>>>>>> 365118762d7bbe6336ed21865b26114a5d083ea2
 * And then there's pip!
   * Jake VanderPlas talks about pip & conda in an old (2016) but still interesting and relevant blog post:
   [Conda myths and misconceptions](https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/)
@@ -51,23 +87,30 @@ It includes Python 3.x and a minimal distribution of Python friends.
   * See: [Using pip in an environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#using-pip-in-an-environment) -- conda.io
   * The link has best practices for using conda and pip
 
-## 2. Use conda environments
+## Use conda environments
 
+<<<<<<< HEAD
+* [conda environments](https://docs.conda.io/projects/conda/en/stable/glossary.html#conda-environment) -- docs.conda.io
+=======
 * What's a conda environment? A: 
   [conda environment](https://docs.conda.io/projects/conda/en/stable/glossary.html#conda-environment) -- docs.conda.io
 * [conda user guide](https://docs.conda.io/projects/conda/en/latest/user-guide/index.html) -- docs.conda.io
 * I've added some [common conda commands](#common-conda-commands) in the section below.
+>>>>>>> 365118762d7bbe6336ed21865b26114a5d083ea2
 
 ### 3. Don't mix channels
 
 Conda installs from [channels](https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/channels.html)
 
+<<<<<<< HEAD
 * I recommend the "conda-forge" channel, which is open source. 
 * When you install miniconda or Anacoda, they set a default channel called "default".
 * Their "default" conflicts
 * Beware of mixing channels, especially with geospatial software (more on that below).
+=======
+>>>>>>> 8696c11a13f359bbfca44e558e9866da7b043292
 ```
-conda config --show channels              # lists default channel(s)
+conda config --show channels              # lists channel(s)
 conda config --add channels conda-forge   # set conda-forge as the default channel
 ```
 
