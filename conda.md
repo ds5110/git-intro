@@ -5,7 +5,7 @@ Recommendations for setting up and using Conda.
 Conda is a system-level binary package and environment manager that runs on all 
 major operating systems and platforms.
 
-I no longer recommend Anaconda or miniconda...
+I no longer recommend Anaconda or miniconda. I do recommend miniforge.
 
 ## miniforge
 
