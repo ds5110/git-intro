@@ -17,7 +17,7 @@ I no longer recommend Anaconda or miniconda. I do recommend miniforge.
 ## First things first
 
 Recommendations below assume that you're using a Unix-like OS.
-Linux and macOS are great. WSL (Windows Subsystem for Linux) works too.
+Linux, macOS and WSL are great.
 
 Windows users, before anything else: I highly recommend that you either buy a Mac or set up 
 [WSL](https://learn.microsoft.com/en-us/windows/wsl/about) (see [setup.md](setup.md)).
