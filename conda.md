@@ -7,12 +7,7 @@ major operating systems and platforms.
 
 You can get conda from [Anaconda](https://www.anaconda.com/docs/getting-started/getting-started) 
 or [miniconda](https://www.anaconda.com/docs/getting-started/miniconda/main), so you may already have it.
-I no longer recommend them because I recommend the [conda-forge](https://conda-forge.org/) "channel", 
-which has some scientific computing software that conflicts with Anaconda and miniconda's "defaults" channel.
-You don't want to mix channels.
-If you do, thenb you risk mysterious errors or dependency resolution problems that can be hard to debug
-("impossible" might be more appropriate).
-That said, if you're already using conda and it works for you, then you may not need this document.
+I recommend [conda-forge](https://conda-forge.org/) and [miniforge](https://github.com/conda-forge/miniforge) instead (see below).
 
 ## First things first
 
@@ -26,6 +21,11 @@ Recommendations below assume that you're using Linux, MacOS or WSL. If not, then
 * "Miniforge is the preferred conda-forge installer"
 * If you already have conda, then you may want to [transition away from defaults](see: https://conda-forge.org/docs/user/transitioning_from_defaults/)
 I no longer recommend Anaconda or miniconda. I do recommend miniforge.
+* which has some scientific computing software that conflicts with Anaconda and miniconda's "defaults" channel.
+Don't mix channels.
+If you do, then you risk mysterious errors or dependency resolution problems that can be hard to debug
+("impossible" might be a more appropriate word).
+That said, if you're already using conda and it works for you, then you may not need this document.
 
 ## miniforge
 
