@@ -29,7 +29,7 @@ It includes Python 3.x and a minimal distribution of Python friends.
   * Windows users: if you're using WSL, then install the Linux version from the WSL terminal!!
 * [Conda documentation](https://docs.conda.io/projects/conda/en/stable/)
   * If you already have Anaconda or miniconda, then no need to change. Just beware!
-  * In a nutshell: Anaconda includes conda and (too) many other things. It's also missing important things.
+  * In a nutshell: Anaconda includes conda and (too) many other things. And it's missing important things.
 
 #### Why miniforge?
 
