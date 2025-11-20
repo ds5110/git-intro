@@ -153,7 +153,7 @@ Ref: [Creating an environment from an enviroment.yml file](https://conda.io/proj
 
 For web development (e.g., [Observable Framework](https://observablehq.com/framework/)), see [node.md](node.md)
 
-For Flask, which is a Python back end, you cna use this YML file:
+For Flask, which is a Python back end, you can use this YML file:
 ```
 name: flask
 channels:
