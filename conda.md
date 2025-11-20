@@ -17,6 +17,7 @@ I recommend [conda-forge](https://conda-forge.org/) and [miniforge](https://gith
 * They all use conda, which is an environment and package manager.
 * Conda gets sofware from [channels](https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/channels.html).
   Anaconda and conda-forge use different channels.
+  Anaconda's channel is missing some important scientific computing software.
 * Don't mix channels.
   If you do, then you risk mysterious errors or dependency resolution problems that can be hard to debug
   ("impossible" might be a more appropriate word).
@@ -42,9 +43,6 @@ I recommend [conda-forge](https://conda-forge.org/) and [miniforge](https://gith
 ## First things first
 
 Recommendations below assume that you're using Linux, MacOS or WSL. If not, then see [setup.md](setup.md).
-
-I no longer recommend Anaconda or miniconda. I do recommend miniforge.
-* which has some scientific computing software that conflicts with Anaconda and miniconda's "defaults" channel.
 
 ## 1. Install miniforge
 
