@@ -19,7 +19,7 @@ Anyone should be able to run your code from the command line on a "Unix-like" OS
   (additional notes [below](https://github.com/ds5110/git-intro/blob/main/setup.md#windows-users)).
   * There's good documentation on 
   [Developing with WSL](https://code.visualstudio.com/docs/remote/wsl).
-  * Warning: the WSL terminal is not PowerShell and the PowerShell is not Linux! This often causes confusion.
+  * Warning: the WSL terminal is not PowerShell, and the PowerShell is not Linux! This often causes confusion.
 
 ## 1. Install conda
 
@@ -51,7 +51,7 @@ conda install conda-forge::make
 ## Windows users
 
 If you're using macOS or Linux, skip this section. If you're using Windows, 
-then Windows Subsystem for Linux (WSL) is a super easy install... 
+then WSL is a super easy install... 
 
 * [Install WSL](https://learn.microsoft.com/en-us/windows/wsl/install) -- these are Microsoft docs.
   * Very easy. Open powershell...
