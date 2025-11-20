@@ -46,11 +46,10 @@ Recommendations below assume that you're using Linux, MacOS or WSL. If not, then
 
 ## 1. Install miniforge
 
-* Download the installer -- https://conda-forge.org/download/ -- and install as directed.
-  * I used the command-line install: `bash Miniforge3-$(uname)-$(uname -m).sh`
-  * miniforge includes Python 3.x and a minimal distribution of Python friends.
-* "Miniforge is the preferred conda-forge installer and includes conda, mamba, and their dependencies."
-* If you already have conda, then see: https://conda-forge.org/docs/user/transitioning_from_defaults/
+Download the installer -- https://conda-forge.org/download/ -- and install as directed.
+
+* I used the command-line install: `bash Miniforge3-$(uname)-$(uname -m).sh`
+* miniforge includes Python 3.x and a minimal distribution of Python friends.
 
 ## 2. Use conda environments
 
