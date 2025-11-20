@@ -11,13 +11,13 @@ If you find any mistakes in this repo, please submit a pull request.
 * [README.md](README.md) (this document): guidelines for github-classroom assignment submission in DS 5110
 * [setup.md](setup.md): opinionated recommendations (with references) for a development environment
 * [conda.md](conda.md): cheat sheet & intro to package management (cross-platform, polyglot, open-source)
-* [git.md](git.md): intro and extensive references for learning and using git on the command line
-* [github-classroom.md](github-classroom.md): github-classroom workflow for instructors & TAs
+* [git.md](git.md): intro and references for learning and using git on the command line
+* [github-classroom.md](github-classroom.md): github-classroom workflow (for instructors & TAs)
 * Additional resources from an awesome TA: [Useful for DS 5110](https://github.com/charVANder/Useful-for-DS5110)
 
 ## Reproducibility
 
-* Create reproducible repositories
+* Create reproducible repos
   * Reproducibility is paramount -- if someone else can't reproduce your results, there's no point.
   * [Jupyter notebooks have reproducibility problems](https://www.nature.com/articles/d41586-021-01174-w),
   so they're not acceptable for assignment submission.
@@ -109,7 +109,7 @@ make q1
 <img src="figs/q1.png" width=350>
 
 * Note that the makefile has all the command-line commands for the entire pipeline.
-* Note that the demo code imports a local module (critical for the DRY princple).
+* Note that the demo code imports a local module (part of DRY).
 * This markdown file embeds `figs/q1.png` using vanilla HTML, which allows you to set the width:
 ```
 <img src="figs/q1.png" width=350>
