@@ -50,13 +50,11 @@ It includes Python 3.x and a minimal distribution of Python friends.
 * [Conda documentation](https://docs.conda.io/projects/conda/en/stable/)
   * If you already have Anaconda or miniconda, then no need to change. Just beware!
   * In a nutshell: Anaconda includes conda and (too) many other things. And it's missing important things.
->>>>>>> 365118762d7bbe6336ed21865b26114a5d083ea2
 
 #### Why miniforge?
 
 * There's been a growing division between Anaconda (proprietary) and 
   [Conda-Forge](https://conda-forge.org/) (open source).
-<<<<<<< HEAD
   They are 2 different software "distributions" that use "conda".
   [Conda](https://docs.conda.io/en/latest/) is an environment and package manager for any language (not just Python).
 * The minimal installer for Anaconda is miniconda. The open counterpart to miniconda is miniforge.
