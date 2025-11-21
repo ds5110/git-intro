@@ -2,7 +2,7 @@
 
 For web development, you need Node.js and the related ecosystem.
 
-I'm on a Mac, and I've had problems with brew in the past so I avoid it. I recommend downloading from the command line:
+I'm on a Mac, and I've had problems with brew in the past so I avoid it. I downloaded from the command line...
 
 * [Download Node.js](https://nodejs.org/en/download) -- nodejs.org
 * The install on 19 Nov 2025...
