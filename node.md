@@ -22,3 +22,14 @@ node -v # Should print "v24.11.1".
 # Verify npm version:
 npm -v # Should print "11.6.2".
 ```
+
+## yarn
+
+* First ferify install location (it's $HOME/.nvm)
+  ```
+  npm root -g
+  ```
+* Install: https://yarnpkg.com/getting-started/install
+  ```
+  npm install -g corepack
+  ```
