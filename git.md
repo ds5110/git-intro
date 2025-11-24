@@ -14,7 +14,7 @@ An opinionated set of recommendations (with references) for using git from the c
 ## install
 
 * Depending on your operating system, you may already have git.
-* If you have a Mac, you have a version of git in `/usr/bin/git`. 
+* If you have a Mac, install the Xcode Command Line Tools and you'll have `/usr/bin/git`. 
 * Or you can install git from conda-forge...
   ```
   conda install -c conda-forge git
