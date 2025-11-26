@@ -149,14 +149,19 @@ Ref: [Creating an environment from an enviroment.yml file](https://conda.io/proj
 
 For web development (e.g., [Observable Framework](https://observablehq.com/framework/)), see [node.md](node.md)
 
-For Flask, which is a Python back end, you can use this YML file:
+For Python back ends you can use this framework.yml file:
 ```
-name: flask
+name: framework
 channels:
   - conda-forge
 dependencies:
-  - werkzeug==3.1
-  - flask==3.1
+  - werkzeug
+  - flask
+  - uvicorn
+```
+and install with
+```
+conda env create -f framework.yml
 ```
 
 ### Geospatial

@@ -25,7 +25,7 @@ npm -v # Should print "11.6.2".
 
 ## yarn
 
-* First ferify install location (it's $HOME/.nvm)
+* First verify the location for global installs (it's $HOME/.nvm)
   ```
   npm root -g
   ```
