@@ -4,8 +4,9 @@
 # Ref: https://www.gnu.org/software/make/manual/html_node/Phony-Targets.html
 .PHONY: data
 
-# Create the first chart in ISLR2 Figure 1.1 (this requires a local copy of data/Wage.csv)
+# Answer to Question 1 (this requires a local copy of ./data/Wage.csv)
 q1: data/Wage.csv
+	mkdir -p figs
 	python -B src/q1.py
 
 # Download the data
@@ -18,4 +19,4 @@ data/Wage.csv:
 	cd data; curl -LO https://github.com/ds5110/rdata/raw/main/data/Wage.csv
 
 clean:
-	rm data/Wage.csv
+	rm -rf data figs
