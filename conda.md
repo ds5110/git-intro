@@ -98,12 +98,12 @@ You can use conda to create multiple environments with various installed librari
 ```
 conda create --name myenv
 conda activate myenv
-conda install -c conda-forge::python
-conda install -c conda-forge::scikit-learn
-conda install -c conda-forge::seaborn
-conda install -c conda-forge::pandas
-conda install -c conda-forge::matplotlib
-conda install -c conda-forge::make
+conda install conda-forge::python
+conda install conda-forge::scikit-learn
+conda install conda-forge::seaborn
+conda install conda-forge::pandas
+conda install conda-forge::matplotlib
+conda install conda-forge::make
 ```
 * Rather than install by hand, I recommend YML files (see below)
 * Once installed, activate the "myenv" environment
