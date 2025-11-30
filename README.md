@@ -78,7 +78,10 @@ If you find any mistakes in this repo, please submit a pull request.
   * Consider adding [a license](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) to your repo.
 * For project websites and automated workflows, you have choices...
   * Plan on using [github pages](https://docs.github.com/en/pages/quickstart) to showcase your project
-  to a general audience, like the C-suite for the company where you want a job.
+  to a general audience, like the C-suite for the company where you want a job. (Note: While I highly
+  recommend github pages, I don't like Jekyll. Instead of Jekyll, I highly recommend 
+  [Observable Framework](https://observablehq.com/framework/deploying#deploying) for deploying
+  a website on github pages that has interactive data visualizations.)
   * There are many tools for automating workflows. They're never free for production/secure sites.
   To automate the workflow for your publicly available github-pages site, 
   I recommend [github actions](https://docs.github.com/en/actions). It's free for small projects.
