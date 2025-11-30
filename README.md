@@ -72,7 +72,8 @@ If you find any mistakes in this repo, please submit a pull request.
 * For projects...
   * Use miniforge and share your conda environment with a YML file (see [conda.md](conda.md)).
   * Assume the audience for your README.md has your technical skill level.
-  * Use `./docs` for a public facing github-pages site, and make sure it's understandable to a general audience.
+  * Use `./docs` for a public facing [github pages](https://docs.github.com/en/pages) site, 
+  and make sure it's understandable to a general audience.
   (That's for portfolio projects, but not homework or in-class exercises.)
   * Consider adding [a license](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) to your repo.
 * For project websites and automated workflows, you have choices...
