@@ -86,14 +86,14 @@ Recommendations for data science development environment
   To automate the workflow for your publicly available github-pages site, 
   I recommend [github actions](https://docs.github.com/en/actions). It's free for small projects.
 
-## Example assignment layout
+## Example assignment solution
 
-Suppose the assignment asks you to reproduce the first chart in Figure 1.1 of 
-[ISL](https://www.statlearning.com/). A solution follows...
+Suppose Question 1 of the assignment asks you to reproduce the first chart in Figure 1.1 of 
+[ISL](https://www.statlearning.com/). Here's an acceptable solution...
 
 ### Step 1: Data access
 
-Download the CSV file that's used in [ISL](http://statlearning.com) with the following command
+Download the CSV file that's used in Figure 1.1 of [ISL](http://statlearning.com) with the following command
 ```
 make data/Wage.csv
 ```
