@@ -2,16 +2,16 @@
 
 Development environment (recommendations) for data science applications
 
-* Command line for reproducibility (required)
+* Command line reproducibility (required)
 * GitHub for assignments & projects (required)
-* Colab (Jupyter) for prototyping & pedagogy (not allowed for assignments & projects)
+* Colab & Jupyter (okay for prototyping & pedagogy, not for assignments & projects)
 
 ## Contents
 
-* [README.md](README.md) (this document): guidelines for github-classroom assignment submission in DS 5110
+* [README.md](README.md) (this document): guidelines for github-classroom assignment submission
 * [setup.md](setup.md): opinionated recommendations (with references) for a development environment
-* [conda.md](conda.md): cheat sheet & intro to package management (cross-platform, polyglot, open-source)
-* [git.md](git.md): intro and references for learning and using git on the command line
+* [conda.md](conda.md): intro & cheat sheet for package management (cross-platform, polyglot, open-source)
+* [git.md](git.md): intro and references for command-line git
 * [github-classroom.md](github-classroom.md): github-classroom workflow (for instructors & TAs)
 * Additional resources from an awesome TA: [Useful for DS 5110](https://github.com/charVANder/Useful-for-DS5110)
 
