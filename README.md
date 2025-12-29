@@ -1,6 +1,6 @@
 # git-intro
 
-Development environment recommendations for data science applications
+Recommendations for data science development environment
 
 * Command line reproducibility (required)
 * GitHub for assignments & projects (required)
