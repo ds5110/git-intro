@@ -1,10 +1,10 @@
 # git-intro
 
-Guidelines for creating a reproducible data-science pipeline.
+Development environment (recommendations) for data science applications
 
-DS 5110 assignments must be reproducible from the command-line -- Jupyter notebooks are not allowed.
-
-If you find any mistakes in this repo, please submit a pull request.
+* Command line for reproducibility (required)
+* GitHub for assignments & projects (required)
+* Colab (Jupyter) for prototyping & pedagogy (not allowed for assignments & projects)
 
 ## Contents
 
