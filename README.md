@@ -34,7 +34,7 @@ If you find any mistakes in this repo, please submit a pull request.
     > I had downloaded Github Desktop and was using that without realizing that is what I was doing, 
     > which also contributed to my confusion. I removed it.
 * Document your repository
-  * Everything must be reproducible from the command line
+  * Everything must be reproducible from the command line -- provide clear, complete instructions.
   * Document **authoritative** data source(s), and show how to access those source(s).
   * If necessary, provide sample/simulated data cleansed of PII to enable testing/verification by others.
 * Acknowledge, acknowledge, acknowledge
