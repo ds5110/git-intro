@@ -34,9 +34,9 @@ Recommendations for data science development environment
     > I had downloaded Github Desktop and was using that without realizing that is what I was doing, 
     > which also contributed to my confusion. I removed it.
 * Document your repository
-  * Everything must be reproducible from the command line -- provide clear, complete instructions.
+  * Everything must be reproducible from the command line -- provide clear instructions.
   * Document **authoritative** data source(s), and show how to access those source(s).
-  * If necessary, provide sample/simulated data cleansed of PII to enable testing/verification by others.
+  * If necessary, provide sample/simulated data cleansed of PII to enable testing/verification.
 * Acknowledge, acknowledge, acknowledge
   * Cite all data sources and provide links to the original/authoritative sources.
   * If you get code and/or ideas from someone else, make sure you have their permission and 
