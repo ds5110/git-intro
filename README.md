@@ -1,17 +1,17 @@
 # git-intro
 
-Guidelines for creating a reproducible data-science pipeline.
+Recommendations for data science development environment
 
-DS 5110 assignments must be reproducible from the command-line -- Jupyter notebooks are not allowed.
-
-If you find any mistakes in this repo, please submit a pull request.
+* Command line reproducibility (required)
+* GitHub for assignments & projects (required)
+* Colab & Jupyter (okay for prototyping & pedagogy, not for assignments & projects)
 
 ## Contents
 
-* [README.md](README.md) (this document): guidelines for github-classroom assignment submission in DS 5110
+* [README.md](README.md) (this document): guidelines for github-classroom assignment submission
 * [setup.md](setup.md): opinionated recommendations (with references) for a development environment
-* [conda.md](conda.md): cheat sheet & intro to package management (cross-platform, polyglot, open-source)
-* [git.md](git.md): intro and references for learning and using git on the command line
+* [conda.md](conda.md): intro & cheat sheet for package management (cross-platform, polyglot, open-source)
+* [git.md](git.md): intro and references for command-line git
 * [github-classroom.md](github-classroom.md): github-classroom workflow (for instructors & TAs)
 * Additional resources from an awesome TA: [Useful for DS 5110](https://github.com/charVANder/Useful-for-DS5110)
 
@@ -22,7 +22,7 @@ If you find any mistakes in this repo, please submit a pull request.
   * [Jupyter notebooks have reproducibility problems](https://www.nature.com/articles/d41586-021-01174-w),
   so they're not acceptable for assignment submission.
   * ...but they're great for prototyping, in-class exercises and publishing books,
-  like [this awesome 5110 text](https://github.com/jakevdp/PythonDataScienceHandbook)!
+  like [this awesome data-science text](https://github.com/jakevdp/PythonDataScienceHandbook)!
   * Related comments from one of our part-time MSDS students who's also a corporate executive 
   and spends most of her time working in the real world...
     > I asked a Senior Engineer about Jupyter vs. command line, and why we use Notebooks and he said, "We run 
@@ -72,24 +72,28 @@ If you find any mistakes in this repo, please submit a pull request.
 * For projects...
   * Use miniforge and share your conda environment with a YML file (see [conda.md](conda.md)).
   * Assume the audience for your README.md has your technical skill level.
-  * Use `./docs` for a public facing github-pages site, and make sure it's understandable to a general audience.
+  * Use `./docs` for a public facing [github pages](https://docs.github.com/en/pages) site, 
+  and make sure it's understandable to a general audience.
   (That's for portfolio projects, but not homework or in-class exercises.)
   * Consider adding [a license](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) to your repo.
 * For project websites and automated workflows, you have choices...
   * Plan on using [github pages](https://docs.github.com/en/pages/quickstart) to showcase your project
-  to a general audience, like the C-suite for the company where you want a job.
+  to a general audience, like the C-suite for the company where you want a job. (Note: While I highly
+  recommend github pages, I don't like Jekyll. Instead, I highly recommend 
+  [Observable Framework](https://observablehq.com/framework/deploying#deploying) for deploying
+  a multi-page site with interactive visualizations.)
   * There are many tools for automating workflows. They're never free for production/secure sites.
   To automate the workflow for your publicly available github-pages site, 
   I recommend [github actions](https://docs.github.com/en/actions). It's free for small projects.
 
-## Example assignment layout
+## Example assignment solution
 
-Suppose the assignment asks you to reproduce the first chart in Figure 1.1 of 
-[ISL](https://www.statlearning.com/). A solution follows...
+Suppose Question 1 of the assignment asks you to reproduce the first chart in Figure 1.1 of 
+[ISL](https://www.statlearning.com/). Here's an acceptable solution...
 
 ### Step 1: Data access
 
-Download the CSV file that's used in [ISL](http://statlearning.com) with the following command
+Download the CSV file that's used in Figure 1.1 of [ISL](http://statlearning.com) with the following command
 ```
 make data/Wage.csv
 ```
@@ -99,7 +103,7 @@ make data/Wage.csv
 * If you don't have the requisite software, like `make`, then check out [setup.md](setup.md)
 * If you're not familiar with git, then check out [git.md](git.md).
 
-### Q1
+### Question 1
 
 The graphic below reproduces Figure 1.1 of ISL. Recreate it with the following command:
 ```

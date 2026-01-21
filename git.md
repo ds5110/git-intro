@@ -66,18 +66,18 @@ These tutorials are extensive. Some describe advanced usage of git and github --
 * [github cli](https://docs.github.com/en/github-cli) -- github.com
   * The github CLI is NOT the same as "git" on the command line (I don't use it)
 
-## cloning a repo
+## cloning a github repo
+
+If you're authenticating with SSH (a gold standard) then there's an SSH URL that looks like this...
+
+```
+$ git clone git@github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
+```
 
 If you're authenticaing with personal access tokens, then cloning with HTTPS looks something like this...
 
 ```
 $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
-```
-
-If you're authenticating with SSH then there's an alternate URL that looks like this...
-
-```
-$ git clone git@github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
 ```
 
 Reference: [Clone a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) -- github.com

@@ -98,12 +98,12 @@ You can use conda to create multiple environments with various installed librari
 ```
 conda create --name myenv
 conda activate myenv
-conda install -c conda-forge::python
-conda install -c conda-forge::scikit-learn
-conda install -c conda-forge::seaborn
-conda install -c conda-forge::pandas
-conda install -c conda-forge::matplotlib
-conda install -c conda-forge::make
+conda install conda-forge::python
+conda install conda-forge::scikit-learn
+conda install conda-forge::seaborn
+conda install conda-forge::pandas
+conda install conda-forge::matplotlib
+conda install conda-forge::make
 ```
 * Rather than install by hand, I recommend YML files (see below)
 * Once installed, activate the "myenv" environment
@@ -149,9 +149,9 @@ Ref: [Creating an environment from an enviroment.yml file](https://conda.io/proj
 
 For web development (e.g., [Observable Framework](https://observablehq.com/framework/)), see [node.md](node.md)
 
-For Python back ends you can use this framework.yml file:
+For Python back ends you can use this flaskr.yml file:
 ```
-name: framework
+name: flaskr
 channels:
   - conda-forge
 dependencies:
@@ -161,7 +161,7 @@ dependencies:
 ```
 and install with
 ```
-conda env create -f framework.yml
+conda env create -f flaskr.yml
 ```
 
 ### Geospatial
