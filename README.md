@@ -1,17 +1,17 @@
 # git-intro
 
-Guidelines for creating a reproducible data-science pipeline.
+Recommendations for data science development environment
 
-DS 5110 assignments must be reproducible from the command-line -- Jupyter notebooks are not allowed.
-
-If you find any mistakes in this repo, please submit a pull request.
+* Command line reproducibility (required)
+* GitHub for assignments & projects (required)
+* Colab & Jupyter (okay for prototyping & pedagogy, not for assignments & projects)
 
 ## Contents
 
-* [README.md](README.md) (this document): guidelines for github-classroom assignment submission in DS 5110
+* [README.md](README.md) (this document): guidelines for github-classroom assignment submission
 * [setup.md](setup.md): opinionated recommendations (with references) for a development environment
-* [conda.md](conda.md): cheat sheet & intro to package management (cross-platform, polyglot, open-source)
-* [git.md](git.md): intro and references for learning and using git on the command line
+* [conda.md](conda.md): intro & cheat sheet for package management (cross-platform, polyglot, open-source)
+* [git.md](git.md): intro and references for command-line git
 * [github-classroom.md](github-classroom.md): github-classroom workflow (for instructors & TAs)
 * Additional resources from an awesome TA: [Useful for DS 5110](https://github.com/charVANder/Useful-for-DS5110)
 
@@ -25,7 +25,7 @@ If you find any mistakes in this repo, please submit a pull request.
 
 But computational notebooks can also be confusing and foster poor coding practices. And they are difficult to share, collaborate on and reproduce. A 2019 study found that just 24% of 863,878 publicly available Jupyter notebooks on GitHub could be successfully re-executed, and only 4% produced the same results 
   * ...but they're great for prototyping, in-class exercises and publishing books,
-  like [this awesome 5110 text](https://github.com/jakevdp/PythonDataScienceHandbook)!
+  like [this awesome data-science text](https://github.com/jakevdp/PythonDataScienceHandbook)!
   * Related comments from one of our part-time MSDS students who's also a corporate executive 
   and spends most of her time working in the real world...
     > I asked a Senior Engineer about Jupyter vs. command line, and why we use Notebooks and he said, "We run 
@@ -37,9 +37,9 @@ But computational notebooks can also be confusing and foster poor coding practic
     > I had downloaded Github Desktop and was using that without realizing that is what I was doing, 
     > which also contributed to my confusion. I removed it.
 * Document your repository
-  * Everything must be reproducible from the command line
+  * Everything must be reproducible from the command line -- provide clear instructions.
   * Document **authoritative** data source(s), and show how to access those source(s).
-  * If necessary, provide sample/simulated data cleansed of PII to enable testing/verification by others.
+  * If necessary, provide sample/simulated data cleansed of PII to enable testing/verification.
 * Acknowledge, acknowledge, acknowledge
   * Cite all data sources and provide links to the original/authoritative sources.
   * If you get code and/or ideas from someone else, make sure you have their permission and 
@@ -89,14 +89,14 @@ But computational notebooks can also be confusing and foster poor coding practic
   To automate the workflow for your publicly available github-pages site, 
   I recommend [github actions](https://docs.github.com/en/actions). It's free for small projects.
 
-## Example assignment layout
+## Example assignment solution
 
-Suppose the assignment asks you to reproduce the first chart in Figure 1.1 of 
-[ISL](https://www.statlearning.com/). A solution follows...
+Suppose Question 1 of the assignment asks you to reproduce the first chart in Figure 1.1 of 
+[ISL](https://www.statlearning.com/). Here's an acceptable solution...
 
 ### Step 1: Data access
 
-Download the CSV file that's used in [ISL](http://statlearning.com) with the following command
+Download the CSV file that's used in Figure 1.1 of [ISL](http://statlearning.com) with the following command
 ```
 make data/Wage.csv
 ```
