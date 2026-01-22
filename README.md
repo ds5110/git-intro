@@ -91,7 +91,7 @@ Recommendations for data science development environment
 
 ## Example assignment submission
 
-Suppose Question 1 of the assignment asks you to reproduce the first chart in Figure 1.1 of 
+Suppose Question 1 of an assignment asks you to reproduce the first chart in Figure 1.1 of 
 [ISL](https://www.statlearning.com/). Here's an acceptable solution...
 
 ### Step 1: Data access
