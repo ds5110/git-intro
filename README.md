@@ -40,7 +40,7 @@ Recommendations for data science development environment
   * Everything must be reproducible from the command line -- provide clear instructions.
   * Document **authoritative** data source(s), and show how to access those source(s).
   * If necessary, provide sample/simulated data cleansed of PII to enable testing/verification.
-* Acknowledge, acknowledge, acknowledge
+* Acknowledge authoritative sources
   * Cite all data sources and provide links to the original/authoritative sources.
   * If you get code and/or ideas from someone else, make sure you have their permission and 
   that you acknowledge their contribution.
