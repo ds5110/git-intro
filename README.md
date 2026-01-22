@@ -19,11 +19,10 @@ Recommendations for data science development environment
 
 * Create reproducible repos
   * Reproducibility is paramount -- if someone else can't reproduce your results, there's no point.
-  * [Jupyter notebooks have reproducibility problems](https://www.nature.com/articles/d41586-021-01174-w),
-  so they're not acceptable for assignment submission.
+  * Jupyter notebooks have reproducibility problems, so they're not acceptable for assignment submission.
     > Computational notebooks combine code, results, text and images in a single document, yielding what Stephen Wolfram, creator of the Mathematica software package, has called a “computational essay”. And whether written using Jupyter, Mathematica, RStudio or any other platform, researchers can use them for iterative data exploration, communication, teaching and more.
 
-But computational notebooks can also be confusing and foster poor coding practices. And they are difficult to share, collaborate on and reproduce. A 2019 study found that just 24% of 863,878 publicly available Jupyter notebooks on GitHub could be successfully re-executed, and only 4% produced the same results 
+But computational notebooks can also be confusing and foster poor coding practices. And they are difficult to share, collaborate on and reproduce. A 2019 study found that just 24% of 863,878 publicly available Jupyter notebooks on GitHub could be successfully re-executed, and only 4% produced the same results. Ref: https://www.nature.com/articles/d41586-021-01174-w
   * ...but they're great for prototyping, in-class exercises and publishing books,
   like [this awesome data-science text](https://github.com/jakevdp/PythonDataScienceHandbook)!
   * Related comments from one of our part-time MSDS students who's also a corporate executive 
