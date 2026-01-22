@@ -38,7 +38,7 @@ Recommendations for data science development environment
     > which also contributed to my confusion. I removed it.
 * Document your repository
   * Everything must be reproducible from the command line -- provide clear instructions.
-  * Document **authoritative** data source(s), and show how to access those source(s).
+  * Document authoritative data source(s), and show how to get the data from those sources.
   * If necessary, provide sample/simulated data cleansed of PII to enable testing/verification.
 * Acknowledge authoritative sources
   * Cite all data sources and provide links to the original/authoritative sources.
