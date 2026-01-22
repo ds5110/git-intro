@@ -106,7 +106,7 @@ make data/Wage.csv
 * If you don't have the requisite software, like `make`, then check out [setup.md](setup.md)
 * If you're not familiar with git, then check out [git.md](git.md).
 
-### Question 1
+### Step 2: Analysis & results 
 
 The graphic below reproduces Figure 1.1 of ISL. Recreate it with the following command:
 ```
