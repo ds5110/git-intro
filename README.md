@@ -41,7 +41,7 @@ Recommendations for data science development environment
   * Document authoritative data source(s), and show how to access the data from those sources.
   * If necessary, provide sample/simulated data cleansed of PII to enable testing/verification.
 * Acknowledge authoritative sources
-  * Cite all data sources and provide links to the original/authoritative sources.
+  * Cite all data sources and provide links to the original/authoritative sources whenever possible.
   * If you get code and/or ideas from someone else, make sure you have their permission and 
   that you acknowledge their contribution.
   * Acknowledging your predecessors has a side benefit: it's a good way to avoid plagiarism. 
