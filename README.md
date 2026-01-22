@@ -89,7 +89,7 @@ Recommendations for data science development environment
   To automate the workflow for your publicly available github-pages site, 
   I recommend [github actions](https://docs.github.com/en/actions). It's free for small projects.
 
-## Example assignment solution
+## Example assignment submission
 
 Suppose Question 1 of the assignment asks you to reproduce the first chart in Figure 1.1 of 
 [ISL](https://www.statlearning.com/). Here's an acceptable solution...
