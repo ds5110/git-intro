@@ -33,3 +33,13 @@ npm -v # Should print "11.6.2".
   ```
   npm install -g corepack
   ```
+
+## secrets
+
+The statement
+```
+import "dotenv/config";
+```
+is an ES6 module syntax in Node.js that loads environment variables from a local `.env` file 
+into the Node.js runtime's `process.env` object without needing to explicitly call a configuration function. 
+In practice, you should `.gitignore` your `.env` file.
