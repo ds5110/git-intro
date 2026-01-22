@@ -48,7 +48,7 @@ Recommendations for data science development environment
   Note: in addition to hallucinating (lying?), LLMs often fail to acknowledge.
 * Write clean code in a well-organized repo
   * Strive for self-documenting code (e.g., follow [PEP 8](https://peps.python.org/pep-0008/) in Python). But that's not all...
-  * Choose an appropriate layout for your project repository (see below for assignments in this class).
+  * Choose an appropriate layout for your project repository (see recommendations below for this class).
   * Apply the DRY principle (Don't Repeat Yourself). 
   For example, if multiple files use the same code, then put reused code in a module and import it.
 * Use [.gitignore](https://git-scm.com/docs/gitignore) for big and/or private data
