@@ -116,7 +116,7 @@ make q1
 <img src="figs/q1.png" width=350>
 
 * Note that the makefile has all the command-line commands for the entire pipeline.
-* Note that the demo code imports a local module (part of DRY).
+* Note that the demo code imports a local module (implementing the DRY principle).
 * This markdown file embeds `figs/q1.png` using vanilla HTML, which allows you to set the width:
 ```
 <img src="figs/q1.png" width=350>
