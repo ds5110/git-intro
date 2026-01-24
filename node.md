@@ -1,6 +1,6 @@
 # node
 
-For web development, you need Node.js and the related ecosystem.
+For web development, you need Node.js and the related ecosystem. It comes with the npm package manager.
 
 I'm on a Mac, and I've had problems with homebrew in the past. I avoid it. I downloaded Node.js from the command line...
 
