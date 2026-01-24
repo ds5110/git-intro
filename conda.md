@@ -11,8 +11,8 @@ To get conda, I recommend [conda-forge](https://conda-forge.org/) and [miniforge
 I do not recommend [Anaconda](https://www.anaconda.com/docs/getting-started/getting-started) 
 or [miniconda](https://www.anaconda.com/docs/getting-started/miniconda/main).
 They both use conda. If you're already using one of them, then you may be okay. 
-In other words, if it ain't broke, don't fix it.  
-However, if you start encountering reproducibility problems it may be time to rethink it.
+In other words, if it ain't broke, don't fix it.  However, if you start encountering reproducibility 
+problems it may be time to fix things.
 
 #### Why conda-forge and miniforge?
 
