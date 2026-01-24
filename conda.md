@@ -126,7 +126,8 @@ conda install conda-forge::make
 
 Use YML files to [manage](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html),
 and [share](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment) your conda environments.
-I'll often create an environment by hand, and I can recover what I did with
+I'll often create an environment by hand with the latest software, and I can create
+a YML file that recovers what I did with
 ```
 conda env export --from-history > environment.yml
 ```
