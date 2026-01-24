@@ -6,7 +6,7 @@ Opinionated recommendations for setting up and using
 Conda is a system-level binary package and environment manager that runs on all 
 major operating systems and platforms.
 
-To get conda, I recommend [conda-forge](https://conda-forge.org/) and [miniforge](https://github.com/conda-forge/miniforge) instead (see below).
+To get conda, I recommend [conda-forge](https://conda-forge.org/) and [miniforge](https://github.com/conda-forge/miniforge) (see below).
 
 I do not recommend [Anaconda](https://www.anaconda.com/docs/getting-started/getting-started) 
 or [miniconda](https://www.anaconda.com/docs/getting-started/miniconda/main).
