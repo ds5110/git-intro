@@ -45,6 +45,8 @@ problems it may be time to fix it.
   * See: [Using pip in an environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#using-pip-in-an-environment) -- conda.io
   * This link has best practices for using conda and pip
 
+# Recommendations
+
 ### 0. First things first
 
 Recommendations below assume that you're using Linux, MacOS or WSL (WSL is for windows users).
