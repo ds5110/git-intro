@@ -42,7 +42,8 @@ I recommend [conda-forge](https://conda-forge.org/) and [miniforge](https://gith
 
 ## First things first
 
-Recommendations below assume that you're using Linux, MacOS or WSL. If not, then see [setup.md](setup.md).
+Recommendations below assume that you're using Linux, MacOS or WSL (WSL is for windows users).
+If not, then see [setup.md](setup.md).
 
 ## 1. Install miniforge
 
