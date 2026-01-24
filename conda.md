@@ -51,6 +51,8 @@ Download the installer -- https://conda-forge.org/download/ -- and install as di
 
 * I used the command-line install: `bash Miniforge3-$(uname)-$(uname -m).sh`
 * miniforge includes Python 3.x and a minimal distribution of Python friends.
+* I don't recommend anaconda or miniconda anymore, but if you're already using them, 
+  then you're probably okay for this class.
 
 ### 2. Use conda environments
 
