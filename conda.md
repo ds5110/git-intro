@@ -7,8 +7,10 @@ Conda is a system-level binary package and environment manager that runs on all
 major operating systems and platforms.
 
 I recommend [conda-forge](https://conda-forge.org/) and [miniforge](https://github.com/conda-forge/miniforge) instead (see below).
-You can get conda from [Anaconda](https://www.anaconda.com/docs/getting-started/getting-started) 
-or [miniconda](https://www.anaconda.com/docs/getting-started/miniconda/main), so you may already have it.
+
+I don't recommend [Anaconda](https://www.anaconda.com/docs/getting-started/getting-started) 
+or [miniconda](https://www.anaconda.com/docs/getting-started/miniconda/main).
+They both use conda, so you may be okay for this class. In other words, if it ain't broke, don't fix it.
 
 #### Why conda-forge and miniforge?
 
