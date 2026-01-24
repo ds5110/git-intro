@@ -8,13 +8,13 @@ major operating systems and platforms.
 
 To get conda, I recommend [conda-forge](https://conda-forge.org/) and [miniforge](https://github.com/conda-forge/miniforge) (see below).
 
-I do not recommend [Anaconda](https://www.anaconda.com/docs/getting-started/getting-started) 
+I do NOT recommend [Anaconda](https://www.anaconda.com/docs/getting-started/getting-started) 
 or [miniconda](https://www.anaconda.com/docs/getting-started/miniconda/main).
 They both use conda. If you're already using one of them, then you may be okay. 
 In other words, if it ain't broke, don't fix it.  However, if you start encountering reproducibility 
 problems it may be time to fix it.
 
-#### Why conda-forge and miniforge?
+#### Why conda-forge and miniforge? Why not anaconda or miniconda?
 
 * There's been a growing division between Anaconda (proprietary) and 
   conda-forge (open source). The minimal installer for Anaconda is miniconda; 
@@ -25,7 +25,7 @@ problems it may be time to fix it.
   Anaconda's channel is missing some important scientific computing software.
 * Don't mix channels.
   If you do, then you risk mysterious errors or dependency resolution problems that can be hard to debug
-  ("impossible" might be a more appropriate word).
+  ("nearly impossible" might be a more appropriate term).
   That said, if you're already using conda and it works for you, then you may not need this document.
 * Problems developed in 2024 when Anaconda's "default" channel developed incompatibilities with conda-forge.
   That's more recent than some popular data science books, which don't mention miniforge, such as
