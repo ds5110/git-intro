@@ -16,7 +16,7 @@ problems it may be time to fix it.
 
 #### Why conda-forge and miniforge? Why not anaconda or miniconda?
 
-* There's been a growing division between Anaconda (proprietary) and 
+* There's been a growing division between Anaconda (commercial licensing) and 
   conda-forge (open source). The minimal installer for Anaconda is miniconda; 
   it's open source counterpart is miniforge.
   They all use conda, which is open source.
