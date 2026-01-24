@@ -8,7 +8,7 @@ major operating systems and platforms.
 
 I recommend [conda-forge](https://conda-forge.org/) and [miniforge](https://github.com/conda-forge/miniforge) instead (see below).
 
-I don't recommend [Anaconda](https://www.anaconda.com/docs/getting-started/getting-started) 
+I do not recommend [Anaconda](https://www.anaconda.com/docs/getting-started/getting-started) 
 or [miniconda](https://www.anaconda.com/docs/getting-started/miniconda/main).
 They both use conda, so you may be okay. In other words, if it ain't broke, don't fix it.
 
