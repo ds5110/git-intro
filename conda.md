@@ -82,11 +82,20 @@ Deactivate the environment
 ```
 conda deactivate
 ```
+List all the installed environments
+```
+conda env list
+```
+Remove an environment
+```
+conda remove --name myenv --all
+```
 
 **References:**
 
 * [Manage environments](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) -- conda.io
 * [Creating an environment with commands](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands)
+Ref: [Remove an environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#removing-an-environment) -- conda.io
 * vscode instructions for conda environments: https://code.visualstudio.com/docs/python/environments
 
 ### Install libraries in a conda environment
@@ -106,38 +115,19 @@ conda install conda-forge::matplotlib
 conda install conda-forge::make
 ```
 * Rather than install by hand, I recommend YML files (see below)
-* Once installed, activate the "myenv" environment
-```
-conda activate myenv
-```
-* And deactivate the currently activated environment
-```
-conda deactivate
-```
-* List all installed environments
-```
-conda env list
-```
-
-### Remove an environment
-
-```
-conda remove --name myenv --all
-```
-
-Ref: [Remove an environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#removing-an-environment) -- conda.io
 
 ### YML files
 
 Use YML files to [manage](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html),
 and [share](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment) your conda environments.
-I created an environment.yml for this repo with the following commands:
+I created an environment.yml with the latest versions with the following commands:
 ```
-conda env export --from-history
+conda env export --from-history > environment.yml
 ```
-Here's what I did [environment.yml](environment.yml). Note: without version numbers, that environment isn't reproducible.
+Here it is: [environment.yml](environment.yml). 
+Note however: without explicit version numbers, that environment isn't reproducible.
 
-For a reproducible environment, you need the version numbers. You get that with...
+For a reproducible environment, you need the version numbers, and you get that with...
 ```
 conda env export > environment.yml
 ```
