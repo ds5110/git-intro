@@ -126,12 +126,12 @@ conda install conda-forge::make
 
 Use YML files to [manage](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html),
 and [share](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment) your conda environments.
-I created an environment.yml with the latest versions with the following commands:
+I'll often create an environment by hand, and I can recover what I did with
 ```
 conda env export --from-history > environment.yml
 ```
 Here it is: [environment.yml](environment.yml). 
-Note however: without explicit version numbers, that environment isn't reproducible.
+But without explicit version numbers, that environment isn't reproducible.
 
 For a reproducible environment, you need the version numbers, and you get that with...
 ```
