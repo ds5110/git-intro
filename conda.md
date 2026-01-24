@@ -113,7 +113,6 @@ You can use conda to create multiple environments with various installed librari
 ```
 conda create --name myenv
 conda activate myenv
-conda install conda-forge::python
 conda install conda-forge::scikit-learn
 conda install conda-forge::seaborn
 conda install conda-forge::pandas
