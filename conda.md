@@ -73,7 +73,7 @@ See the discussion above.
 conda config --show channels              # lists channels
 ```
 
-## Common conda commands
+# Common conda commands
 
 ### Create and activate a conda environment
 
