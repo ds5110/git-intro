@@ -131,11 +131,16 @@ Ref: [Remove an environment](https://conda.io/projects/conda/en/latest/user-guid
 
 Use YML files to [manage](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html),
 and [share](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment) your conda environments.
-I created an environment.yml for this repo with:
+I created an environment.yml for this repo with the following commands:
 ```
 conda env export --from-history
 ```
-Here's my latest [environment.yml](environment.yml).
+Here's what I did [environment.yml](environment.yml). Note: without version numbers, that environment isn't reproducible.
+
+For a reproducible environment, you need the version numbers. You get that with...
+```
+conda env export > environment.yml
+```
 
 ### Create an environment from a yml file
 
