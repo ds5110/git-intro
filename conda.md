@@ -17,8 +17,9 @@ problems it may be time to fix it.
 #### Why conda-forge and miniforge?
 
 * There's been a growing division between Anaconda (proprietary) and 
-  conda-forge (open source). The minimal installer for Anaconda is miniconda; it's open counterpart is miniforge.
-* They all use conda, which is an environment and package manager.
+  conda-forge (open source). The minimal installer for Anaconda is miniconda; 
+  it's open source counterpart is miniforge.
+  They all use conda, which is open source.
 * Conda gets sofware from [channels](https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/channels.html).
   Anaconda and conda-forge use different channels.
   Anaconda's channel is missing some important scientific computing software.
