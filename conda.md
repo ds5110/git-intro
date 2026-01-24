@@ -40,19 +40,19 @@ I recommend [conda-forge](https://conda-forge.org/) and [miniforge](https://gith
   * See: [Using pip in an environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#using-pip-in-an-environment) -- conda.io
   * This link has best practices for using conda and pip
 
-## First things first
+### 0. First things first
 
 Recommendations below assume that you're using Linux, MacOS or WSL (WSL is for windows users).
 If not, then see [setup.md](setup.md).
 
-## 1. Install miniforge
+### 1. Install miniforge
 
 Download the installer -- https://conda-forge.org/download/ -- and install as directed.
 
 * I used the command-line install: `bash Miniforge3-$(uname)-$(uname -m).sh`
 * miniforge includes Python 3.x and a minimal distribution of Python friends.
 
-## 2. Use conda environments
+### 2. Use conda environments
 
 * What's a conda environment? A: 
   [conda environment](https://docs.conda.io/projects/conda/en/stable/glossary.html#conda-environment) -- docs.conda.io
