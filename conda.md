@@ -34,7 +34,7 @@ problems it may be time to fix it.
   * Wes McKinney lead developer of Pandas and author of 
   [Python for Data Analysis, 3rd Ed (2022)](https://wesmckinney.com)
 * If you already have conda, then you may want to 
-  [transition away from defaults](see: https://conda-forge.org/docs/user/transitioning_from_defaults/)
+  [transition away from defaults](https://conda-forge.org/docs/user/transitioning_from_defaults/)
 
 #### What about pip?
 
