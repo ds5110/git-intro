@@ -119,7 +119,7 @@ conda install conda-forge::pandas
 conda install conda-forge::matplotlib
 conda install conda-forge::make
 ```
-* Rather than install by hand, I recommend YML files (see below)
+* Without version numbers, this isn't reproducible. For reproducibility, I recommend YML files.
 
 ### YML files
 
