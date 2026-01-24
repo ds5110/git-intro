@@ -12,7 +12,7 @@ I do not recommend [Anaconda](https://www.anaconda.com/docs/getting-started/gett
 or [miniconda](https://www.anaconda.com/docs/getting-started/miniconda/main).
 They both use conda. If you're already using one of them, then you may be okay. 
 In other words, if it ain't broke, don't fix it.  However, if you start encountering reproducibility 
-problems it may be time to fix things.
+problems it may be time to fix it.
 
 #### Why conda-forge and miniforge?
 
