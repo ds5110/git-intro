@@ -26,16 +26,6 @@ Recommendations for data science development environment
     * For that reason, Jupyter notebooks are not allowed in this class for assignments or projects.
     * ...but they're great for prototyping, in-class exercises and publishing books,
     like [this awesome data-science text](https://github.com/jakevdp/PythonDataScienceHandbook)!
-  * We use the command line for a reason. Related comments come from one of our part-time MSDS students 
-  who's also a corporate executive and spends most of her time working in the real world...
-    > I asked a Senior Engineer about Jupyter vs. command line, and why we use Notebooks and he said, "We run 
-    > everything in the terminal. The only people on the team who use Notebooks are the data scientists and they 
-    > aren't deploying anything to production. Frankly it's a pain in the rear to deal with their stuff when they 
-    > send it over for us to scale and build into something that can be pushed to production. I wish they would stop 
-    > using Notebooks but they are addicted."
-    >
-    > I had downloaded Github Desktop and was using that without realizing that is what I was doing, 
-    > which also contributed to my confusion. I removed it.
 * Document your repository
   * Everything must be reproducible from the command line -- provide clear instructions.
   * Document authoritative data source(s), and show how to access the data from those sources.
