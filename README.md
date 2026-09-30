@@ -8,14 +8,14 @@ Recommendations for data science development environment
 
 ## Contents
 
-* [README.md](README.md) (this document): guidelines for github-classroom assignment submission
+* [README.md](README.md) (this document): guidelines for assignment submission
 * [setup.md](setup.md): opinionated recommendations (with references) for a development environment
 * [conda.md](conda.md): intro & cheat sheet for package management (cross-platform, polyglot, open-source)
 * [git.md](git.md): intro and references for command-line git
 * [node.md](node.md): Node.js and npm for web development
 * [llm-policy.md](llm-policy.md): policy for using LLMs and AI coding agents
 * [colab.md](colab.md): notes on using Google Colab (for prototyping, not assignments)
-* [github-classroom.md](github-classroom.md): github-classroom workflow (for instructors & TAs)
+* [classroom50.md](classroom50.md): Classroom50 cheatsheet (for instructors & TAs)
 * Additional resources from an awesome TA: [Useful for DS 5110](https://github.com/charVANder/Useful-for-DS5110)
 
 ## Reproducibility
