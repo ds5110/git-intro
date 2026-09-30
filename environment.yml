@@ -5,10 +5,11 @@ dependencies:
   - python=3.13
   - numpy=2.2
   - pandas=2.2
-  - conda-forge::seaborn
-  - conda-forge::geopandas
-  - conda-forge::geojson
-  - conda-forge::contextily
-  - conda-forge::imageio
-  - conda-forge::aspell
-  - conda-forge::git-filter-repo
+  - matplotlib
+  - seaborn
+  - geopandas
+  - geojson
+  - contextily
+  - imageio
+  - make
+  - git-filter-repo
