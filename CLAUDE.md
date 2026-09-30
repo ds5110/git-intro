@@ -20,7 +20,7 @@ This is a teaching repository for DS 5110 demonstrating best practices for repro
 ```bash
 make q1                  # Creates figs/q1.png using data/Wage.csv
 make data/Wage.csv       # Downloads the ISL Wage dataset (runs automatically via q1 target)
-make clean               # Removes downloaded data
+make clean               # Removes downloaded data (figs are committed and kept)
 ```
 
 ### Environment setup
@@ -41,12 +41,12 @@ The repository demonstrates a standard Make-based data science pipeline:
 3. **Output generation**: Scripts save figures to `./figs` for embedding in README.md
 
 ### Module Structure
-- `src/readit.py`: Reusable utility module for reading CSV data via pandas
-- `src/q1.py`: Example analysis script that imports `readit` module and creates visualizations
+- `src/readit.py`: Reusable utility module (`read_csv`) for reading CSV data via pandas
+- `src/q1.py`: Example analysis script that imports `read_csv` from the `readit` module and creates visualizations
 - Future scripts should follow this pattern: import shared functionality rather than duplicating code
 
 ### Makefile Dependencies
-The Makefile uses dependency chains (e.g., `q1: data/Wage.csv`) to automatically trigger data downloads before running analysis. The `.PHONY: data` declaration ensures targets work even if a `data/` directory exists.
+The Makefile uses dependency chains (e.g., `q1: data/Wage.csv`) to automatically trigger data downloads before running analysis. `q1` and `clean` are declared `.PHONY` because they don't produce files with those names.
 
 ## Assignment Workflow
 
