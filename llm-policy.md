@@ -13,7 +13,7 @@ Use of LLMs and AI coding agents is encouraged. Two rules: **don't trust; verify
 
 * Be ready to explain in detail any code an agent produces for you.
 * Collaborate with git branches & PRs -- https://docs.github.com/en/get-started/using-github/github-flow
-* Document your work with clear, well-explained PRs -- https://google.github.io/eng-practices/
+* Document your work with clear, well-explained PRs -- https://google.github.io/eng-practices/review/developer/cl-descriptions.html
 * Reproducibility is paramount -- provide enough info so that a peer could easily reproduce
   your results, end to end (see the example in [README.md](README.md)).
 * Say which AI tools you used and for what, in your README or PR. Acknowledging your
