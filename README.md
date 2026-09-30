@@ -12,6 +12,9 @@ Recommendations for data science development environment
 * [setup.md](setup.md): opinionated recommendations (with references) for a development environment
 * [conda.md](conda.md): intro & cheat sheet for package management (cross-platform, polyglot, open-source)
 * [git.md](git.md): intro and references for command-line git
+* [node.md](node.md): Node.js and npm for web development
+* [llm-policy.md](llm-policy.md): policy for using LLMs and AI coding agents
+* [colab.md](colab.md): notes on using Google Colab (for prototyping, not assignments)
 * [github-classroom.md](github-classroom.md): github-classroom workflow (for instructors & TAs)
 * Additional resources from an awesome TA: [Useful for DS 5110](https://github.com/charVANder/Useful-for-DS5110)
 
@@ -51,7 +54,8 @@ Recommendations for data science development environment
   * Instead, provide instructions for downloading file(s) into `./data` and make sure 
   to `.gitignore` that directory or the files in it (see [git.md](git.md)).
   Or you may want to look into [git-lfs](https://docs.github.com/en/repositories/working-with-files/managing-large-files/configuring-git-large-file-storage).
-  * Size is important because Github has a [50 MB limit for files](https://docs.github.com/en/enterprise-cloud@latest/repositories/working-with-files/managing-large-files/about-large-files-on-github).
+  * Size is important because Github warns you about files over 50 MB and
+  [blocks files over 100 MB](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
   Be warned: if you accidentally commit a large and/or private file, you'll have to get it out 
   ([not fun](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)).
 
@@ -91,7 +95,7 @@ Suppose Question 1 of an assignment asks you to reproduce the first chart in Fig
 
 ### Step 1: Data access
 
-Download the CSV file that's used in Figure 1.1 of [ISL](http://statlearning.com) with the following command
+Download the CSV file that's used in Figure 1.1 of [ISL](https://www.statlearning.com/) with the following command
 ```
 make data/Wage.csv
 ```
@@ -100,10 +104,16 @@ make data/Wage.csv
 * This step is necessary when cloning this repo because `data` is in the .gitignore file.
 * If you don't have the requisite software, like `make`, then check out [setup.md](setup.md)
 * If you're not familiar with git, then check out [git.md](git.md).
+* The Python code requires the conda environment in [environment.yml](environment.yml)
+  (see [conda.md](conda.md)). Activate it before running `make`:
+  ```
+  conda env create -f environment.yml   # first time only
+  conda activate ds
+  ```
 
 ### Step 2: Reproducible results 
 
-The graphic below reproduces Figure 1.1 of ISL. Recreate it with the following command:
+The graphic below reproduces the left panel of Figure 1.1 of ISL. Recreate it with the following command:
 ```
 make q1
 ```
@@ -125,7 +135,8 @@ make q1
 * [github flavored markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 * [gfm spec](https://github.github.com/gfm/)
 * [embed a PNG in markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#images)
-* [math in markdown](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
+* [math in markdown](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions).
+  For example, `$$\int e^x dx = e^x + \mathrm{const}$$` renders as
 
 $$
 \int e^x dx = e^x + \mathrm{const}
