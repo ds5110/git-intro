@@ -1,8 +1,8 @@
 import pandas as pd
 
-def csv(url_or_file="https://github.com/ds5110/rdata/raw/main/data/Wage.csv"):
+def read_csv(url_or_file):
     '''
-    Use pandas to read CSV data from the url (default: ISL wage dataset in my rdata repo)
+    Use pandas to read CSV data from a url or local file
     '''
     print(f"reading data from {url_or_file}")
 
