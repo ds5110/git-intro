@@ -1,9 +1,13 @@
 # node
 
 For web development you need Node.js, which ships with the npm package manager.
-Use the current **LTS** release (Node 26 as of late Oct 2026). Starting with
-Node 27, Node ships one major release per year and every release becomes LTS,
-so "use the latest LTS" is the whole rule.
+Use the current LTS release. As of Sep 2026, Node 24 is the latest LTS.
+(Check the [release schedule](https://nodejs.org/en/about/previous-releases).)
+Node 27 will start shipping one major release per year, and it'll become LTS that October, 
+so "use the latest LTS" in general.
+
+If your project also has a Python back end (e.g., FastAPI), use Node for the front end and
+a conda environment for the back end (see the Web dev section of [conda.md](conda.md#web-dev)).
 
 ## Install with nvm (macOS, Linux, WSL)
 
@@ -16,11 +20,11 @@ strongly recommend a version manager like nvm over the Node installer.
 
 ```
 # Check the nvm README for the current version in this URL
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.8/install.sh | bash
 \. "$HOME/.nvm/nvm.sh"     # or restart your shell
 
 nvm install --lts
-node -v    # v26.x or later
+node -v    # the current LTS
 npm -v
 ```
 
@@ -49,12 +53,13 @@ environment as your Python packages.
 ### Pin the version per project
 
 ```
-echo "26" > .nvmrc  # pin the major version (or "lts/*"); commit this file
-nvm use             # anyone cloning the repo gets a matching version
+echo "24" > .nvmrc  # pin the major version (or "lts/*"); commit this file
+nvm install         # anyone cloning the repo installs (if needed) and uses a matching version
 ```
 
-Pin the major version, not an exact release like `v26.1.3`; otherwise `nvm use`
-fails for anyone who doesn't have that exact patch installed.
+Use `nvm install` rather than `nvm use`: `nvm use` fails if that version isn't installed yet.
+Pin the major version, not an exact release like `v24.1.3`, so anyone gets the latest patch.
+Use a major version that's already LTS (see above).
 
 ## npm and reproducibility
 
@@ -75,6 +80,8 @@ Use npm. It comes with Node, so there's nothing extra to install.
 Rule of thumb: use whichever package manager the lockfile says.
 If a project has a `yarn.lock` instead, run `npm install -g corepack && corepack enable`
 first (Corepack is no longer bundled with Node 25+), then use `yarn`.
+(This is the exception to "avoid `npm install -g`" above: Corepack manages the package manager itself,
+and uses the yarn version recorded in the project's `package.json`, if there is one.)
 
 ## npm scripts and Make
 
@@ -108,8 +115,8 @@ Use the same Node version and dependencies in CI as on your machine
 
 ```
 steps:
-  - uses: actions/checkout@v6
-  - uses: actions/setup-node@v6
+  - uses: actions/checkout@v7
+  - uses: actions/setup-node@v7
     with:
       node-version-file: .nvmrc
   - run: npm ci
