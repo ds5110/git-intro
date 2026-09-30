@@ -3,3 +3,4 @@ junk
 data
 .env
 node_modules/
+*.swp
