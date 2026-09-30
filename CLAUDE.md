@@ -8,11 +8,30 @@ This is a teaching repository for DS 5110 demonstrating best practices for repro
 
 ## Key Principles
 
-- **Command-line reproducibility**: All workflows must be executable from the command line. Jupyter notebooks are discouraged for assignment submission due to reproducibility issues.
+- **Command-line reproducibility**: All workflows must be executable from the command line. Jupyter notebooks are not allowed for assignments or projects due to reproducibility issues (fine for prototyping).
 - **Make-based pipelines**: Use Make to orchestrate all data processing, analysis, and visualization steps.
 - **Modular code organization**: Source code lives in `./src`, figures in `./figs`, data in `./data` (gitignored).
 - **One file per question**: For assignments, each question gets its own Python file (e.g., `src/q1.py`, `src/q2.py`).
 - **DRY principle**: Shared code belongs in modules that get imported (see `src/readit.py` as example).
+
+## Documentation
+
+Most of the repo is course documentation for students (DS 5110 and a web dev course):
+
+- `README.md`: reproducibility and assignment-submission guidelines, with the example pipeline
+- `setup.md`: development environment (Unix-like shell/WSL, conda, vscode, make, git, Node)
+- `git.md`, `conda.md`, `node.md`: command-line git, conda (miniforge), and Node/npm
+- `llm-policy.md`: policy for using LLMs and coding agents
+- `colab.md`: Google Colab notes (prototyping only)
+- `classroom50.md`: Classroom50 cheatsheet for instructors & TAs (replaced GitHub Classroom in 2026)
+
+Conventions for editing the docs:
+
+- Write cheatsheets that link to authoritative docs; don't duplicate step-by-step instructions that will drift.
+- Verify time-sensitive claims (Node LTS dates, GitHub Action and nvm versions, tool behavior) against current sources before writing them, and check links.
+- Keep the author's first-person, opinionated voice and lowercase "github" style.
+- Course specifics: miniforge/conda-forge only (avoid pip); students use their northeastern.edu email with their existing github account; assignments go through Classroom50 with repo links submitted in Canvas; the web dev course uses a JS front end with a FastAPI back end.
+- This repo is the author's personal notes: "update" commit messages are intentional, so don't suggest changing them.
 
 ## Development Commands
 
