@@ -1,9 +1,10 @@
 
 # Colab
 
-http://colab.research.google.com 
+https://colab.research.google.com
 
-Students should authenticate with their husky.neu.edu email.
+Sign in with your husky.neu.edu Google account if you have one (it has worked for students in the past).
+Otherwise, a personal Gmail account is fine.
 
 https://colab.research.google.com/notebooks/ has some useful info. 
 
@@ -29,9 +30,9 @@ The notebook has been changed outside of this session. Would you like to overwri
 
 * Open the notebook you want to share
 * File > "Locate in Drive"
-* Control-Click > "Share"
+* Right-click > "Share"
   * Add the person's email (their google account)
-* Control-Click > "Get link"
+* Right-click > "Get link"
 
 ## Collaborating
 
@@ -93,14 +94,14 @@ Use `curl` followed by appropriate unix commands to manipulate those files.  For
     ! gunzip -f movie_data.csv.gz
     ! ls
 
-Note: Github has a 50M file-size limit.
+Note: Github warns about files over 50 MB and blocks files over 100 MB.
 
 ## Accessing your Google Drive
 
 ### A shared file in your Google Drive
 
 If you choose the "Get shareable link" option for a file in your Google Drive,
-that link contains a unique ID that will allow anyone can load the file into their Colab session.
+that link contains a unique ID that will allow anyone to load the file into their Colab session.
 For example, here's a shareable link (it is not a working example):
 
     https://drive.google.com/file/d/1C7Rw06hhv0HgyjN28nMie6iI77F7hewoL/view?usp=sharing
@@ -117,7 +118,9 @@ For example, if the shared file is CSV, then you can load it with pandas (again,
     url = "https://drive.google.com/uc?export=download&id=1C7Rw06hhv0HgyjN28nMie6iI77F7hewoL"
     df = pd.read_csv(url)
 
-There are file-size restrictions for this approach, but it works for files that exceed the github limits.
+This works for files that exceed the github limits, up to a point. For large files, Google shows a
+"can't scan this file for viruses" page instead of the file, so `pd.read_csv` gets HTML instead of CSV
+(and fails with a confusing parser error). If that happens, use the method below.
 
 ### Large files shared from your Google Drive
 
