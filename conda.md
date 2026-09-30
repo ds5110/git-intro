@@ -27,7 +27,7 @@ problems it may be time to fix it.
   If you do, then you risk mysterious errors or dependency resolution problems that can be hard to debug
   ("nearly impossible" might be a more appropriate term).
   That said, if you're already using conda and it works for you, then you may not need this document.
-* Problems developed in 2024 when Anaconda's "default" channel developed incompatibilities with conda-forge.
+* Problems developed in 2024 when Anaconda's "defaults" channel developed incompatibilities with conda-forge.
   That's more recent than some popular data science books, which don't mention miniforge, such as
   * Jake VanderPlas, the author of 
   [Python Data Science Handbook, 2nd Ed (2022)](https://github.com/jakevdp/PythonDataScienceHandbook)
@@ -142,10 +142,9 @@ a YML file that recovers what I did with
 conda env export --from-history > environment.yml
 ```
 That only lists the packages you asked for, and only includes version numbers if you specified them.
-For example, [environment.yml](environment.yml) pins python, numpy and pandas and leaves the rest unpinned.
-
-To share an environment across operating systems (e.g., Mac vs. Linux/WSL), use `--from-history`
-and pin the versions of the packages that matter, like [environment.yml](environment.yml) does.
+That's the one to use when sharing an environment across operating systems (e.g., Mac vs. Linux/WSL):
+pin the versions of the packages that matter, like [environment.yml](environment.yml) does
+(it pins python, numpy and pandas and leaves the rest unpinned).
 
 To record the exact version of every installed package, use
 ```
