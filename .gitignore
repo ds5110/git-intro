@@ -1,3 +1,5 @@
 .DS_Store
 junk
 data
+.env
+node_modules/
